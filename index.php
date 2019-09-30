@@ -2,6 +2,7 @@
 	header("Content-Type: text/html; charset=utf8");
 	session_start();
 	include('../core.php');
+	date_default_timezone_set ( "America/Mexico_City" );
 	function formatoFecha($fecha){
 		$fecha = empty($fecha)?date('Y-m-d'):$fecha;
 		$dias = array('Domingo','Lunes','Martes','Mi&eacute;rcoles','Jueves','Viernes','S&aacute;bado');
@@ -78,8 +79,8 @@
 				<?php
 					$sql = 'SELECT tor_marcadores.partido_id FROM tor_marcadores
 							WHERE tor_marcadores.ganador_id IS NOT NULL';
-					$result = @mysql_query($sql);
-					if(@mysql_num_rows($result) == 0){
+					$result = @mysqli_query($sql);
+					if(@mysqli_num_rows($result) == 0){
 				?>
 					<div class="title">PRÓXIMOS JUEGOS</div>
 					<div id="ultimos">
@@ -91,13 +92,13 @@
 								WHERE tor_partidos.torneo_id BETWEEN 1 AND 15 AND tor_partidos.fecha IS NOT NULL AND tor_partidos.fecha>=CURRENT_DATE()
 								ORDER BY tor_partidos.fecha ASC,tor_partidos.hora ASC
 								LIMIT 20';
-						$partidos = @mysql_query($sql);
-						while($p = @mysql_fetch_array($partidos)){
+						$partidos = @mysqli_query($sql);
+						while($p = @mysqli_fetch_array($partidos, MYSQLI_NUM)){
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['local'];
-							$local = @mysql_query($sql);
-							$l = @mysql_fetch_array($local);
+							$local = @mysqli_query($sql);
+							$l = @mysqli_fetch_array($local, MYSQLI_NUM);
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['visitante'];
-							$visitante = @mysql_query($sql);
+							$visitante = @mysqli_query($sql);
 							$v = @mysql_fetch_array($visitante);
 				?>
 							<tr>
@@ -109,7 +110,7 @@
 							</tr>
 				<?php
 						}
-						@mysql_free_result($partidos);
+						@mysqli_free_result($partidos);
 				?>
 						</table>
 					</div>
@@ -127,14 +128,14 @@
 								WHERE tor_partidos.torneo_id BETWEEN 1 AND 15 AND tor_marcadores.ganador_id IS NOT NULL
 								ORDER BY tor_partidos.fecha DESC,tor_partidos.hora DESC
 								LIMIT 20';
-						$partidos = @mysql_query($sql);
-						while($p = @mysql_fetch_array($partidos)){
+						$partidos = @mysqli_query($sql);
+						while($p = @mysqli_fetch_array($partidos, MYSQLI_NUM)){
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['local'];
-							$local = @mysql_query($sql);
-							$l = @mysql_fetch_array($local);
+							$local = @mysqli_query($sql);
+							$l = @mysql_fetch_array($local, MYSQLI_NUM);
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['visitante'];
-							$visitante = @mysql_query($sql);
-							$v = @mysql_fetch_array($visitante);
+							$visitante = @mysqli_query($sql);
+							$v = @mysql_fetch_array($visitante, MYSQLI_NUM);
 				?>
 							<tr>
 								<td class="icon" style="background-image: url(images/<?php echo $p['icono']; ?>_b.png);"></td>
@@ -145,13 +146,13 @@
 							</tr>
 				<?php
 						}
-						@mysql_free_result($partidos);
+						@mysqli_free_result($partidos);
 				?>
 						</table>
 					</div>
 				<?php
 					}
-					@mysql_free_result($result);
+					@mysqli_free_result($result);
 				?>
 				</article>
 				<!-- <div id="skewed">
@@ -208,5 +209,5 @@
 	</body>
 </html>
 <?php
-	@mysql_close($dbc);
+	@mysqli_close($dbc);
 ?>
