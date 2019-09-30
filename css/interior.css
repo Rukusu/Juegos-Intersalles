@@ -1,0 +1,442 @@
+body{
+	padding-top: 70px;
+}
+header.interior{
+	max-height: 70px;
+}
+#menu_int{
+	background: url(../images/menu_b.png);
+	background-size: cover;
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	width: 40px;
+}
+#chkMenu:checked + header #menu_int{
+	background: url(../images/menu_close_b.png);
+	background-size: cover;
+}
+#titulo{
+	background: url(../images/titulo.png) top left #fff;
+	background-size: cover;
+	color: #fff;
+	font-family: 'Indivisa Text Sans BoldItalic', Verdana, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+}
+#titulo div{
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+.text{
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 20px 0;
+	text-align: justify;
+}
+.text .imagen{
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+	padding-top: 70%;
+}
+.text .icono{
+	display: none;
+}
+.text strong{
+	color: #002c6c;
+}
+.text blockquote{
+	margin: 0 20px;
+}
+.text a{
+	color: #00f;
+}
+.text a.reglamento{
+	border-bottom: 1px solid #002c6c;
+	display: block;
+	margin-bottom: 20px;
+}
+.text a.reglamento span{
+	float: right;
+}
+.programa{
+	margin: 0 auto;
+	max-width: 600px;
+	text-align: left;
+	width: 100%;
+}
+.programa strong{
+	border-bottom: 2px solid #ff0;
+	display: block;
+	width: 280px;
+}
+.programa ul{
+	list-style: none;
+	margin: 0 0 20px 0;
+	padding: 0;
+}
+#items{
+	background-position: center;
+	background-size: cover;
+}
+.item{
+	background-position: center;
+	background-size: cover;
+	border: 1px solid #fff;
+	float: left;
+	font-size: 18px;
+	height: 120px;
+	text-align: center;
+	width: 50%;
+}
+.item a{
+	background-color: rgba(23,48,106,.8);
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	height: 100%;
+	padding: 10px;
+	padding-top: 50px;
+}
+.accordion input{
+	display: none;
+}
+.accordion label{
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 16px;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 3px 20px;
+	width: 100%;
+}
+.accordion.r1 label{
+	background: #002c6c;
+}
+.accordion.r2 label{
+	background: #c40b2b;
+}
+.accordion label span{
+	background: url(../images/down.png);
+	background-size: cover;
+	height: 20px;
+	float: right;
+	margin-top: 2px;
+	width: 20px;
+}
+.accordion .container{
+	margin-bottom: 1px;
+	max-height: 0;
+	overflow: hidden;
+	transition: all .5s ease;
+}
+.accordion input:checked ~ .container{
+	max-height: 1000px;
+}
+.accordion input:checked + label span{
+	transform: rotate(180deg);
+}
+.accordion .container table{
+	margin: 5px auto;
+	max-width: 600px;
+	width: 100%;
+}
+.accordion.r1 .container table{
+	border: 1px solid #002c6c;
+}
+.accordion.r2 .container table{
+	border: 1px solid #c40b2b;
+}
+.accordion .container table tr:nth-child(1) th{
+	text-transform: uppercase;
+}
+.accordion.r1 .container table th{
+	background: #002c6c;
+	color: #fff;
+	font-weight: normal;
+}
+.accordion.r2 .container table th{
+	background: #c40b2b;
+	color: #fff;
+	font-weight: normal;
+}
+.torneo{
+	border-radius: 0 15px 0 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	margin: 2px 20px;
+	transform: skewX(-45deg);
+}
+.torneo label{
+	cursor: pointer;
+	display: block;
+	padding: 5px 20px;
+	transform: skewX(45deg);
+}
+.torneo.r2{
+	background: #c40b2b;
+	border: 2px solid #c40b2b;
+}
+.torneo.r2.selected{
+	background: transparent;
+	color: #c40b2b;
+}
+.torneo.r1,
+.torneo.r3{
+	background: #002c6c;
+	border: 2px solid #002c6c;
+}
+.torneo.r1.selected,
+.torneo.r3.selected{
+	background: transparent;
+	color: #002c6c;
+}
+.radTorneo{
+	display: none;
+}
+.radTorneo + .torneoDetalle{
+	display: none;
+}
+.radTorneo + .torneoDetalle .jornadas,
+.radTorneo + .torneoDetalle .estadisticas{
+	border-radius: 10px;
+}
+.radTorneo + .torneoDetalle .estadisticas{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.radTorneo + .torneoDetalle .estadisticas th{
+	color: #fff;
+}
+.radTorneo.r2 + .torneoDetalle .jornadas,
+.radTorneo.r2 + .torneoDetalle .estadisticas{
+	border: 2px solid #c40b2b;
+}
+.radTorneo.r2 + .torneoDetalle .estadisticas table{
+	border: 1px solid #c40b2b;
+}
+.radTorneo.r2 + .torneoDetalle .estadisticas th{
+	background: #c40b2b;
+}
+.radTorneo.r1 + .torneoDetalle .jornadas,
+.radTorneo.r3 + .torneoDetalle .jornadas,
+.radTorneo.r1 + .torneoDetalle .estadisticas,
+.radTorneo.r3 + .torneoDetalle .estadisticas{
+	border: 2px solid #002c6c;
+}
+.radTorneo.r1 + .torneoDetalle .estadisticas table,
+.radTorneo.r3 + .torneoDetalle .estadisticas table{
+	border: 1px solid #002c6c;
+}
+.radTorneo.r1 + .torneoDetalle .estadisticas th,
+.radTorneo.r3 + .torneoDetalle .estadisticas th{
+	background: #002c6c;
+}
+.radTorneo:checked + .torneoDetalle{
+	display: block;
+}
+.radTorneo + .torneoDetalle .jornadaTitulo{
+	color: #fff;
+	font-size: 16px;
+	padding: 3px;
+	text-align: center;
+}
+.radTorneo.r2 + .torneoDetalle .jornadaTitulo{
+	background: #c40b2b;
+}
+.radTorneo.r1 + .torneoDetalle .jornadaTitulo,
+.radTorneo.r3 + .torneoDetalle .jornadaTitulo{
+	background: #002c6c;
+}
+.radTorneo + .torneoDetalle .partido:nth-child(odd){
+	background: rgba(79,139,237,.2);
+}
+.radTorneo + .torneoDetalle .partido .cancha{
+	color: #2959a5;
+	float: left;
+	max-width: 50%;
+	padding: 3px 5px;
+	text-decoration: underline;
+}
+.radTorneo + .torneoDetalle .partido .fechaHora{
+	float: right;
+	max-width: 50%;
+	padding: 3px 5px;
+	text-align: right;
+}
+.radTorneo + .torneoDetalle .partido .fechaHora span{
+	display: block;
+}
+.radTorneo + .torneoDetalle .partido .versus{
+	float: left;
+	font-size: 18px;
+	padding: 3px 5px;
+	text-align: center;
+	width: 100%;
+}
+.radTorneo + .torneoDetalle .partido .versus .local{
+	float: left;
+	text-align: right;
+	width: calc(50% - 40px);
+}
+.radTorneo + .torneoDetalle .partido .versus .vs{
+	float: left;
+	text-align: center;
+	width: 80px;
+}
+.radTorneo + .torneoDetalle .partido .versus .visitante{
+	float: right;
+	text-align: left;
+	width: calc(50% - 40px);
+}
+.canchaInfo{
+	display: none;
+}
+.canchaInfo .foto{
+	background-position: center;
+	background-size: cover;
+	padding-top: 50%;
+}
+.canchaInfo .map{
+	height: 300px !important;
+	width: 100% !important;
+}
+.my-gallery figure{
+	display: inline-block;
+	margin: 5px;
+}
+.my-gallery img{
+	height: 80px;
+	width: auto;
+}
+.my-gallery figcaption{
+	display: none;
+}
+
+@media screen and (min-width: 480px){
+	.radTorneo + .torneoDetalle .partido .fechaHora span{
+		display: inline;
+	}
+}
+@media screen and (min-width: 640px){
+	.text .imagen{
+		float: left;
+		height: 150px;
+		margin-right: 20px;
+		padding: 0;
+		width: 200px;
+	}
+	.text .icono{
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 50px;
+		display: block;
+		float: left;
+		height: 70px;
+		margin-right: 20px;
+		width: 70px;
+	}
+	.item{
+		height: 150px;
+		width: 33.33%;
+	}
+	.item a{
+		padding-top: 65px;
+	}
+	.canchaInfo{
+		width: 560px;
+	}
+	.canchaInfo .info,
+	.canchaInfo .map{
+		float: left;
+		width: 50% !important;
+	}
+	.canchaInfo .map{
+		height: 360px !important;
+	}
+	.canchaInfo .foto{
+		margin-right: 10px;
+	}
+}
+@media screen and (min-width: 768px){
+	#menu_int{
+		display: none;
+	}
+	#titulo{
+		background-position: center;
+	}
+	.item{
+		width: 25%;
+	}
+	.radTorneo + .torneoDetalle .jornadas{
+		float: left;
+		width: calc(50% - 10px);
+	}
+	.radTorneo + .torneoDetalle .partido .fechaHora span{
+		display: block;
+	}
+	.radTorneo + .torneoDetalle .estadisticas{
+		float: right;
+		margin: 0;
+		width: calc(50% - 10px);
+	}
+	.canchaInfo{
+		width: 640px;
+	}
+}
+@media screen and (min-width: 960px){
+	body{
+		padding-top: 90px;
+	}
+	header.interior{
+		max-height: 90px;
+	}
+	.item{
+		height: 170px;
+		width: 20%;
+	}
+	.item a{
+		padding-top: 75px;
+	}
+	.torneo{
+		float: left;
+		margin: 2px;
+	}
+	.torneo:nth-child(1){
+		margin-left: 30px;
+	}
+	.torneo label{
+		padding: 5px 30px;
+	}
+	.torneo label span{
+		display: block;
+	}
+	.torneo label strong{
+		margin-left: -20px;
+	}
+	.radTorneo + .torneoDetalle{
+		position: absolute;
+		top: 82px;
+		width: calc(100% - 40px);
+	}
+	.radTorneo + .torneoDetalle .partido .fechaHora span{
+		display: inline;
+	}
+	.canchaInfo{
+		width: 800px;
+	}
+}
+@media screen and (min-width: 1280px){
+	.item{
+		height: 200px;
+	}
+	.item a{
+		padding-top: 90px;
+	}
+}

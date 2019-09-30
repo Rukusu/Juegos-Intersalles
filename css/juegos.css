@@ -1,0 +1,759 @@
+@font-face {
+	font-family: 'Indivisa Text Sans Regular';
+	src: url('../../fonts/eot/IndivisaTextSans-Regular.eot');
+	src: url('../../fonts/eot/IndivisaTextSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/woff2/IndivisaTextSans-Regular.woff2') format('woff2'),
+		url('../../fonts/woff/IndivisaTextSans-Regular.woff') format('woff'),
+		url('../../fonts/ttf/IndivisaTextSans-Regular.ttf') format('truetype'),
+		url('../../fonts/svg/IndivisaTextSans-Regular.svg#indivisa') format('svg');
+}
+@font-face {
+	font-family: 'Indivisa Text Sans Bold';
+	src: url('../../fonts/eot/IndivisaTextSans-Bold.eot');
+	src: url('../../fonts/eot/IndivisaTextSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/woff2/IndivisaTextSans-Bold.woff2') format('woff2'),
+		url('../../fonts/woff/IndivisaTextSans-Bold.woff') format('woff'),
+		url('../../fonts/ttf/IndivisaTextSans-Bold.ttf') format('truetype'),
+		url('../../fonts/svg/IndivisaTextSans-Bold.svg#indivisa') format('svg');
+}
+@font-face {
+	font-family: 'Indivisa Text Sans BoldItalic';
+	src: url('../../fonts/eot/IndivisaTextSans-BoldItalic.eot');
+	src: url('../../fonts/eot/IndivisaTextSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/woff2/IndivisaTextSans-BoldItalic.woff2') format('woff2'),
+		url('../../fonts/woff/IndivisaTextSans-BoldItalic.woff') format('woff'),
+		url('../../fonts/ttf/IndivisaTextSans-BoldItalic.ttf') format('truetype'),
+		url('../../fonts/svg/IndivisaTextSans-BoldItalic.svg#indivisa') format('svg');
+}
+@font-face {
+	font-family: 'Indivisa Display Sans Thin Italic';
+	src: url('../../fonts/eot/IndivisaDisplaySans-ThinItalic.eot');
+	src: url('../../fonts/eot/IndivisaDisplaySans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/woff2/IndivisaDisplaySans-ThinItalic.woff2') format('woff2'),
+		url('../../fonts/woff/IndivisaDisplaySans-ThinItalic.woff') format('woff'),
+		url('../../fonts/ttf/IndivisaDisplaySans-ThinItalic.ttf') format('truetype'),
+		url('../../fonts/svg/IndivisaDisplaySans-ThinItalic.svg#indivisa') format('svg');
+}
+@font-face {
+	font-family: 'Indivisa Display Sans Heavy Italic';
+	src: url('../../fonts/eot/IndivisaDisplaySans-HeavyItalic.eot');
+	src: url('../../fonts/eot/IndivisaDisplaySans-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+		url('../../fonts/woff2/IndivisaDisplaySans-HeavyItalic.woff2') format('woff2'),
+		url('../../fonts/woff/IndivisaDisplaySans-HeavyItalic.woff') format('woff'),
+		url('../../fonts/ttf/IndivisaDisplaySans-HeavyItalic.ttf') format('truetype'),
+		url('../../fonts/svg/IndivisaDisplaySans-HeavyItalic.svg#indivisa') format('svg');
+}
+body{
+	background: linear-gradient(to right,#5fa7e6 0%,#414291 100%);
+	font-family: 'Indivisa Text Sans Regular', Verdana, sans-serif;
+	font-size: 14px;
+	min-height: 100vh;
+}
+.clearfix{
+	clear: both;
+	display: block;
+	height: 0;
+	width: 0;
+}
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+strong{
+	font-family: 'Indivisa Text Sans Bold', Verdana, sans-serif;
+}
+.wrapper{
+	margin: 0 auto;
+	max-width: 1280px;
+	position: relative;
+	width: 100%;
+}
+body > input{
+	display: none;
+}
+header{
+	background: rgba(255,255,255,1);
+	max-height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	transition: all .2s ease;
+	width: 100%;
+	z-index: 100;
+}
+nav{
+	padding-top: 70px;
+}
+nav > a{
+	color: #001e61;
+	display: block;
+	font-family: 'Indivisa Text Sans Bold', Verdana, sans-serif;
+	font-size: 16px;
+	padding: 15px;
+	text-align: center;
+}
+nav > a:hover,
+nav > a:active{
+	background: #001e61;
+	color: #fff;
+}
+nav #social{
+	text-align: center;
+}
+nav #social a{
+	background-size: cover;
+	display: inline-block;
+	height: 30px;
+	margin: 10px;
+	width: 30px;
+}
+#chkMenu:checked + header{
+	max-height: 1000px;
+}
+#juegos{
+	background: url(../images/juegos.png);
+	background-size: cover;
+	display: block;
+	float: left;
+	height: 50px;
+	margin: 10px 20px;
+	width: 130px;
+}
+#juegos_w{
+	background: url(../images/juegos_w.png);
+	background-size: cover;
+	display: block;
+	float: left;
+	height: 50px;
+	left: 20px;
+	position: absolute;
+	top: 10px;
+	width: 130px;
+	z-index: 50;
+}
+#menu,
+#close{
+	cursor: pointer;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	width: 40px;
+}
+#menu{
+	background: url(../images/menu_w.png);
+	background-size: cover;
+	z-index: 50;
+}
+#close{
+	background: url(../images/menu_close_b.png);
+	background-size: cover;
+}
+#banner{
+	height: 85vh;
+	max-height: 600px;
+	min-height: 350px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+.flexslider.banner{
+	height: 100%;
+	top: 0;
+}
+.flexslider.banner .slides{
+	height: 100%;
+}
+.flexslider.banner ul.slides li{
+	background-position: top center;
+	background-size: cover;
+	height: 100%;
+	position: relative;
+}
+.flexslider.banner ul.slides li .slide{
+	display: block;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 1280px;
+	overflow: hidden;
+	position: relative;
+}
+.flexslider.banner ul.slides li .slide .frase{
+	color: #fff;
+	font-family: 'Indivisa Display Sans Thin Italic', Verdana, sans-serif;
+	font-size: 28px;
+	padding: 0 60px;
+	position: absolute;
+	top: 180px;
+	width: 100%;
+}
+.flexslider.banner ul.slides li .slide .frase strong{
+	display: block;
+	font-family: 'Indivisa Display Sans Heavy Italic', Verdana, sans-serif;
+	padding-left: 20%;
+}
+.flexslider.banner ul.slides li .slide .lineas{
+	background: url(../images/lineas.png);
+	background-size: cover;
+	bottom: -10px;
+	height: 250px;
+	position: absolute;
+	left: 50%;
+	width: 250px;
+}
+.flexslider.banner ul.slides li .slide .delasalle{
+	background: url(../../images/delasalle_w2.png);
+	background-size: cover;
+	bottom: 30px;
+	height: 50px;
+	position: absolute;
+	left: 20px;
+	width: 155px;
+}
+.flexslider.banner ul.flex-direction-nav{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.flexslider.banner ul.flex-direction-nav li{
+	margin: 0 auto;
+	max-width: 1280px;
+	position: relative;
+	width: 100%;
+}
+.flexslider.banner ul.flex-direction-nav li a.flex-prev{
+	background-image: url(../../admisiones/images/prev.png);
+	background-position: center;
+	left: inherit;
+	left: 10px;
+	top: 250px;
+}
+.flexslider.banner ul.flex-direction-nav li a.flex-next{
+	background-image: url(../../admisiones/images/next.png);
+	background-position: center;
+	right: 10px;
+	top: 250px;
+}
+#disciplinas{
+	border-top: 10px solid #ff0;
+	position: relative;
+	text-align: center;
+	z-index: 50;
+}
+#disciplinas .wrapper > strong{
+	background: #ff0;
+	border-left: 2000px solid #ff0;
+	color: #001e61;
+	font-family: 'Indivisa Text Sans BoldItalic', Verdana, sans-serif;
+	font-size: 16px;
+	left: -2000px;
+	line-height: 16px;
+	padding: 5px 20px;
+	position: absolute;
+	top: -26px;
+}
+#disciplinas .wrapper > strong span{
+	border-color: transparent transparent transparent #ff0;
+	border-style: solid;
+	border-width: 26px 0 0 26px;
+	height: 0;
+	right: -26px;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+.disciplina{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 40px;
+	border: .5px solid #fff;
+	float: left;
+	height: 80px;
+	width: 33.33%;
+}
+section{
+	background: #fff;
+	padding: 20px;
+}
+section article{
+	margin-bottom: 10px;
+	min-height: 200px;
+}
+section article .bottom{
+	border-radius: 0 0 5px 5px;
+	border-top: 3px solid #fff;
+	bottom: 0;
+	color: #fff;
+	font-family: 'Indivisa Text Sans BoldItalic', Verdana, sans-serif;
+	font-size: 18px;
+	padding: 5px 15px;
+	position: absolute;
+	width: 100%;
+}
+section #transmisiones{
+	border-radius: 0 0 5px 5px;
+	background: #cf0a2c;
+}
+section #galeria{
+	border-radius: 0 0 5px 5px;
+	background: url(../images/galeria.jpg) center;
+	background-size: cover;
+}
+section #transmisiones a,
+section #galeria a,
+section #hospitales a,
+section #mapas a{
+	display: block;
+	min-height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+section #transmisiones .icon{
+	background-size: cover;
+	height: 130px;
+	left: -20px;
+	opacity: .3;
+	position: absolute;
+	top: -20px;
+	width: 130px;
+	z-index: 1;
+}
+section #transmisiones .game{
+	color: #fff;
+	font-size: 22px;
+	padding-top: 10px;
+	text-align: center;
+	z-index: 10;
+}
+section #transmisiones .game .versus span{
+	float: left;
+	height: 40px;
+	width: calc(50% - 30px);
+}
+section #transmisiones .game .versus span:nth-child(1){
+	padding-top: 3px;
+	text-align: right;
+}
+section #transmisiones .game .versus span:nth-child(2){
+	background: #fff;
+	border-radius: 50%;
+	color: #001863;
+	font-family: 'Indivisa Text Sans BoldItalic', Verdana, sans-serif;
+	line-height: 16px;
+	margin: 0 10px;
+	padding: 10px;
+	width: 40px;
+}
+section #transmisiones .game .versus span:nth-child(3){
+	padding-top: 3px;
+	text-align: left;
+}
+section #transmisiones .bottom{
+	background: #001863;
+}
+section #galeria .bottom{
+	background: #cf0a2c;
+}
+section article .title{
+	background: #000269;
+	border-radius: 5px;
+	color: #fff;
+	font-family: 'Indivisa Text Sans BoldItalic', Verdana, sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	padding: 10px;
+}
+#resultados .title{
+	background: url(../images/resultados.png) no-repeat top right;
+	background-size: auto 100%;
+	border-radius: 5px 0 0 0;
+}
+#resultados table{
+	border-radius: 0 0 5px 5px;
+	color: #001863;
+}
+#resultados td{
+	font-size: 16px;
+	height: 42px;
+	padding: 5px;
+	text-align: center;
+}
+#resultados td.icon{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	width: 40px;
+}
+#redesSociales{
+	background: url(../images/redesSociales.png) right center;
+	background-size: cover;
+	border-radius: 5px;
+}
+#redesSociales .socialNetwork{
+	border-radius: 0 5px 5px 0;
+	display: block;
+	height: 30px;
+	margin: 15px 0 15px -20px;
+	padding: 5px 10px;
+	text-align: right;
+}
+#redesSociales .socialNetwork img{
+	float: right;
+	height: 20px;
+	width: 20px;
+}
+#redesSociales .socialNetwork:nth-child(2){
+	background: #00aced;
+	width: 70%;
+}
+#redesSociales .socialNetwork:nth-child(3){
+	background: #3b5998;
+	width: 82.5%;
+}
+#redesSociales .socialNetwork:nth-child(4){
+	background: linear-gradient(to right,#5442d6 0%,#ac2cab 20%,#db2061 40%,#ef1f3f 60%,#f77e48 80%,#fec052 100%);
+	width: 95%;
+}
+#hospitales{
+	background: url(../images/hospitales.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#mapas{
+	background: url(../images/mapas.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#hospitales .ribbon,
+#mapas .ribbon{
+	background: url(../images/ribbon.png) top left;
+	background-size: cover;
+	bottom: 0;
+	color: #fff;
+	font-family: 'Indivisa Text Sans BoldItalic', Verdana, sans-serif;
+	padding: 5px 10px 5px 40px;
+	position: absolute;
+	width: 100%;
+}
+#mapas .ribbon{
+	font-size: 16px;
+}
+#patrocinadores{
+	border-bottom: 5px solid #ff0;
+	border-top: 5px solid #ff0;
+	margin-top: 10px;
+	text-align: center;
+}
+#patrocinadores img{
+	display: inline-block;
+	height: 40px;
+	margin: 10px;
+	width: auto;
+}
+footer #content{
+	background: rgba(255,255,255,.2);
+	margin: 10px auto;
+	min-height: 180px;
+}
+footer #content #contacto{
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+}
+footer #content #contacto span{
+	border-bottom: 2px solid #ff0;
+	border-top: 2px solid #ff0;
+	display: block;
+	font-size: 16px;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+footer #content #contacto a{
+	color: #00d0ff;
+}
+footer #content #contacto #redes,
+footer #content #logos{
+	text-align: center;
+}
+footer #content #contacto #redes a{
+	background-size: cover;
+	display: inline-block;
+	height: 30px;
+	margin: 10px 20px;
+	width: 30px;
+}
+footer #content #logos img{
+	display: inline-block;
+	height: 55px;
+	margin: 10px 20px;
+	width: auto;
+}
+
+@media screen and (min-width: 480px){
+	.flexslider.banner ul.slides li .slide .frase{
+		font-size: 44px;
+	}
+	.flexslider.banner ul.slides li .slide .delasalle{
+		height: 64px;
+		width: 200px;
+	}
+}
+@media screen and (min-width: 640px){
+	.flexslider.banner ul.slides li .slide .frase{
+		font-size: 56px;
+	}
+	.disciplina{
+		width: 25%;
+	}
+	#resultados td.icon{
+		width: 60px;
+	}
+	footer #content #contacto{
+		float: right;
+		width: 40%;
+	}
+	footer #content #logos{
+		float: left;
+		text-align: left;
+		width: 60%;
+	}
+	footer #content #logos img{
+		height: 70px;
+	}
+	footer #content #logos img:nth-child(1){
+		display: block;
+		height: 80px;
+	}
+}
+@media screen and (min-width: 768px){
+	#close{
+		display: none;
+	}
+	nav{
+		margin: 0 0 0 170px;
+		padding-top: 10px;
+	}
+	nav > a{
+		display: block;
+		float: left;
+		font-size: 14px;
+		line-height: 14px;
+		padding: 10px 2px;
+		width: 16%;
+	}
+	nav > a:hover,
+	nav > a:active{
+		background: #fff;
+		color: #001e61;
+	}
+	nav #social{
+		float: left;
+		width: 20%;
+	}
+	nav #social a{
+		height: 20px;
+		margin: 10px 5px;
+		width: 20px;
+	}
+	.flexslider.banner ul.slides li .slide .frase{
+		font-size: 64px;
+		top: 150px;
+	}
+	.flexslider.banner ul.slides li .slide .lineas{
+		left: 60%;
+	}
+	.flexslider.banner ul.slides li .slide .delasalle{
+		height: 80px;
+		width: 250px;
+	}
+	.disciplina{
+		border: none;
+		width: 9%;
+	}
+	.disciplina.filler{
+		display: none;
+	}
+	section{
+		padding: 15px;
+	}
+	section article{
+		float: left;
+		margin: 5px;
+		min-height: 250px;
+		width: calc(50% - 10px);
+	}
+	section article #ultimos{
+		height: 212px;
+		overflow: auto;
+	}
+	section #skewed{
+		background: url(../images/skewed.png) center bottom;
+		background-size: cover;
+		border-radius: 0 0 5px 5px;
+		float: left;
+		margin: 5px;
+		width: calc(100% - 10px);
+	}
+	section #skewed article{
+		margin: 0;
+		width: 50%;
+	}
+	section #transmisiones,
+	section #galeria,
+	section #transmisiones a,
+	section #galeria a{
+		background: transparent;
+		min-height: 250px;
+	}
+	section #hospitales a,
+	section #mapas a{
+		min-height: 250px;
+	}
+	section #transmisiones a .game{
+		padding-top: 30px;
+		width: 80%;
+	}
+	section #transmisiones a .bottom,
+	section #galeria a .bottom{
+		background: transparent;
+		border: none;
+	}
+	section #galeria a .bottom{
+		padding-left: 140px;
+	}
+	#redesSociales .socialNetwork{
+		height: 40px;
+		margin: 20px 0;
+	}#redesSociales .socialNetwork img{
+		height: 30px;
+		width: 30px;
+	}
+	#redesSociales .socialNetwork:nth-child(2){
+		width: 60%;
+	}
+	#redesSociales .socialNetwork:nth-child(3){
+		width: 72.5%;
+	}
+	#redesSociales .socialNetwork:nth-child(4){
+		width: 85%;
+	}
+	#hospitales .ribbon,
+	#mapas .ribbon{
+		font-size: 18px;
+	}
+	#patrocinadores img{
+		margin: 10px 30px;
+	}
+}
+@media screen and (min-width: 800px){
+	.flexslider.banner ul.slides li .slide .frase{
+		font-size: 72px;
+		left: 50%;
+		margin-left: -400px;
+		max-width: 800px;
+	}
+}
+@media screen and (min-width: 960px){
+	#juegos{
+		height: 70px;
+		width: 182px;
+	}
+	#juegos_w{
+		height: 70px;
+		width: 182px;
+	}
+	#menu, #close{
+		top: 25px;
+	}
+	nav{
+		margin: 0 0 0 222px;
+		padding-top: 20px;
+	}
+	nav > a{
+		font-size: 16px;
+		line-height: 16px;
+		min-height: 52px;
+	}
+	nav #social a{
+		height: 25px;
+		margin: 10px;
+		width: 25px;
+	}
+	.flexslider.banner ul.flex-direction-nav li a.flex-prev{
+		left: 20px;
+	}
+	.flexslider.banner ul.flex-direction-nav li a.flex-next{
+		right: 20px;
+	}
+	section #transmisiones .icon{
+		height: 180px;
+		width: 180px;
+	}
+	section #transmisiones a .game{
+		width: 90%;
+	}
+	#patrocinadores{
+		height: 70px;
+	}
+	#patrocinadores img{
+		margin: 10px 25px;
+	}
+	footer #content{
+		background: url(../images/footer.png) top center;
+		background-size: auto 100%;
+		height: 250px;
+	}
+	footer #content #logos img{
+		height: 80px;
+		margin: 20px 30px;
+	}
+	footer #content #contacto{
+		margin-top: 30px;
+		width: 36%;
+	}
+	footer #content #contacto strong{
+		border-bottom: 2px solid #ff0;
+		display: block;
+		padding-left: 40px;
+	}
+	footer #content #contacto span{
+		border: none;
+		margin: 12px;
+		margin-left: 25%;
+	}
+	footer #content #contacto #redes{
+		border-top: 2px solid #ff0;
+		margin-left: 32%;
+		text-align: right;
+	}
+	footer #content #contacto #redes a{
+		margin: 24px 10px;
+	}
+	footer #content #logos img:nth-child(1){
+		display: block;
+		height: 80px;
+	}
+}
+@media screen and (min-width: 1280px){
+	#patrocinadores img{
+		margin: 10px 50px;
+	}
+	footer #content #contacto{
+		width: 40%;
+	}
+	footer #content #contacto span{
+		margin-left: 35%;
+	}
+	footer #content #contacto #redes{
+		margin-left: 22%;
+		text-align: center;
+	}
+	footer #content #contacto #redes a{
+		margin: 24px 20px;
+	}
+	footer #content #logos img{
+		margin: 20px 40px;
+	}
+}
