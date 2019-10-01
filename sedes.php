@@ -60,9 +60,9 @@
 						INNER JOIN tor_deportes ON tor_canchas.deporte_id = tor_deportes.deporte_id
 						WHERE tor_canchas.cancha_id<>5 AND tor_canchas.cancha_id<>16 AND tor_canchas.cancha_id<>18
 						ORDER BY tor_deportes.deporte,tor_canchas.cancha';
-				$result = @mysql_query($sql);
+				$result = @mysqli_query($sql);
 				$deporte = '';
-				while($r = @mysql_fetch_array($result)){
+				while($r = @mysqli_fetch_array($result)){
 					if($r['deporte'] != $deporte){
 						if($deporte != '') echo '</blockquote><br>';
 						$deporte = $r['deporte'];
@@ -71,7 +71,7 @@
 					echo utf8_encode('<div class="imagen" style="background-image: url(images/cancha'.$r['cancha_id'].'.jpg);"></div><strong>'.$r['cancha'].'</strong><br>'.$r['direccion'].'<br>Responsable: '.$r['responsable'].'<br>Contacto: '.$r['contacto'].'<br><a href="#mapasede" class="fancybox showmap" data-id="'.$r['cancha_id'].'" data-lat="'.$r['latitud'].'" data-lon="'.$r['longitud'].'">Ver mapa</a><br><br><div class="clearfix"></div>');
 				}
 				echo '</blockquote>';
-				@mysql_close($dbc);
+				@mysqli_close($dbc);
 			?>
 			</div>
 		</section>

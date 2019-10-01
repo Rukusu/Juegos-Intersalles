@@ -194,11 +194,11 @@
 		<?php
 			}else{
 				$dbc = connect_bajio();
-				$_REQUEST['d'] = htmlspecialchars(mysql_real_escape_string($_REQUEST['d']));
-				if(isset($_REQUEST['u'])) $_REQUEST['u'] = htmlspecialchars(mysql_real_escape_string($_REQUEST['u']));
+				$_REQUEST['d'] = htmlspecialchars(mysqli_real_escape_string($dbc,$_REQUEST['d']));
+				if(isset($_REQUEST['u'])) $_REQUEST['u'] = htmlspecialchars(mysqli_real_escape_string($dbc,$_REQUEST['u']));
 				$sql = 'SELECT deporte_id,deporte FROM tor_deportes WHERE deporte_id='.$_REQUEST['d'];
-				$result = @mysql_query($sql);
-				if(@mysql_num_rows($result) > 0){
+				$result = @mysqli_query($sql);
+				if(@mysqli_num_rows($result) > 0){
 					$r = @mysql_fetch_array($result);
 		?>
 		<div id="titulo">
@@ -216,11 +216,11 @@
 							WHERE tor_torneos.tipo_id=1 AND tor_torneos.deporte_id='.$_REQUEST['d'].' AND (tor_partidos.local=tor_equipos.equipo_id OR tor_partidos.visitante=tor_equipos.equipo_id) AND tor_partidos.tipo_id = 1';
 					if(isset($_REQUEST['u']) && $_REQUEST['u'] != '') $sql .= ' AND tor_equipos.delegacion_id='.$_REQUEST['u'];
 					$sql .=' ORDER BY tor_ramas.rama,tor_grupos.grupo';
-					$torneos = @mysql_query($sql);
+					$torneos = @mysqli_query($sql);
 					$tor = 1;
 					$selected = 1;
 					$detalle = '';
-					while($t = @mysql_fetch_array($torneos)){
+					while($t = @mysqli_fetch_array($torneos)){
 						if($detalle == '') $detalle = 'rad'.$tor;
 		?>
 			<div class="torneo r<?php echo $t['rama_id']; if($selected) echo ' selected'; ?>">
@@ -237,10 +237,10 @@
 								INNER JOIN tor_tipo_partidos ON tor_partidos.tipo_id = tor_tipo_partidos.tor_tipo_partido_id
 								WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_grupos.grupo_id='.$t['grupo_id'].' AND tor_partidos.tipo_id=1
 								ORDER BY tor_partidos.jornada,tor_partidos.fecha,tor_partidos.hora,tor_partidos.partido_id';
-						$roles = @mysql_query($sql);
+						$roles = @mysqli_query($sql);
 						$jor = 0;
 						$tipo = '';
-						while($r = @mysql_fetch_array($roles)){
+						while($r = @mysqli_fetch_array($roles, MYSQLI_NUM)){
 							if($r['jornada'] != $jor){
 								if($jor != 0) echo '
 					</div>';
@@ -250,16 +250,16 @@
 					<div class="partidos">';
 							}
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['local'];
-							$local = @mysql_query($sql);
-							$l = @mysql_fetch_array($local);
+							$local = @mysqli_query($sql);
+							$l = @mysqli_fetch_array($local, MYSQLI_NUM);
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['visitante'];
-							$visitante = @mysql_query($sql);
-							$v = @mysql_fetch_array($visitante);
+							$visitante = @mysqli_query($sql);
+							$v = @mysqli_fetch_array($visitante, MYSQLI_NUM);
 							$sql = 'SELECT tor_marcadores.marcador_local,tor_marcadores.marcador_visitante FROM tor_marcadores
 									WHERE tor_marcadores.partido_id='.$r['partido_id'];
-							$marcador = @mysql_query($sql);
-							if(@mysql_num_rows($marcador) > 0){
-								$m = @mysql_fetch_array($marcador);
+							$marcador = @mysqli_query($sql);
+							if(@mysqli_num_rows($marcador) > 0){
+								$m = @mysqli_fetch_array($marcador, MYSQLI_NUM);
 								$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
 							}else{
 								$vs = 'vs';
@@ -286,11 +286,11 @@
 								INNER JOIN tor_tipo_partidos ON tor_partidos.tipo_id = tor_tipo_partidos.tor_tipo_partido_id
 								WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_grupos.grupo_id='.$t['grupo_id'].' AND tor_partidos.tipo_id<>1
 								ORDER BY tor_partidos.jornada,tor_partidos.fecha,tor_partidos.hora,tor_partidos.partido_id';
-						$roles = @mysql_query($sql);
-						if(@mysql_num_rows($roles) > 0){
+						$roles = @mysqli_query($sql);
+						if(@mysqli_num_rows($roles) > 0){
 							$jor = 0;
 							$tipo = '';
-							while($r = @mysql_fetch_array($roles)){
+							while($r = @mysqli_fetch_array($roles,MYSQLI_NUM)){
 								if($jor != 0) echo '
 					</div>';
 								$jor = $r['jornada'];
@@ -301,16 +301,16 @@
 					<div class="partidos">';
 								}
 								$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['local'];
-								$local = @mysql_query($sql);
-								$l = @mysql_fetch_array($local);
+								$local = @mysqli_query($sql);
+								$l = @mysqli_fetch_array($local,MYSQLI_NUM);
 								$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['visitante'];
-								$visitante = @mysql_query($sql);
-								$v = @mysql_fetch_array($visitante);
+								$visitante = @mysqli_query($sql);
+								$v = @mysqli_fetch_array($visitante,MYSQLI_NUM);
 								$sql = 'SELECT tor_marcadores.marcador_local,tor_marcadores.marcador_visitante FROM tor_marcadores
 										WHERE tor_marcadores.partido_id='.$r['partido_id'];
-								$marcador = @mysql_query($sql);
-								if(@mysql_num_rows($marcador) > 0){
-									$m = @mysql_fetch_array($marcador);
+								$marcador = @mysqli_query($sql);
+								if(@mysqli_num_rows($marcador) > 0){
+									$m = @mysqli_fetch_array($marcador,MYSQLI_NUM);
 									$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
 								}else{
 									$vs = 'vs';
@@ -340,11 +340,11 @@
 									WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_partidos.grupo_id=0 AND tor_partidos.tipo_id<>1
 									ORDER BY tor_partidos.jornada,tor_partidos.fecha,tor_partidos.hora,tor_partidos.partido_id';
 							// echo $sql;
-							$roles = @mysql_query($sql);
-							if(@mysql_num_rows($roles) > 0){
+							$roles = @mysqli_query($sql);
+							if(@mysqli_num_rows($roles) > 0){
 								$jor = 0;
 								$tipo = '';
-								while($r = @mysql_fetch_array($roles)){
+								while($r = @mysqli_fetch_array($roles,MYSQLI_NUM)){
 									if($jor != 0 && $tipo != $r['tor_tipo_partido']) echo '
 						</div>';
 									$jor = $r['jornada'];
@@ -355,16 +355,16 @@
 						<div class="partidos">';
 									}
 									$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['local'];
-									$local = @mysql_query($sql);
-									$l = @mysql_fetch_array($local);
+									$local = @mysqli_query($sql);
+									$l = @mysqli_fetch_array($local,MYSQLI_NUM);
 									$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['visitante'];
-									$visitante = @mysql_query($sql);
-									$v = @mysql_fetch_array($visitante);
+									$visitante = @mysqli_query($sql);
+									$v = @mysqli_fetch_array($visitante,MYSQLI_NUM);
 									$sql = 'SELECT tor_marcadores.marcador_local,tor_marcadores.marcador_visitante FROM tor_marcadores
 											WHERE tor_marcadores.partido_id='.$r['partido_id'];
-									$marcador = @mysql_query($sql);
-									if(@mysql_num_rows($marcador) > 0){
-										$m = @mysql_fetch_array($marcador);
+									$marcador = @mysqli_query($sql);
+									if(@mysqli_num_rows($marcador) > 0){
+										$m = @mysqli_fetch_array($marcador,MYSQLI_NUM);
 										$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
 									}else{
 										$vs = 'vs';
@@ -420,8 +420,8 @@
 								LEFT JOIN tor_estadisticas ON tor_equipos.equipo_id = tor_estadisticas.equipo_id AND tor_torneos.torneo_id = tor_estadisticas.torneo_id
 								WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_partidos.grupo_id='.$t['grupo_id'].' AND (tor_partidos.local=tor_equipos.equipo_id OR tor_partidos.visitante=tor_equipos.equipo_id)
 								ORDER BY tor_estadisticas.puntos DESC,tor_estadisticas.diferencia DESC,tor_estadisticas.porcentaje DESC,tor_equipos.equipo';
-						$equipos = @mysql_query($sql);
-						while($e = @mysql_fetch_array($equipos)){
+						$equipos = @mysqli_query($sql);
+						while($e = @mysqli_fetch_array($equipos,MYSQLI_NUM)){
 					?>
 						<tr>
 							<td align="center"><?php echo utf8_encode($e['equipo']); ?></td>
@@ -452,7 +452,7 @@
 				</div>
 				<div class="clearfix"></div>
 		<?php
-						@mysql_free_result($roles);
+						@mysqli_free_result($roles);
 		?>
 			</div>
 		<?php
@@ -461,14 +461,14 @@
 					}
 					$sql = 'SELECT cancha_id,cancha,descripcion,contacto,responsable,direccion,latitud,longitud FROM tor_canchas
 							ORDER BY cancha_id';
-					$result = @mysql_query($sql);
-					while($r = @mysql_fetch_array($result)){
+					$result = @mysqli_query($sql);
+					while($r = @mysqli_fetch_array($result,MYSQLI_NUM)){
 		?>
 			<div class="canchadata" id="canchadata<?php echo $r['cancha_id']; ?>" data-desc="<?php echo utf8_encode($r['descripcion'].'<br><br>Responsable<br>'.$r['responsable'].'<br><br>Contacto<br>'.$r['contacto']); ?>" data-lat="<?php echo $r['latitud']; ?>" data-lon="<?php echo $r['longitud']; ?>"></div>
 		<?php
 					}
 				}
-				@mysql_close($dbc);
+				@mysqli_close($dbc);
 		?>
 			<div class="canchaInfo" id="cancha">
 				<div class="info">
