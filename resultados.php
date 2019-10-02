@@ -1,5 +1,5 @@
 <?php
-	header("Content-Type: text/html; charset=utf8");
+	header("Content-Type: text/html; ");
 	session_start();
 	include('../core.php');
 	function formatoFecha($fecha){
@@ -33,12 +33,23 @@
 	<body>
 		<?php
 			include('header_int.php');
+			$dbc = connect_bajio();
 			if(!isset($_REQUEST['d'])){
 		?>
 		<div id="titulo">
-			<div class="wrapper">ROL DE JUEGOS Y RESULTADOS</div>
+			<div class="wrapper">ROL DE JUEGOS Y 	</div>
 		</div>
 		<section class="wrapper" id="items">
+			<?php
+				$sql = "SELECT deporte_id, imagen, nombre FROM tor_deportes";
+				$result = @mysqli_query($dbc,$sql);
+				while($row = mysqli_fetch_assoc($result)){
+					printf ("<div class=\"item\" data-bg=\"".$row['imagen']."\" style=\"background-image: url(images/".$row['imagen'].");\"><a href=\"?d=".$row['deporte_id']."\">%s</a></div>",$row['nombre']);
+					printf ("\n");
+				}
+				
+			?>
+			<!--
 			<div class="item" data-bg="dep_ajedrez" style="background-image: url(images/dep_ajedrez.jpg);"><a href="?d=1">AJEDREZ</a></div>
 			<div class="item" data-bg="dep_atletismo" style="background-image: url(images/dep_atletismo.jpg);"><a href="?d=2">ATLETISMO</a></div>
 			<div class="item" data-bg="dep_basquetbol" style="background-image: url(images/dep_basquetbol.jpg);"><a href="?d=3">BASQUETBOL</a></div>
@@ -49,12 +60,13 @@
 			<div class="item" data-bg="dep_taekwondo" style="background-image: url(images/dep_taekwondo.jpg);"><a href="?d=8">TAE KWON DO</a></div>
 			<div class="item" data-bg="dep_tenis" style="background-image: url(images/dep_tenis.jpg);"><a href="?d=6">TENIS</a></div>
 			<div class="item" data-bg="dep_americano" style="background-image: url(images/dep_americano.jpg);"><a href="?d=9">TOCHO BANDERA</a></div>
-			<div class="item" data-bg="dep_voleibol" style="background-image: url(images/dep_voleibol.jpg);"><a href="?d=7">VOLEIBOL</a></div>
+			<div class="item" data-bg="dep_voleibol" style="background-image: url(images/dep_voleibol.jpg);"><a href="?d=7">VOLEIBOL</a></div>-->
 			<div class="clearfix"></div>
 		</section>
 		<?php
 			}elseif($_REQUEST['d'] == 2){
 		?>
+		<!--
 		<div id="titulo">
 			<div class="wrapper">Atletismo</div>
 		</div>
@@ -64,9 +76,10 @@
 				<strong>Viernes 22 de Marzo de 2019 </strong>
 							</div><br>
 			 <!-- <div class="text">
-				<a class="reglamento" href="documents/Atletismo1erDia.pdf" target="_blank"><strong>Resultados 1er día</strong><span><img src="../images/pdf_mini.gif"> Descargar</span></a>
-				<a class="reglamento" href="documents/AtletismoFinal.pdf" target="_blank"><strong>Resultados Finales</strong><span><img src="../images/pdf_mini.gif"> Descargar</span></a>
+				<a class="reglamento" href="documents/Atletismo1erDia.pdf" target="_blank"><strong>Resultados 1er día</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
+				<a class="reglamento" href="documents/AtletismoFinal.pdf" target="_blank"><strong>Resultados Finales</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
 			</div> --> 	
+		<!--		
 			<div class="accordion r2">
 				<input type="checkbox" id="chk100mf">
 				<label class="tab" for="chk100mf">100 m Femenil <span></span></label>
@@ -164,9 +177,11 @@
 			</div>
 		
 		</section>
+		-->
 		<?php
 			}elseif($_REQUEST['d'] == 8){
 		?>
+		<!--	
 		<div id="titulo">
 			<div class="wrapper">Tae Kwon Do</div>
 		</div>
@@ -191,15 +206,16 @@
 				</div>
 			</div>
 		</section>
+		-->
 		<?php
 			}else{
-				$dbc = connect_bajio();
+				
 				$_REQUEST['d'] = htmlspecialchars(mysqli_real_escape_string($dbc,$_REQUEST['d']));
 				if(isset($_REQUEST['u'])) $_REQUEST['u'] = htmlspecialchars(mysqli_real_escape_string($dbc,$_REQUEST['u']));
 				$sql = 'SELECT deporte_id,deporte FROM tor_deportes WHERE deporte_id='.$_REQUEST['d'];
-				$result = @mysqli_query($sql);
+				$result = @mysqli_query($dbc,$sql);
 				if(@mysqli_num_rows($result) > 0){
-					$r = @mysql_fetch_array($result);
+					$r = @mysqli_fetch_array($result,MYSQLI_BOTH);
 		?>
 		<div id="titulo">
 			<div class="wrapper"><?php echo utf8_encode($r['deporte']); ?></div>
@@ -216,11 +232,11 @@
 							WHERE tor_torneos.tipo_id=1 AND tor_torneos.deporte_id='.$_REQUEST['d'].' AND (tor_partidos.local=tor_equipos.equipo_id OR tor_partidos.visitante=tor_equipos.equipo_id) AND tor_partidos.tipo_id = 1';
 					if(isset($_REQUEST['u']) && $_REQUEST['u'] != '') $sql .= ' AND tor_equipos.delegacion_id='.$_REQUEST['u'];
 					$sql .=' ORDER BY tor_ramas.rama,tor_grupos.grupo';
-					$torneos = @mysqli_query($sql);
+					$torneos = @mysqli_query($dbc,$sql);
 					$tor = 1;
 					$selected = 1;
 					$detalle = '';
-					while($t = @mysqli_fetch_array($torneos)){
+					while($t = @mysqli_fetch_array($torneos, MYSQLI_BOTH)){
 						if($detalle == '') $detalle = 'rad'.$tor;
 		?>
 			<div class="torneo r<?php echo $t['rama_id']; if($selected) echo ' selected'; ?>">
@@ -237,10 +253,10 @@
 								INNER JOIN tor_tipo_partidos ON tor_partidos.tipo_id = tor_tipo_partidos.tor_tipo_partido_id
 								WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_grupos.grupo_id='.$t['grupo_id'].' AND tor_partidos.tipo_id=1
 								ORDER BY tor_partidos.jornada,tor_partidos.fecha,tor_partidos.hora,tor_partidos.partido_id';
-						$roles = @mysqli_query($sql);
+						$roles = @mysqli_query($dbc,$sql);
 						$jor = 0;
 						$tipo = '';
-						while($r = @mysqli_fetch_array($roles, MYSQLI_NUM)){
+						while($r = @mysqli_fetch_array($roles, MYSQLI_BOTH)){
 							if($r['jornada'] != $jor){
 								if($jor != 0) echo '
 					</div>';
@@ -250,16 +266,16 @@
 					<div class="partidos">';
 							}
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['local'];
-							$local = @mysqli_query($sql);
-							$l = @mysqli_fetch_array($local, MYSQLI_NUM);
+							$local = @mysqli_query($dbc,$sql);
+							$l = @mysqli_fetch_array($local, MYSQLI_BOTH);
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['visitante'];
-							$visitante = @mysqli_query($sql);
-							$v = @mysqli_fetch_array($visitante, MYSQLI_NUM);
+							$visitante = @mysqli_query($dbc,$sql);
+							$v = @mysqli_fetch_array($visitante, MYSQLI_BOTH);
 							$sql = 'SELECT tor_marcadores.marcador_local,tor_marcadores.marcador_visitante FROM tor_marcadores
 									WHERE tor_marcadores.partido_id='.$r['partido_id'];
-							$marcador = @mysqli_query($sql);
+							$marcador = @mysqli_query($dbc,$sql);
 							if(@mysqli_num_rows($marcador) > 0){
-								$m = @mysqli_fetch_array($marcador, MYSQLI_NUM);
+								$m = @mysqli_fetch_array($marcador, MYSQLI_BOTH);
 								$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
 							}else{
 								$vs = 'vs';
@@ -286,11 +302,11 @@
 								INNER JOIN tor_tipo_partidos ON tor_partidos.tipo_id = tor_tipo_partidos.tor_tipo_partido_id
 								WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_grupos.grupo_id='.$t['grupo_id'].' AND tor_partidos.tipo_id<>1
 								ORDER BY tor_partidos.jornada,tor_partidos.fecha,tor_partidos.hora,tor_partidos.partido_id';
-						$roles = @mysqli_query($sql);
+						$roles = @mysqli_query($dbc,$sql);
 						if(@mysqli_num_rows($roles) > 0){
 							$jor = 0;
 							$tipo = '';
-							while($r = @mysqli_fetch_array($roles,MYSQLI_NUM)){
+							while($r = @mysqli_fetch_array($roles,MYSQLI_BOTH)){
 								if($jor != 0) echo '
 					</div>';
 								$jor = $r['jornada'];
@@ -301,16 +317,16 @@
 					<div class="partidos">';
 								}
 								$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['local'];
-								$local = @mysqli_query($sql);
-								$l = @mysqli_fetch_array($local,MYSQLI_NUM);
+								$local = @mysqli_query($dbc,$sql);
+								$l = @mysqli_fetch_array($local,MYSQLI_BOTH);
 								$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['visitante'];
-								$visitante = @mysqli_query($sql);
-								$v = @mysqli_fetch_array($visitante,MYSQLI_NUM);
+								$visitante = @mysqli_query($dbc,$sql);
+								$v = @mysqli_fetch_array($visitante,MYSQLI_BOTH);
 								$sql = 'SELECT tor_marcadores.marcador_local,tor_marcadores.marcador_visitante FROM tor_marcadores
 										WHERE tor_marcadores.partido_id='.$r['partido_id'];
-								$marcador = @mysqli_query($sql);
+								$marcador = @mysqli_query($dbc,$sql);
 								if(@mysqli_num_rows($marcador) > 0){
-									$m = @mysqli_fetch_array($marcador,MYSQLI_NUM);
+									$m = @mysqli_fetch_array($marcador,MYSQLI_BOTH);
 									$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
 								}else{
 									$vs = 'vs';
@@ -340,11 +356,11 @@
 									WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_partidos.grupo_id=0 AND tor_partidos.tipo_id<>1
 									ORDER BY tor_partidos.jornada,tor_partidos.fecha,tor_partidos.hora,tor_partidos.partido_id';
 							// echo $sql;
-							$roles = @mysqli_query($sql);
+							$roles = @mysqli_query($dbc,$sql);
 							if(@mysqli_num_rows($roles) > 0){
 								$jor = 0;
 								$tipo = '';
-								while($r = @mysqli_fetch_array($roles,MYSQLI_NUM)){
+								while($r = @mysqli_fetch_array($roles,MYSQLI_BOTH)){
 									if($jor != 0 && $tipo != $r['tor_tipo_partido']) echo '
 						</div>';
 									$jor = $r['jornada'];
@@ -355,16 +371,16 @@
 						<div class="partidos">';
 									}
 									$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['local'];
-									$local = @mysqli_query($sql);
-									$l = @mysqli_fetch_array($local,MYSQLI_NUM);
+									$local = @mysqli_query($dbc,$sql);
+									$l = @mysqli_fetch_array($local,MYSQLI_BOTH);
 									$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['visitante'];
-									$visitante = @mysqli_query($sql);
-									$v = @mysqli_fetch_array($visitante,MYSQLI_NUM);
+									$visitante = @mysqli_query($dbc,$sql);
+									$v = @mysqli_fetch_array($visitante,MYSQLI_BOTH);
 									$sql = 'SELECT tor_marcadores.marcador_local,tor_marcadores.marcador_visitante FROM tor_marcadores
 											WHERE tor_marcadores.partido_id='.$r['partido_id'];
-									$marcador = @mysqli_query($sql);
+									$marcador = @mysqli_query($dbc,$sql);
 									if(@mysqli_num_rows($marcador) > 0){
-										$m = @mysqli_fetch_array($marcador,MYSQLI_NUM);
+										$m = @mysqli_fetch_array($marcador,MYSQLI_BOTH);
 										$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
 									}else{
 										$vs = 'vs';
@@ -420,8 +436,8 @@
 								LEFT JOIN tor_estadisticas ON tor_equipos.equipo_id = tor_estadisticas.equipo_id AND tor_torneos.torneo_id = tor_estadisticas.torneo_id
 								WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_partidos.grupo_id='.$t['grupo_id'].' AND (tor_partidos.local=tor_equipos.equipo_id OR tor_partidos.visitante=tor_equipos.equipo_id)
 								ORDER BY tor_estadisticas.puntos DESC,tor_estadisticas.diferencia DESC,tor_estadisticas.porcentaje DESC,tor_equipos.equipo';
-						$equipos = @mysqli_query($sql);
-						while($e = @mysqli_fetch_array($equipos,MYSQLI_NUM)){
+						$equipos = @mysqli_query($dbc,$sql);
+						while($e = @mysqli_fetch_array($equipos,MYSQLI_BOTH)){
 					?>
 						<tr>
 							<td align="center"><?php echo utf8_encode($e['equipo']); ?></td>
@@ -444,7 +460,7 @@
 						if($_REQUEST['d'] == 1){
 		?>
 			<br><div class="text" style="padding: 10px;">
-				<a class="reglamento" href="documents/AjedrezFinal.pdf" target="_blank"><strong>Informe</strong><span><img src="../images/pdf_mini.gif"> Descargar</span></a>
+				<a class="reglamento" href="documents/AjedrezFinal.pdf" target="_blank"><strong>Informe</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
 			</div>
 		<?php
 						}
@@ -461,8 +477,8 @@
 					}
 					$sql = 'SELECT cancha_id,cancha,descripcion,contacto,responsable,direccion,latitud,longitud FROM tor_canchas
 							ORDER BY cancha_id';
-					$result = @mysqli_query($sql);
-					while($r = @mysqli_fetch_array($result,MYSQLI_NUM)){
+					$result = @mysqli_query($dbc,$sql);
+					while($r = @mysqli_fetch_array($result,MYSQLI_BOTH)){
 		?>
 			<div class="canchadata" id="canchadata<?php echo $r['cancha_id']; ?>" data-desc="<?php echo utf8_encode($r['descripcion'].'<br><br>Responsable<br>'.$r['responsable'].'<br><br>Contacto<br>'.$r['contacto']); ?>" data-lat="<?php echo $r['latitud']; ?>" data-lon="<?php echo $r['longitud']; ?>"></div>
 		<?php

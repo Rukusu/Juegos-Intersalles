@@ -54,14 +54,14 @@
 						INNER JOIN tor_deportes ON tor_torneos.deporte_id = tor_deportes.deporte_id
 						INNER JOIN tor_ramas ON tor_torneos.rama_id = tor_ramas.rama_id
 						ORDER BY tor_partidos.fecha ASC,tor_partidos.hora ASC';
-				$trans = @mysql_query($sql);
-				while($t = @mysql_fetch_array($trans)){
+				$trans = @mysqli_query($dbc,$sql);
+				while($t = @mysqli_fetch_array($trans, MYSQLI_NUM)){
 					$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$t['local'];
-					$local = @mysql_query($sql);
-					$l = @mysql_fetch_array($local);
+					$local = @mysqli_query($dbc,$sql);
+					$l = @mysqli_fetch_array($local, MYSQLI_NUM);
 					$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$t['visitante'];
-					$visitante = @mysql_query($sql);
-					$v = @mysql_fetch_array($visitante);
+					$visitante = @mysqli_query($dbc,$sql);
+					$v = @mysqli_fetch_array($visitante, MYSQLI_NUM);
 			?>
 				<div class="icono" style="background-image: url(images/<?php echo $t['icono']; ?>_b.png);"></div>
 				<?php
@@ -71,7 +71,7 @@
 				<div class="clearfix"></div>
 			<?php
 				}
-				@mysql_close($dbc);
+				@mysqli_close($dbc);
 			?>
 			</div>
 		</section>

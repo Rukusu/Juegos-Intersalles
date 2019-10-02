@@ -48,7 +48,7 @@
 				$dbc = connect_bajio();
 				$_REQUEST['u'] = htmlspecialchars(mysqli_real_escape_string($dbc,$_REQUEST['u']));
 				$sql = 'SELECT delegacion_id,delegacion FROM tor_delegaciones WHERE delegacion_id='.$_REQUEST['u'];
-				$result = @mysqli_query($sql);
+				$result = @mysqli_query($dbc,$sql);
 				if(@mysqli_num_rows($result) > 0){
 					$r = @mysqli_fetch_array($result);
 		?>
@@ -63,7 +63,7 @@
 							INNER JOIN tor_deportes ON tor_equipos.deporte_id = tor_deportes.deporte_id
 							WHERE tor_delegaciones.delegacion_id='.$_REQUEST['u'].'
 							ORDER BY tor_deportes.nombre';
-					$result = @mysqli_query($sql);
+					$result = @mysqli_query($dbc,$sql);
 					while($r = @mysqli_fetch_array($result)){
 		?>
 			<div class="item" data-bg="<?php echo $r['imagen']; ?>" style="background-image: url(images/<?php echo $r['imagen']; ?>.jpg);"><a href="resultados.php?d=<?php echo $r['deporte_id']; ?>&u=<?php echo $_REQUEST['u']; ?>"><?php echo utf8_encode($r['nombre']); ?></a></div>

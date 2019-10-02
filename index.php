@@ -79,7 +79,7 @@
 				<?php
 					$sql = 'SELECT tor_marcadores.partido_id FROM tor_marcadores
 							WHERE tor_marcadores.ganador_id IS NOT NULL';
-					$result = @mysqli_query($sql);
+					$result = @mysqli_query($dbc,$sql);
 					if(@mysqli_num_rows($result) == 0){
 				?>
 					<div class="title">PRÓXIMOS JUEGOS</div>
@@ -92,13 +92,13 @@
 								WHERE tor_partidos.torneo_id BETWEEN 1 AND 15 AND tor_partidos.fecha IS NOT NULL AND tor_partidos.fecha>=CURRENT_DATE()
 								ORDER BY tor_partidos.fecha ASC,tor_partidos.hora ASC
 								LIMIT 20';
-						$partidos = @mysqli_query($sql);
+						$partidos = @mysqli_query($dbc,$sql);
 						while($p = @mysqli_fetch_array($partidos, MYSQLI_NUM)){
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['local'];
-							$local = @mysqli_query($sql);
+							$local = @mysqli_query($dbc,$sql);
 							$l = @mysqli_fetch_array($local, MYSQLI_NUM);
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['visitante'];
-							$visitante = @mysqli_query($sql);
+							$visitante = @mysqli_query($dbc,$sql);
 							$v = @mysql_fetch_array($visitante);
 				?>
 							<tr>
@@ -128,14 +128,14 @@
 								WHERE tor_partidos.torneo_id BETWEEN 1 AND 15 AND tor_marcadores.ganador_id IS NOT NULL
 								ORDER BY tor_partidos.fecha DESC,tor_partidos.hora DESC
 								LIMIT 20';
-						$partidos = @mysqli_query($sql);
+						$partidos = @mysqli_query($dbc,$sql);
 						while($p = @mysqli_fetch_array($partidos, MYSQLI_NUM)){
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['local'];
-							$local = @mysqli_query($sql);
-							$l = @mysql_fetch_array($local, MYSQLI_NUM);
+							$local = @mysqli_query($dbc,$sql);
+							$l = @mysqli_fetch_array($local, MYSQLI_NUM);
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['visitante'];
-							$visitante = @mysqli_query($sql);
-							$v = @mysql_fetch_array($visitante, MYSQLI_NUM);
+							$visitante = @mysqli_query($dbc,$sql);
+							$v = @mysqli_fetch_array($visitante, MYSQLI_NUM);
 				?>
 							<tr>
 								<td class="icon" style="background-image: url(images/<?php echo $p['icono']; ?>_b.png);"></td>
