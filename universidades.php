@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	header("Content-Type: text/html; charset=utf8");
 	session_start();
 	include('../core.php');
@@ -6,7 +6,8 @@
 <!doctype html>
 <html lang="es">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
 		<meta name="theme-color" content="#001e61">
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
 		<link type="image/x-icon" href="../favicon.ico" rel="icon">
@@ -24,6 +25,7 @@
 		<?php
 			include('header_int.php');
 			$dbc = connect_bajio();
+			mysqli_set_charset ( $dbc , "utf8mb4_unicode_ci" );
 			if(!isset($_REQUEST['u'])){
 		?>
 		<div id="titulo">
@@ -35,12 +37,13 @@
 				$sql = "SELECT delegacion_id, icono, imagen, nombre FROM tor_delegaciones";
 				$result = mysqli_query($dbc,$sql);
 				while($row = mysqli_fetch_assoc($result)){
-					echo '<div class="item" data-bg="'.$row['icono'].'" style="background-image: url(images/'.$row['imagen'].'.jpg);"><a href="?u='.$row['delegacion_id'].'">'.strtoupper($row['nombre']).'</a></div>';
+					//$name = mb_convert_encoding($row['nombre'], "UTF-8", "auto");
+					//$name = iconv('UTF-8','ASCII//TRANSLIT',);htmlspecialchars(utf8_encode(),ENT_QUOTES)
+					echo '<div class="item" data-bg="'.$row['icono'].'" style="background-image: url(images/'.$row['imagen'].'.jpg);"><a href="?u='.$row['delegacion_id'].'">'.utf8_encode($row['nombre']).'</a></div>';
 					printf ("\n");
 				}
 			?>
-			<!--
-			<div class="item" data-bg="uni_bajio" style="background-image: url(images/uni_bajio.jpg);"><a href="?u=10">BAJÍO</a></div>
+			<!--<div class="item" data-bg="uni_bajio" style="background-image: url(images/uni_bajio.jpg);"><a href="?u=10">BAJÍO</a></div>
 			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="?u=4">CANCÚN</a></div>
 			<div class="item" data-bg="uni_chihuahua" style="background-image: url(images/uni_chihuahua.jpg);"><a href="?u=11">CHIHUAHUA</a></div>
 			<div class="item" data-bg="uni_cuernavaca" style="background-image: url(images/uni_cuernavaca.jpg);"><a href="?u=7">CUERNAVACA</a></div>
