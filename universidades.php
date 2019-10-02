@@ -23,12 +23,23 @@
 	<body>
 		<?php
 			include('header_int.php');
+			$dbc = connect_bajio();
 			if(!isset($_REQUEST['u'])){
 		?>
 		<div id="titulo">
 			<div class="wrapper">UNIVERSIDADES PARTICIPANTES</div>
 		</div>
 		<section class="wrapper" id="items">
+		
+			<?php
+				$sql = "SELECT delegacion_id, icono, imagen, nombre FROM tor_delegaciones";
+				$result = mysqli_query($dbc,$sql);
+				while($row = mysqli_fetch_assoc($result)){
+					echo '<div class="item" data-bg="'.$row['icono'].'" style="background-image: url(images/'.$row['imagen'].'.jpg);"><a href="?u='.$row['delegacion_id'].'">'.strtoupper($row['nombre']).'</a></div>';
+					printf ("\n");
+				}
+			?>
+			<!--
 			<div class="item" data-bg="uni_bajio" style="background-image: url(images/uni_bajio.jpg);"><a href="?u=10">BAJÍO</a></div>
 			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="?u=4">CANCÚN</a></div>
 			<div class="item" data-bg="uni_chihuahua" style="background-image: url(images/uni_chihuahua.jpg);"><a href="?u=11">CHIHUAHUA</a></div>
@@ -40,12 +51,12 @@
 			<div class="item" data-bg="uni_puebla" style="background-image: url(images/uni_puebla.jpg);"><a href="?u=2">PUEBLA</a></div>
 			<div class="item" data-bg="uni_oaxaca" style="background-image: url(images/uni_oaxaca.jpg);"><a href="?u=5">OAXACA</a></div>
 			<div class="item" data-bg="uni_pachuca" style="background-image: url(images/uni_pachuca.jpg);"><a href="?u=6">PACHUCA</a></div>
-			<div class="item" data-bg="uni_saltillo" style="background-image: url(images/uni_saltillo.jpg);"><a href="?u=9">SALTILLO</a></div>
+			<div class="item" data-bg="uni_saltillo" style="background-image: url(images/uni_saltillo.jpg);"><a href="?u=9">SALTILLO</a></div>-->
 			<div class="clearfix"></div>
 		</section>
 		<?php
 			}else{
-				$dbc = connect_bajio();
+				
 				$_REQUEST['u'] = htmlspecialchars(mysqli_real_escape_string($dbc,$_REQUEST['u']));
 				$sql = 'SELECT delegacion_id,delegacion FROM tor_delegaciones WHERE delegacion_id='.$_REQUEST['u'];
 				$result = @mysqli_query($dbc,$sql);
