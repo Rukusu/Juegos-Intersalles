@@ -38,7 +38,7 @@
 			if(!isset($_REQUEST['d'])){
 		?>
 		<div id="titulo">
-			<div class="wrapper">ROL DE JUEGOS Y 	</div>
+			<div class="wrapper">ROL DE JUEGOS Y RESULTADOS</div>
 		</div>
 		<section class="wrapper" id="items">
 			<?php
@@ -219,7 +219,7 @@
 					$r = @mysqli_fetch_array($result,MYSQLI_BOTH);
 		?>
 		<div id="titulo">
-			<div class="wrapper"><?php echo utf8_encode($r['deporte']); ?></div>
+			<div class="wrapper"><?php echo $r['deporte']; ?></div>
 		</div>
 		<section class="wrapper">
 		<?php
@@ -285,12 +285,12 @@
 							if($r['hora'] != '') $hora = convertHour($r['hora']); else $hora = '';
 							echo '
 						<div class="partido">
-							<a href="#cancha" data-id="'.$r['cancha_id'].'" class="cancha fancybox">'.utf8_encode($r['cancha']).'</a>
+							<a href="#cancha" data-id="'.$r['cancha_id'].'" class="cancha fancybox">'.$r['cancha'].'</a>
 							<div class="fechaHora"><span>'.$fecha.'</span> <span>'.$hora.'</span></div>
 							<div class="versus">
-								<div class="local"><strong>'.utf8_encode($l['equipo']).'</strong></div>
+								<div class="local"><strong>'.$l['equipo'].'</strong></div>
 								<div class="vs">'.$vs.'</div>
-								<div class="visitante"><strong>'.utf8_encode($v['equipo']).'</strong></div>
+								<div class="visitante"><strong>'.$v['equipo'].'</strong></div>
 							</div>
 						<div class="clearfix"></div></div>';
 						}
@@ -336,12 +336,12 @@
 								if($r['hora'] != '') $hora = convertHour($r['hora']); else $hora = '';
 								echo '
 						<div class="partido">
-							<a href="#cancha" data-id="'.$r['cancha_id'].'" class="cancha fancybox">'.utf8_encode($r['cancha']).'</a>
+							<a href="#cancha" data-id="'.$r['cancha_id'].'" class="cancha fancybox">'.$r['cancha'].'</a>
 							<div class="fechaHora"><span>'.$fecha.'</span> <span>'.$hora.'</span></div>
 							<div class="versus">
-								<div class="local"><strong>'.utf8_encode($l['equipo']).'</strong></div>
+								<div class="local"><strong>'.$l['equipo'].'</strong></div>
 								<div class="vs">'.$vs.'</div>
-								<div class="visitante"><strong>'.utf8_encode($v['equipo']).'</strong></div>
+								<div class="visitante"><strong>'.$v['equipo'].'</strong></div>
 							</div>
 						<div class="clearfix"></div></div>';
 							}
@@ -390,12 +390,12 @@
 									if($r['hora'] != '') $hora = convertHour($r['hora']); else $hora = '';
 									echo '
 							<div class="partido">
-								<a href="#cancha" data-id="'.$r['cancha_id'].'" class="cancha fancybox">'.utf8_encode($r['cancha']).'</a>
+								<a href="#cancha" data-id="'.$r['cancha_id'].'" class="cancha fancybox">'.$r['cancha'].'</a>
 								<div class="fechaHora"><span>'.$fecha.'</span> <span>'.$hora.'</span></div>
 								<div class="versus">
-									<div class="local"><strong>'.utf8_encode($l['equipo']).'</strong></div>
+									<div class="local"><strong>'.$l['equipo'].'</strong></div>
 									<div class="vs">'.$vs.'</div>
-									<div class="visitante"><strong>'.utf8_encode($v['equipo']).'</strong></div>
+									<div class="visitante"><strong>'.$v['equipo'].'</strong></div>
 								</div>
 							<div class="clearfix"></div></div>';
 								}
@@ -441,7 +441,7 @@
 						while($e = @mysqli_fetch_array($equipos,MYSQLI_BOTH)){
 					?>
 						<tr>
-							<td align="center"><?php echo utf8_encode($e['equipo']); ?></td>
+							<td align="center"><?php echo $e['equipo']; ?></td>
 							<td align="center"><?php echo $e['jugados']; ?></td>
 							<td align="center"><?php echo $e['ganados']; ?></td>
 							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9){ ?><td align="center"><?php echo $e['empatados']; ?></td><?php } ?>
@@ -481,7 +481,7 @@
 					$result = @mysqli_query($dbc,$sql);
 					while($r = @mysqli_fetch_array($result,MYSQLI_BOTH)){
 		?>
-			<div class="canchadata" id="canchadata<?php echo $r['cancha_id']; ?>" data-desc="<?php echo utf8_encode($r['descripcion'].'<br><br>Responsable<br>'.$r['responsable'].'<br><br>Contacto<br>'.$r['contacto']); ?>" data-lat="<?php echo $r['latitud']; ?>" data-lon="<?php echo $r['longitud']; ?>"></div>
+			<div class="canchadata" id="canchadata<?php echo $r['cancha_id']; ?>" data-desc="<?php echo $r['descripcion'].'<br><br>Responsable<br>'.$r['responsable'].'<br><br>Contacto<br>'.$r['contacto']; ?>" data-lat="<?php echo $r['latitud']; ?>" data-lon="<?php echo $r['longitud']; ?>"></div>
 		<?php
 					}
 				}

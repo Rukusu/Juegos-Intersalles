@@ -39,7 +39,7 @@
 				while($row = mysqli_fetch_assoc($result)){
 					//$name = mb_convert_encoding($row['nombre'], "UTF-8", "auto");
 					//$name = iconv('UTF-8','ASCII//TRANSLIT',);htmlspecialchars(utf8_encode(),ENT_QUOTES)
-					echo '<div class="item" data-bg="'.$row['icono'].'" style="background-image: url(images/'.$row['imagen'].'.jpg);"><a href="?u='.$row['delegacion_id'].'">'.utf8_encode($row['nombre']).'</a></div>';
+					echo '<div class="item" data-bg="'.$row['icono'].'" style="background-image: url(images/'.$row['imagen'].'.jpg);"><a href="?u='.$row['delegacion_id'].'"><b>La Salle</b><br>'.utf8_encode($row['nombre']).'</a></div>';
 					printf ("\n");
 				}
 			?>
