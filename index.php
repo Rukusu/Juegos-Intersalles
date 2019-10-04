@@ -21,7 +21,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
 		<link type="image/x-icon" href="../favicon.ico" rel="icon">
 		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
-		<title>XVIII Juegos Deportivos Interprepas 2019 </title>
+		<title>XVIII Juegos Deportivos 2019 </title>
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 		<link rel="stylesheet" href="../css/flexslider.css">
 		<link rel="stylesheet" type="text/css" href="css/juegos.css?<?php echo date('YmdHis'); ?>">
@@ -49,35 +49,36 @@
 					</li>
 								</ul>
 			</div>
-		</div>
+		</div><!--
 		<div class="wrapper">
 			<div style="max-width: 468px; margin-right: 10px; margin-left: auto;">
 			<p style="padding-right: 60px; color: white; font-size: 40px; text-align: right; font-family: 'Indivisa Text Sans BoldItalic', Verdana, sans-serif;">Disciplinas</p>
-			<div style="margin-right: 10px; margin-left: auto; background: linear-gradient(to right, red , orange); color: white; height: 36px; width: 132px; margin-top: -60px;"></div>
+			<div style="margin-right: 10px; margin-left: auto; background: linear-gradient(to right, #d85d72 ,#e3894b); color: white; height: 36px; width: 132px; margin-top: -60px;"></div>
 			<p style="color: white; font-size: 20px; text-align: right; font-family: 'Indivisa Text Sans', Verdana, sans-serif;"> El CONADELA, que es el organismo encargado de supervisar los Juegos Deportivos Lasallistas, establece que en su XXVI edición se jugaran 7 deportes oficiales y 4 de exhibición con sus respectivas ramas y series<p>
 			</div>
 			<div style="margin-right: 10px; margin-left: auto; width: 132px; margin-bottom: 26px">
-			<button onclick="location.href='resultados.php';" style="box-shadow: 5px 5px 2px #484848; border-radius: 30px; background: linear-gradient(to right, red , orange); color: white; height: 36px; width: 132px;"><b>CONSULTA</b></button>
+			<button onclick="location.href='resultados.php';" style="box-shadow: 5px 5px 2px #484848; border-radius: 30px; background: linear-gradient(to right, #d85d72 , #e3894b); color: white; height: 36px; width: 132px;"><b>CONSULTA</b></button>
 			</div>
-		</div>
-		<!--
+		</div>-->
+		
 		<div id="disciplinas">
 			<div class="wrapper">
 				<strong>DISCIPLINAS<span></span></strong>
-				<a href="resultados.php?d=1" class="disciplina" alt="Ajedrez" style="background-image: url(images/ico_ajedrez.png);"></a>
-				<a href="resultados.php?d=2" class="disciplina" alt="Atletismo" style="background-image: url(images/ico_atletismo.png);"></a>
-				<a href="resultados.php?d=3" class="disciplina" alt="Basquetbol" style="background-image: url(images/ico_basquetbol.png);"></a>
-				<a href="resultados.php?d=4" class="disciplina" alt="Futbol Rápido" style="background-image: url(images/ico_rapido.png);"></a>
-				<a href="resultados.php?d=5" class="disciplina" alt="Futbol Soccer" style="background-image: url(images/ico_futbol.png);"></a>
-				<a href="resultados.php?d=6" class="disciplina" alt="Tenis" style="background-image: url(images/ico_tenis.png);"></a>
-				<a href="resultados.php?d=7" class="disciplina" alt="Voleibol" style="background-image: url(images/ico_voleibol.png);"></a>
-				<a href="resultados.php?d=8" class="disciplina" alt="Tae Kwon Do" style="background-image: url(images/ico_taekwondo.png);"></a>
-				<a href="resultados.php?d=9" class="disciplina" alt="Tocho Bandera" style="background-image: url(images/ico_americano.png);"></a>
-				<a href="resultados.php?d=10" class="disciplina" alt="Voleibol de Playa" style="background-image: url(images/ico_voleibol.png);"></a>
+				<a href="resultados.php?d=1" class="disciplina" alt="Ajedrez" style="background-image: url(images/Juegos2019_Ajedrez0.jpg);"></a>
+				<a href="resultados.php?d=3" class="disciplina" alt="Basquetbol" style="background-image: url(images/Juegos2019_Basquetbol0.jpg);"></a>
+				<a href="resultados.php?d=4" class="disciplina" alt="Futbol Rápido" style="background-image: url(images/Juegos2019_FutbolRapido0.jpg);"></a>
+				<a href="resultados.php?d=5" class="disciplina" alt="Futbol Soccer" style="background-image: url(images/Juegos2019_FutbolSoccer0.jpg);"></a>
+				<a href="resultados.php?d=6" class="disciplina" alt="Tenis" style="background-image: url(images/Juegos2019_Tenis0.jpg);"></a>
+				<a href="resultados.php?d=7" class="disciplina" alt="Voleibol" style="background-image: url(images/Juegos2019_Voleibol0.jpg);"></a>
+				<a href="resultados.php?d=8" class="disciplina" alt="Tae Kwon Do" style="background-image: url(images/Juegos2019_Taekondo0.jpg);"></a>
+				<a href="resultados.php?d=9" class="disciplina" alt="Tocho Bandera" style="background-image: url(images/Juegos2019_TochoBandera0.jpg);"></a>
+				<a href="resultados.php?d=10" class="disciplina" alt="Handball" style="background-image: url(images/Juegos2019_HandBall0.jpg);"></a>
+				<a href="resultados.php?d=11" class="disciplina" alt="CrossFit" style="background-image: url(images/Juegos2019_Crossfit0.jpg);"></a>
+				<a href="resultados.php?d=11" class="disciplina" alt="Natacion" style="background-image: url(images/Juegos2019_Natacion0.jpg);"></a>
 				<a class="disciplina filler"></a>
 				<div class="clearfix"></div>
 			</div>
-		</div>-->
+		</div>
 		<div class="wrapper">
 		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
@@ -232,6 +233,37 @@
 				<div class="clearfix"></div>
 			</div>
 		</section>
+		
+			<!-- Load Facebook SDK for JavaScript -->
+			<div class="wrapper">
+				<div id="fb-root"></div>
+				<script>
+					window.fbAsyncInit = function() {
+					  FB.init({
+						xfbml            : true,
+						version          : 'v4.0'
+					  });
+					};
+
+					(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = 'http://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+					fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
+
+				<!-- Your customer chat code -->
+				<div class="fb-customerchat"
+					attribution=setup_tool
+					page_id="2760673140824619"
+					logged_in_greeting="Hola, ¿En qué podemos ayudarte? "
+					logged_out_greeting="Hola, ¿En qué podemos ayudarte? ">
+				</div>
+
+			</div>	
+		
 		</div>
 		<?php include('footer.php'); ?>
 	</body>
