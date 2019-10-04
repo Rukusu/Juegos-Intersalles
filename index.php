@@ -33,17 +33,17 @@
 	</head>
 	<body>
 		<?php include('header.php'); ?>
-		<div id="banner">
+		<div id="banner" style="height: 800px; max-height: 800px;">
 			<div class="wrapper">
 				<div id="juegos_w"></div>
 				<label id="menu" for="chkMenu"></label>
 			</div>
-			<div class="flexslider banner">
+			<div class="flexslider banner" style="margin-top: 60px;">
 				<ul class="slides">
-					<li style="background-image: url(images/bann1-2019.png);">
+					<li style="background-image: url(images/bann1-2019.png); max-width: 1280px; margin-right: auto; margin-left: auto;">
 						<div class="slide">
 							<!--<div class="lineas"></div>-->
-							<div class="frase">JUGAMOS CON <strong>GARRA</strong></div>
+							<div class="frase"><strong>XXVI<br>JUEGOS DEPORTIVOS<br>LASALLISTAS</strong><br>Ciudad de México<br>Red de Universidades<br>La Salle<br>2019</div>
 							<div class="delasalle"></div>
 						</div>
 					</li>
