@@ -1,4 +1,5 @@
 <footer>
+			<!--
 			<div id="patrocinadores">
 				<img src="images/leones.png">
 				<img src="images/leones.png">
@@ -7,8 +8,9 @@
 				<img src="images/leones.png">
 				<img src="images/leones.png">
 				<img src="images/leones.png">
-			</div>
-			<div id="content" class="wrapper">
+			</div>-->
+			<div id="content">
+				<!--
 				<div id="contacto">
 					<strong>CONTACTO</strong>
 					<span>
@@ -27,7 +29,7 @@
 					<img src="images/ialu.png">
 					<img src="images/300.png">
 					<img src="images/leones.png">
-				</div>
+				</div>-->
 				<div class="clearfix"></div>
 			</div>
 		</footer>

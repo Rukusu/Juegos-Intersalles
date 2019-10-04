@@ -33,23 +33,34 @@
 	</head>
 	<body>
 		<?php include('header.php'); ?>
-		<div id="banner" style="height: 800px; max-height: 800px;">
+		<div id="banner" style="height: 730px; max-height: 800px;">
 			<div class="wrapper">
 				<div id="juegos_w"></div>
 				<label id="menu" for="chkMenu"></label>
 			</div>
 			<div class="flexslider banner" style="margin-top: 60px;">
 				<ul class="slides">
-					<li style="background-image: url(images/bann1-2019.png); max-width: 1280px; margin-right: auto; margin-left: auto;">
+					<li style="background-image: url(images/bann1-2019.png); margin-right: auto; margin-left: auto; max-width: 1280px;">
 						<div class="slide">
 							<!--<div class="lineas"></div>-->
-							<div class="frase"><strong>XXVI<br>JUEGOS DEPORTIVOS<br>LASALLISTAS</strong><br>Ciudad de México<br>Red de Universidades<br>La Salle<br>2019</div>
+							<div class="frase"><strong>XXVI<br>JUEGOS DEPORTIVOS<br>LASALLISTAS</strong>Ciudad de México<br>Red de Universidades<br>La Salle<br>2019</div>
 							<div class="delasalle"></div>
 						</div>
 					</li>
 								</ul>
 			</div>
 		</div>
+		<div class="wrapper">
+			<div style="max-width: 468px; margin-right: 10px; margin-left: auto;">
+			<p style="padding-right: 60px; color: white; font-size: 40px; text-align: right; font-family: 'Indivisa Text Sans BoldItalic', Verdana, sans-serif;">Disciplinas</p>
+			<div style="margin-right: 10px; margin-left: auto; background: linear-gradient(to right, red , orange); color: white; height: 36px; width: 132px; margin-top: -60px;"></div>
+			<p style="color: white; font-size: 20px; text-align: right; font-family: 'Indivisa Text Sans', Verdana, sans-serif;"> El CONADELA, que es el organismo encargado de supervisar los Juegos Deportivos Lasallistas, establece que en su XXVI edición se jugaran 7 deportes oficiales y 4 de exhibición con sus respectivas ramas y series<p>
+			</div>
+			<div style="margin-right: 10px; margin-left: auto; width: 132px; margin-bottom: 26px">
+			<button onclick="location.href='resultados.php';" style="border-radius: 30px; background: linear-gradient(to right, red , orange); color: white; height: 36px; width: 132px;"><b>CONSULTA</b></button>
+			</div>
+		</div>
+		<!--
 		<div id="disciplinas">
 			<div class="wrapper">
 				<strong>DISCIPLINAS<span></span></strong>
@@ -66,7 +77,7 @@
 				<a class="disciplina filler"></a>
 				<div class="clearfix"></div>
 			</div>
-		</div>
+		</div>-->
 		<section class="wrapper">
 			<div>
 				<article id="redesSociales">
