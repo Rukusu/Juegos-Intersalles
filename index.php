@@ -40,9 +40,9 @@
 			</div>
 			<div class="flexslider banner">
 				<ul class="slides">
-					<li style="background-image: url(images/bann1.jpg);">
+					<li style="background-image: url(images/bann1-2019.png);">
 						<div class="slide">
-							<div class="lineas"></div>
+							<!--<div class="lineas"></div>-->
 							<div class="frase">JUGAMOS CON <strong>GARRA</strong></div>
 							<div class="delasalle"></div>
 						</div>
