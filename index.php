@@ -57,7 +57,7 @@
 			<p style="color: white; font-size: 20px; text-align: right; font-family: 'Indivisa Text Sans', Verdana, sans-serif;"> El CONADELA, que es el organismo encargado de supervisar los Juegos Deportivos Lasallistas, establece que en su XXVI edición se jugaran 7 deportes oficiales y 4 de exhibición con sus respectivas ramas y series<p>
 			</div>
 			<div style="margin-right: 10px; margin-left: auto; width: 132px; margin-bottom: 26px">
-			<button onclick="location.href='resultados.php';" style="border-radius: 30px; background: linear-gradient(to right, red , orange); color: white; height: 36px; width: 132px;"><b>CONSULTA</b></button>
+			<button onclick="location.href='resultados.php';" style="box-shadow: 5px 5px 2px #484848; border-radius: 30px; background: linear-gradient(to right, red , orange); color: white; height: 36px; width: 132px;"><b>CONSULTA</b></button>
 			</div>
 		</div>
 		<!--
@@ -78,7 +78,8 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>-->
-		<section class="wrapper">
+		<div class="wrapper">
+		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
 				<article id="redesSociales">
 					<div class="title">REDES SOCIALES</div>
@@ -86,6 +87,11 @@
 					<a href="https://www.facebook.com/Red-La-Salle-México-2760673140824619/" target="_blank" class="socialNetwork"><img src="images/facebook_w.png"></a>
 					<a href="https://www.instagram.com/redlasallemx" target="_blank" class="socialNetwork"><img src="images/instagram_w.png"></a>
 				</article>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<section class="wrapper caja_inicio" style="display:inline-block;">
+			<div>
 				<article id="resultados">
 				<?php
 					$sql = 'SELECT tor_marcadores.partido_id FROM tor_marcadores
@@ -166,6 +172,12 @@
 					@mysqli_free_result($result);
 				?>
 				</article>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+		<section class="wrapper caja_inicio" style="display:inline-block;">
+			<div>
+				
 				<!-- <div id="skewed">
 					<article id="transmisiones">
 					<?php
@@ -210,12 +222,17 @@
 				<article id="hospitales">
 					<a href="hospitales.php"><span class="ribbon">SERVICIO MÉDICO Y HOSPITALES</span></a>
 				</article>
+			</div>
+		</section>
+		<section class="wrapper caja_inicio" style="display:inline-block;">
+			<div>
 				<article id="mapas">
 					<a href="sedes.php"><span class="ribbon">MAPAS Y SEDES</span></a>
 				</article>
 				<div class="clearfix"></div>
 			</div>
 		</section>
+		</div>
 		<?php include('footer.php'); ?>
 	</body>
 </html>
