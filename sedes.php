@@ -62,7 +62,7 @@
 						ORDER BY tor_deportes.deporte,tor_canchas.cancha';
 				$result = @mysqli_query($sql);
 				$deporte = '';
-				while($r = @mysqli_fetch_array($result)){
+				while($r = @mysqli_fetch_array($result,MYSQLI_BOTH )){
 					if($r['deporte'] != $deporte){
 						if($deporte != '') echo '</blockquote><br>';
 						$deporte = $r['deporte'];

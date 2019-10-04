@@ -33,7 +33,7 @@
 			$dbc = connect_bajio();
 		?>
 		<div id="titulo">
-			<div class="wrapper">PRONTUARIO</div>
+			<div class="wrapper">CHILANGONARIO</div>
 		</div>
 		
 		<section class="wrapper" id="items">
