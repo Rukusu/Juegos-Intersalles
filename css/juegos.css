@@ -537,6 +537,7 @@ footer #content #logos img{
 		height: 80px;
 	}
 }
+
 @media screen and (min-width: 768px){
 	#close{
 		display: none;
@@ -580,7 +581,7 @@ footer #content #logos img{
 	}
 	.disciplina{
 		border: none;
-		width: 9%;
+		width: 15%;
 	}
 	.disciplina.filler{
 		display: none;
@@ -758,6 +759,13 @@ footer #content #logos img{
 		height: 80px;
 	}
 }
+
+@media screen and (min-width: 1237px){
+	.disciplina{
+		border: none;
+		width: 9%;
+}
+
 @media screen and (min-width: 1280px){
 	#patrocinadores img{
 		margin: 10px 50px;

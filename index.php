@@ -23,6 +23,7 @@
 		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
 		<title>XVIII Juegos Deportivos 2019 </title>
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/lineaDelTiempo.css">
 		<link rel="stylesheet" href="../css/flexslider.css">
 		<link rel="stylesheet" type="text/css" href="css/juegos.css?<?php echo date('YmdHis'); ?>">
 		<script type="text/javascript" src="../js/jquery.js"></script>
@@ -47,7 +48,7 @@
 							<div class="delasalle"></div>
 						</div>
 					</li>
-								</ul>
+				</ul>
 			</div>
 		</div><!--
 		<div class="wrapper">
@@ -79,6 +80,120 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>
+		
+		<div class="wrapper">
+			<section id="process" class="wrapper respond"  style="padding-top: 40px; width: 97%; box-shadow: 5px 5px 2px #484848;">
+				<div class="row">
+					<div class="section-heading">
+						<!--<h2 class="text-center orange">Responsive Horizontal Timeline</h2>-->
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="steps-timeline text-center">
+							<div class="steps-one">
+								<h3>2016</h3>
+								<div class="end-circle back-orange"></div>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-blue">
+									<div class="steps-pane">
+										<img src="images/uni_cancun.jpg">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-blue">
+									<div class="inverted-steps-pane">
+										<p>Cancún</p>
+									</div>
+								</div>
+							</div>
+							<div class="steps-two">
+								<h3>2017</h3>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-orange">
+									<div class="steps-pane">
+										<img src="images/uni_neza.jpg">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-orange">
+									<div class="inverted-steps-pane">
+										<p>Nezahualcoyotl</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="steps-three">
+								<h3>2018</h3>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-blue">
+									<div class="steps-pane">
+										<img class="third" src="images/uni_bajio.jpg">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-blue">
+									<div class="inverted-steps-pane">
+										<p>Bajío</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="steps-four">
+								<h3>2019</h3>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-orange">
+									<div class="steps-pane">
+										<img src="images/uni_mexico.jpg">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-orange">
+									<div class="inverted-steps-pane">
+										<p>México</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="steps-five">
+								<h3>2020</h3>
+								<div class="inverted-end-circle back-orange"></div>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-blue">
+									<div class="steps-pane">
+										<img src="https://imgur.com/5U7IJvy.png">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-blue">
+									<div class="inverted-steps-pane">
+										<p>¿?</p>									
+									</div>
+								</div>
+							</div>
+
+						</div>
+				  <!-- /.steps-timeline -->
+					</div>
+				</div>
+			</section>
+		</div>
+		
 		<div class="wrapper">
 		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
