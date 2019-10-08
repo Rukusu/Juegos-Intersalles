@@ -81,7 +81,7 @@
 			</div>
 		</div>
 		
-		<div class="wrapper">
+		<div class="wrapper" style="margin-top: 20px;">
 			<section id="process" class="wrapper respond"  style="padding-top: 40px; width: 97%; box-shadow: 5px 5px 2px #484848;">
 				<div class="row">
 					<div class="section-heading">

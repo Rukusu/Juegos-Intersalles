@@ -42,10 +42,10 @@
 		</div>
 		<section class="wrapper" id="items">
 			<?php
-				$sql = "SELECT deporte_id, imagen, nombre FROM tor_deportes WHERE Activo = 1";
+				$sql = "SELECT deporte_id, imagen, nombre, icono FROM tor_deportes WHERE Activo = 1";
 				$result = @mysqli_query($dbc,$sql);
 				while($row = mysqli_fetch_assoc($result)){
-					printf ("<div class=\"item\" data-bg=\"".$row['imagen']."\" style=\"background-image: url(images/".$row['imagen'].");\"><a href=\"?d=".$row['deporte_id']."\">%s</a></div>",$row['nombre']);
+					printf ("<div class=\"item\" data-bg=\"".$row['imagen']."\" style=\"background-image: url(images/".$row['imagen'].");\"><a href=\"?d=".$row['deporte_id']."\"><img src=\"images/".$row['icono'].".jpg\" alt=\"%s\" style=\"width: 80%% \"></a></div>",$row['nombre']);
 					printf ("\n");
 				}
 				
