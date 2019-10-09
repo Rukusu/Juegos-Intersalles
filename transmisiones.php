@@ -19,7 +19,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
 		<link type="image/x-icon" href="../favicon.ico" rel="icon">
 		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
-		<title>XXV Juegos Deportivos Universitarios Lasallistas 2018</title>
+		<title>XXVI Juegos Deportivos Universitarios Lasallistas 2019</title>
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 		<link rel="stylesheet" href="../css/fancybox.css">
 		<link rel="stylesheet" type="text/css" href="css/juegos.css?<?php echo date('YmdHis'); ?>">
@@ -63,7 +63,7 @@
 					$visitante = @mysqli_query($dbc,$sql);
 					$v = @mysqli_fetch_array($visitante, MYSQLI_BOTH );
 			?>
-				<div class="icono" style="background-image: url(images/<?php echo $t['icono']; ?>_b.png);"></div>
+				<div class="icono" style="background-image: url(images/<?php echo $t['icono']; ?>.png);"></div>
 				<?php
 					echo utf8_encode($t['deporte'].' '.$t['rama'].' - <strong>'.$l['equipo'].'</strong> VS <strong>'.$v['equipo'].'</strong><br>'.formatoFecha($t['fecha']).', '.convertHour($t['hora']).', '.$t['cancha'].'<br>');
 					if($t['url'] != '#') echo '<a href="'.$t['url'].'" target="_blank">Ver transmisi&oacute;n</a>';

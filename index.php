@@ -65,17 +65,17 @@
 		<div id="disciplinas">
 			<div class="wrapper">
 				<strong>DISCIPLINAS<span></span></strong>
-				<a href="resultados.php?d=1" class="disciplina" alt="Ajedrez" style="background-image: url(images/Juegos2019_Ajedrez0.jpg);"></a>
-				<a href="resultados.php?d=3" class="disciplina" alt="Basquetbol" style="background-image: url(images/Juegos2019_Basquetbol0.jpg);"></a>
-				<a href="resultados.php?d=4" class="disciplina" alt="Futbol Rápido" style="background-image: url(images/Juegos2019_FutbolRapido0.jpg);"></a>
-				<a href="resultados.php?d=5" class="disciplina" alt="Futbol Soccer" style="background-image: url(images/Juegos2019_FutbolSoccer0.jpg);"></a>
-				<a href="resultados.php?d=6" class="disciplina" alt="Tenis" style="background-image: url(images/Juegos2019_Tenis0.jpg);"></a>
-				<a href="resultados.php?d=7" class="disciplina" alt="Voleibol" style="background-image: url(images/Juegos2019_Voleibol0.jpg);"></a>
-				<a href="resultados.php?d=8" class="disciplina" alt="Tae Kwon Do" style="background-image: url(images/Juegos2019_Taekondo0.jpg);"></a>
-				<a href="resultados.php?d=9" class="disciplina" alt="Tocho Bandera" style="background-image: url(images/Juegos2019_TochoBandera0.jpg);"></a>
-				<a href="resultados.php?d=10" class="disciplina" alt="Handball" style="background-image: url(images/Juegos2019_HandBall0.jpg);"></a>
-				<a href="resultados.php?d=11" class="disciplina" alt="CrossFit" style="background-image: url(images/Juegos2019_Crossfit0.jpg);"></a>
-				<a href="resultados.php?d=11" class="disciplina" alt="Natacion" style="background-image: url(images/Juegos2019_Natacion0.jpg);"></a>
+				<a href="resultados.php?d=1" class="disciplina" alt="Ajedrez" style="background-image: url(images/Juegos2019_Ajedrez0.png);"></a>
+				<a href="resultados.php?d=3" class="disciplina" alt="Basquetbol" style="background-image: url(images/Juegos2019_Basquetbol0.png);"></a>
+				<a href="resultados.php?d=4" class="disciplina" alt="Futbol Rápido" style="background-image: url(images/Juegos2019_FutbolRapido0.png);"></a>
+				<a href="resultados.php?d=5" class="disciplina" alt="Futbol Soccer" style="background-image: url(images/Juegos2019_FutbolSoccer0.png);"></a>
+				<a href="resultados.php?d=6" class="disciplina" alt="Tenis" style="background-image: url(images/Juegos2019_Tenis0.png);"></a>
+				<a href="resultados.php?d=7" class="disciplina" alt="Voleibol" style="background-image: url(images/Juegos2019_Voleibol0.png);"></a>
+				<a href="resultados.php?d=8" class="disciplina" alt="Tae Kwon Do" style="background-image: url(images/Juegos2019_Taekondo0.png);"></a>
+				<a href="resultados.php?d=9" class="disciplina" alt="Tocho Bandera" style="background-image: url(images/Juegos2019_TochoBandera0.png);"></a>
+				<a href="resultados.php?d=10" class="disciplina" alt="Handball" style="background-image: url(images/Juegos2019_HandBall0.png);"></a>
+				<a href="resultados.php?d=11" class="disciplina" alt="CrossFit" style="background-image: url(images/Juegos2019_Crossfit0.png);"></a>
+				<a href="resultados.php?d=11" class="disciplina" alt="Natacion" style="background-image: url(images/Juegos2019_Natacion0.png);"></a>
 				<a class="disciplina filler"></a>
 				<div class="clearfix"></div>
 			</div>

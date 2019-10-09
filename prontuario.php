@@ -122,10 +122,10 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Luchas</h4>
+						<h4 class="modal-title">Lucharaaaaán a dos de tres caídas sin límite de tiempo</h4>
 					</div>
 					<div class="modal-body">
-						<p>Some text in the modal.</p>
+						<p>La Lucha Libre se vive en los mejores recintos de la república, pero nada como asistir a una función en la catedral de la lucha libre, la Arena Coliseo o en la Arena México. Solo ahí descubrirás si realmente perteneces al bando técnico, eres tan ñero como un rudo o incluso hasta perteneces a los exóticos.</p>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
