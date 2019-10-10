@@ -92,7 +92,7 @@
 					<div class="row">
 						<div class="steps-timeline text-center">
 							<div class="steps-one">
-								<h3>2016</h3>
+								<h3 style="margin-left: 95px;">2016</h3>
 								<div class="end-circle back-orange"></div>
 								<div class="step-wrap">
 									<div class="steps-stops">
@@ -111,7 +111,7 @@
 								</div>
 							</div>
 							<div class="steps-two">
-								<h3>2017</h3>
+								<h3 style="margin-left: 95px;">2017</h3>
 								<div class="step-wrap">
 									<div class="steps-stops">
 										<div class="verticle-line back-orange"></div>
@@ -130,7 +130,7 @@
 							</div>
 
 							<div class="steps-three">
-								<h3>2018</h3>
+								<h3 style="margin-left: 95px;">2018</h3>
 								<div class="step-wrap">
 									<div class="steps-stops">
 										<div class="verticle-line back-orange"></div>
@@ -149,7 +149,7 @@
 							</div>
 
 							<div class="steps-four">
-								<h3>2019</h3>
+								<h3 style="margin-left: 95px;">2019</h3>
 								<div class="step-wrap">
 									<div class="steps-stops">
 										<div class="verticle-line back-orange"></div>
@@ -168,7 +168,7 @@
 							</div>
 
 							<div class="steps-five">
-								<h3>2020</h3>
+								<h3 style="margin-left: 95px;">2020</h3>
 								<div class="inverted-end-circle back-orange"></div>
 								<div class="step-wrap">
 									<div class="steps-stops">
@@ -177,7 +177,7 @@
 								</div>
 								<div class="pane-warp back-blue">
 									<div class="steps-pane">
-										<img src="https://imgur.com/5U7IJvy.png">
+										<img src="images/uni_2020.png	">
 									</div>
 								</div>
 								<div class="inverted-pane-warp back-blue">

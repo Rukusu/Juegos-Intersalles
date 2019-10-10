@@ -40,7 +40,7 @@
 		<div id="titulo">
 			<div class="wrapper">ROL DE JUEGOS Y RESULTADOS</div>
 		</div>
-		<section class="wrapper" id="items">
+		<section class="wrapper" id="items" style="margin-top: 20px;">
 			<?php
 				$sql = "SELECT deporte_id, imagen, nombre, icono FROM tor_deportes WHERE Activo = 1";
 				$result = @mysqli_query($dbc,$sql);
@@ -221,7 +221,7 @@
 		<div id="titulo">
 			<div class="wrapper"><?php echo $r['deporte']; ?></div>
 		</div>
-		<section class="wrapper">
+		<section class="wrapper" style="margin-top: 20px;">
 		<?php
 					// Se obtienen los torneos por rama y grupo
 					$sql = 'SELECT DISTINCT tor_torneos.torneo_id,tor_torneos.deporte_id,tor_ramas.rama_id,tor_ramas.rama,tor_grupos.grupo_id,tor_grupos.grupo FROM tor_torneos

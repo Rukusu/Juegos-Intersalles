@@ -35,7 +35,7 @@
 		<div id="titulo">
 			<div class="wrapper">REGLAMENTOS</div>
 		</div>
-		<section class="wrapper">
+		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
 				<a class="reglamento" href="documents/Estatutos.pdf" target="_blank"><strong>Estatutos</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
 				<a class="reglamento" href="documents/Reglamento_General.pdf" target="_blank"><strong>Reglamento_General</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>

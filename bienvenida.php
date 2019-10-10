@@ -26,7 +26,7 @@
 		<div id="titulo">
 			<div class="wrapper">BIENVENIDA</div>
 		</div>
-		<section class="wrapper">
+		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
 				Bienvenidos a los XVIII Juegos Interprepas Lasallistas 2019 <br><br><br>
 				<strong>PROGRAMA</strong><br><br>

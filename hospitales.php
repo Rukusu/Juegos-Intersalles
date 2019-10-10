@@ -23,7 +23,7 @@
 		<div id="titulo">
 			<div class="wrapper">HOSPITALES</div>
 		</div>
-		<section class="wrapper">
+		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
 				En caso de requerir atención médica durante los XVIII Juegos Deportivos Interprepas 2019, sugerimos revisar los convenios de seguro que cada Universidad tienen para la selección de una Institución de Salud. Los Hospitales que se lista a continuación, son a los que nuestra Casa de Estudios regularmente recurre.<br><br>
 				

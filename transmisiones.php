@@ -43,7 +43,7 @@
 		<div id="titulo">
 			<div class="wrapper">TRANSMISIONES EN VIVO</div>
 		</div>
-		<section class="wrapper">
+		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
 			<?php
 				$dbc = connect_bajio();

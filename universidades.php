@@ -31,16 +31,20 @@
 		<div id="titulo">
 			<div class="wrapper">UNIVERSIDADES PARTICIPANTES</div>
 		</div>
-		<section class="wrapper" id="items">
+		<section class="wrapper" id="items" style="margin-top: 20px;">
 		
 			<?php
-				$sql = "SELECT delegacion_id, icono, imagen, nombre, Sitio FROM tor_delegaciones";
+				$sql = "SELECT delegacion_id, icono, imagen, nombre, Sitio FROM tor_delegaciones WHERE activo = 1 ORDER BY nombre";
 				$result = mysqli_query($dbc,$sql);
 				while($row = mysqli_fetch_assoc($result)){
 					//$name = mb_convert_encoding($row['nombre'], "UTF-8", "auto");
 					//$name = iconv('UTF-8','ASCII//TRANSLIT',);htmlspecialchars(utf8_encode(),ENT_QUOTES)
 					//<a href="?u='.$row['sitio'].'">
-					echo '<div class="item" data-bg="'.$row['icono'].'" style="background-image: url(images/'.$row['imagen'].'.jpg);"><a target="_blank" href="'.$row['Sitio'].'"><b>La Salle</b><br>'.utf8_encode($row['nombre']).'</a></div>';
+					if ($row['delegacion_id'] <> 10){
+					echo '<div class="item" data-bg="'.$row['icono'].'" style="background-image: url(images/'.$row['imagen'].'.jpg);"><a target="_blank" href="'.$row['Sitio'].'"><p style="font-size: 24px;"><b>La Salle</b><br>'.utf8_encode($row['nombre']).'</p></a></div>';
+					}else{
+					echo '<div class="item" data-bg="'.$row['icono'].'" style="background-image: url(images/'.$row['imagen'].'.jpg);"><a target="_blank" href="'.$row['Sitio'].'"><p style="font-size: 24px;"><b>De La Salle</b><br>'.utf8_encode($row['nombre']).'</p></a></div>';
+					}
 					printf ("\n");
 				}
 			?>
