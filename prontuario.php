@@ -37,26 +37,26 @@
 		</div>
 		
 		<section class="wrapper" id="items" style="margin-top: 20px">
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal01"><p style="font-size: 24px;">Torta de tamal</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal02"><p style="font-size: 24px;">Torta de chilaquiles</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal03"><p style="font-size: 24px;">Tacos al pastor</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal04"><p style="font-size: 24px;">Luchas</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal05"><p style="font-size: 24px;">Marchas / manifestaciones</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal06"><p style="font-size: 24px;">Metro</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal07"><p style="font-size: 24px;">Ecobici y scooters</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal08"><p style="font-size: 24px;">"Tráfico"</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal09"><p style="font-size: 24px;">Chapultepec</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal10"><p style="font-size: 24px;">Museos</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal11"><p style="font-size: 24px;">Rascacielos</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal12"><p style="font-size: 24px;">Edificios con nombres MUY extraños</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal13"><p style="font-size: 24px;">Ángel de la Independencia</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal14"><p style="font-size: 24px;">Paseo de la Reforma</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal15"><p style="font-size: 24px;">Palacio de Bellas Artes</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal16"><p style="font-size: 24px;">Plancha del Zócalo</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal17"><p style="font-size: 24px;">Barrio Universitario</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal18"><p style="font-size: 24px;">Las trajineras de Xochimilco</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal19"><p style="font-size: 24px;">Alerta sísmica</p></a></div>
-			<div class="item" data-bg="uni_cancun" style="background-image: url(images/uni_cancun.jpg);"><a href="#" data-toggle="modal" data-target="#Modal20"><p style="font-size: 24px;">Estadios para todos los deportes</p></a></div>
+			<div class="item" data-bg="prontuario/chilaquiles" style="background-image: url(images/prontuario/chilaquiles.jpg);"><a href="#" data-toggle="modal" data-target="#Modal01"><p style="font-size: 24px;">Tortas de tamal y chilaquiles</p></a></div>
+			<div class="item" data-bg="prontuario/quesadillas" style="background-image: url(images/prontuario/quesadillas.jpg);"><a href="#" data-toggle="modal" data-target="#Modal02"><p style="font-size: 24px;">Quesadillas</p></a></div>
+			<div class="item" data-bg="prontuario/tacos" style="background-image: url(images/prontuario/tacos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal03"><p style="font-size: 24px;">Tacos al pastor</p></a></div>
+			<div class="item" data-bg="prontuario/luchas" style="background-image: url(images/prontuario/luchas.jpg);"><a href="#" data-toggle="modal" data-target="#Modal04"><p style="font-size: 24px;">Luchas</p></a></div>
+			<div class="item" data-bg="prontuario/manifestacion" style="background-image: url(images/prontuario/manifestacion.jpg);"><a href="#" data-toggle="modal" data-target="#Modal05"><p style="font-size: 24px;">Marchas / manifestaciones</p></a></div>
+			<div class="item" data-bg="prontuario/metro" style="background-image: url(images/prontuario/metro.jpg);"><a href="#" data-toggle="modal" data-target="#Modal06"><p style="font-size: 24px;">Metro</p></a></div>
+			<div class="item" data-bg="prontuario/bicis" style="background-image: url(images/prontuario/bicis.jpg);"><a href="#" data-toggle="modal" data-target="#Modal07"><p style="font-size: 24px;">Ecobici y scooters</p></a></div>
+			<div class="item" data-bg="prontuario/trafico" style="background-image: url(images/prontuario/trafico.jpg);"><a href="#" data-toggle="modal" data-target="#Modal08"><p style="font-size: 24px;">"Tráfico"</p></a></div>
+			<div class="item" data-bg="prontuario/chapultepec" style="background-image: url(images/prontuario/chapultepec.jpg);"><a href="#" data-toggle="modal" data-target="#Modal09"><p style="font-size: 24px;">Chapultepec</p></a></div>
+			<div class="item" data-bg="prontuario/museos" style="background-image: url(images/prontuario/museos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal10"><p style="font-size: 24px;">Museos</p></a></div>
+			<div class="item" data-bg="prontuario/rascacielos" style="background-image: url(images/prontuario/rascacielos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal11"><p style="font-size: 24px;">Rascacielos</p></a></div>
+			<div class="item" data-bg="prontuario/edificios_nombre_extrano" style="background-image: url(images/prontuario/edificios_nombre_extrano.jpg);"><a href="#" data-toggle="modal" data-target="#Modal12"><p style="font-size: 24px;">Edificios con nombres MUY extraños</p></a></div>
+			<div class="item" data-bg="prontuario/angel" style="background-image: url(images/prontuario/angel.jpg);"><a href="#" data-toggle="modal" data-target="#Modal13"><p style="font-size: 24px;">Ángel de la Independencia</p></a></div>
+			<div class="item" data-bg="prontuario/reforma" style="background-image: url(images/prontuario/reforma.jpg);"><a href="#" data-toggle="modal" data-target="#Modal14"><p style="font-size: 24px;">Paseo de la Reforma</p></a></div>
+			<div class="item" data-bg="prontuario/bellas_artes" style="background-image: url(images/prontuario/bellas_artes.jpg);"><a href="#" data-toggle="modal" data-target="#Modal15"><p style="font-size: 24px;">Palacio de Bellas Artes</p></a></div>
+			<div class="item" data-bg="prontuario/zocalo" style="background-image: url(images/prontuario/zocalo.jpg);"><a href="#" data-toggle="modal" data-target="#Modal16"><p style="font-size: 24px;">Plancha del Zócalo</p></a></div>
+			<div class="item" data-bg="prontuario/barrio" style="background-image: url(images/prontuario/barrio.jpg);"><a href="#" data-toggle="modal" data-target="#Modal17"><p style="font-size: 24px;">Barrio Universitario</p></a></div>
+			<div class="item" data-bg="prontuario/trajineras" style="background-image: url(images/prontuario/trajineras.jpg);"><a href="#" data-toggle="modal" data-target="#Modal18"><p style="font-size: 24px;">Las trajineras de Xochimilco</p></a></div>
+			<div class="item" data-bg="prontuario/sismo" style="background-image: url(images/prontuario/sismo.jpg);"><a href="#" data-toggle="modal" data-target="#Modal19"><p style="font-size: 24px;">Alerta sísmica</p></a></div>
+			<div class="item" data-bg="prontuario/estadio" style="background-image: url(images/prontuario/estadio.jpg);"><a href="#" data-toggle="modal" data-target="#Modal20"><p style="font-size: 24px;">Estadios para todos los deportes</p></a></div>
 			<div class="clearfix"></div>
 		</section>
 		
@@ -73,10 +73,10 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/chilaquiles.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
-						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
-						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
+						<h4 class="modal-title" style="margin-left: 45%;"><b style="line-height: 42px; color: white; font-size: 40px; font-family: 'Indivisa display Sans heavy', Verdana, sans-serif;">Tortas de tamal y chilaquiles</b></h4>
+						<p style="margin-top: 20px; color: white; font-size: 20px; height: 250px; margin-left: 45%; font-family: 'Indivisa Text Sans Regular', Verdana, sans-serif;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
 						</div>
 						</span>
 					</div>
@@ -98,10 +98,10 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/quesadillas.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
-						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
-						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
+						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Las quesadillas pueden ir sin queso</b></h4>
+						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Si sales a turistear date la oportunidad de probar una quesadilla, pero ojo, que no te extrañe que doña pelos te pregunte “¿con o sin queso?” En la CDMX pueden o no llevar queso. Este tema lleva años siendo polémica y no pretendemos tener la última palabra, solo disfrutar de un ancestral platillo. Pero sí, sí son quesadillas. </p>
 						</div>
 						</span>
 					</div>
@@ -125,8 +125,8 @@
 						<span>
 						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
-						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
-						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
+						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tacos al pastor de mi corazón</b></h4>
+						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Aunque los tacos son prácticamente el idioma que se habla en todo el país, los taquitos al pastor se sienten muy chilangos. Puedes encontrarlos prácticamente en cualquier esquina y en el corazón de todos los citadinos. </p>
 						</div>
 						</span>
 					</div>
@@ -148,10 +148,10 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/luchas.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
-						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
-						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
+						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Lucharaaaaán a dos de tres caídas sin límite de tiempo</b></h4>
+						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">La Lucha Libre se vive en los mejores recintos de la república, pero nada como asistir a una función en la catedral de la lucha libre, la Arena Coliseo o en la Arena México. Solo ahí descubrirás si realmente perteneces al bando técnico, eres tan ñero como un rudo o incluso hasta perteneces a los exóticos.</p>
 						</div>
 						</span>
 					</div>
@@ -173,10 +173,10 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/manifestacion.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
-						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
-						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
+						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Marchas / manifestaciones</b></h4>
+						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Ármate de paciencia si te agarra una manifestación. Aquí en la Ciudad motivos sobran para salir a las calles y aunque muchas veces se exige justicia social, otras basta que gane el Oscar Leonardo DiCaprio para el típico “vámonos al Ángel” y hacer más lento el tránsito en Paseo de la Reforma.</p>
 						</div>
 						</span>
 					</div>
@@ -198,10 +198,10 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/metro.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
-						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
-						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
+						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">¿Es cierto todo eso que dicen del Metro?</b></h4>
+						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Cuando no hay mucha gente, ambos son medios de transporte sumamente efectivos que conectan norte, sur, oriente y poniente. Pero si te subes en hora pico, te sentirás tan apretado como en una lata de sardina y terminarás tan sudado como un taco de canasta.</p>
 						</div>
 						</span>
 					</div>
@@ -223,10 +223,10 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/bicis.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
-						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
-						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
+						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">¿Quién dejó su bici a mitad de la calle?</b></h4>
+						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Con tanto caos y tanta contaminación, a veces ni el auto ni el transporte público se nos antojan. Por eso no te sorprendas si encuentras en la calle algún scooter o bicicleta abandonada, es parte de los nuevos medios de transporte que llegaron a la capital para ayudar a la movilidad y también al medio ambiente. Si quieres usar una de estas, descarga las aplicaciones.</p>
 						</div>
 						</span>
 					</div>
@@ -248,7 +248,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/trafico.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -261,7 +261,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="Modal09 " class="modal fade" role="dialog">
+		<div id="Modal09" class="modal fade" role="dialog">
 			<div class="modal-dialog" style="max-width: 900px; width: auto">
 
 			<!-- Modal content-->
@@ -273,7 +273,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/chapultepec.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -298,7 +298,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/museos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -323,7 +323,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/rascacielos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -348,7 +348,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/edificios_nombre_extrano.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -373,7 +373,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/angel.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -398,7 +398,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/reforma.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -423,7 +423,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/bellas_artes.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -448,7 +448,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/zocalo.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -473,7 +473,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/barrio.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -498,7 +498,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/trajineras.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -523,7 +523,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/sismo.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
@@ -548,7 +548,7 @@
 					</div>-->
 					<div class="modal-body">
 						<span>
-						<img src="images/prontuario/tacos.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
+						<img src="images/prontuario/estadio.jpg" alt="Smiley face" style="vertical-align: middle; float: left;" height="350" width="350"> 
 						<div style="display: inline; vertical-align: middle;">
 						<h4 class="modal-title" style="margin-left: 45%;"><b style="color: white; font-size: 40px;">Tortas de tamal y chilaquiles</b></h4>
 						<p style="color: white; font-size: 20px; height: 250px; margin-left: 45%;">Decía uno de los fundadores de la antigua México Tenochtitlan que "todo cabe en un bolillo sabiéndolo acomodar". Esa tradición de los chilangos aplica para tamales, chilaquiles y prácticamente cualquier alimento. Ya un visionario hasta ha probado la torta de tacos al pastor.</p>
