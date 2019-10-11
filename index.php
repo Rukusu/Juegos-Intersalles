@@ -23,6 +23,7 @@
 		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
 		<title>XXVI Juegos Deportivos Universitarios Lasallistas 2019</title>
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/lineaDelTiempo.css">
 		<link rel="stylesheet" href="../css/flexslider.css">
 		<link rel="stylesheet" type="text/css" href="css/juegos.css?<?php echo date('YmdHis'); ?>">
@@ -124,7 +125,7 @@
 								</div>
 								<div class="inverted-pane-warp back-orange">
 									<div class="inverted-steps-pane">
-										<p>Nezahualcoyotl</p>
+										<p>Nezahualcóyotl</p>
 									</div>
 								</div>
 							</div>

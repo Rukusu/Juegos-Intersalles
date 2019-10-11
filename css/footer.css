@@ -1,0 +1,38 @@
+.footerMiddle{background:#1f2d56;overflow:hidden}
+footer .footerMiddle nav{width:70%;margin:0 auto;padding:15px 0 5px}
+footer .footerMiddle nav ul{text-align:center}
+footer .footerMiddle nav ul li{border-right:1px solid #fff;padding:1px 10px;display:inline-block;margin-bottom:10px}
+footer .footerMiddle nav ul li:last-child{border:0}
+footer .ubicacion{margin-top:20px;overflow:hidden}
+footer .ubicacion .address{display:inline-block;width:65%;vertical-align:bottom}
+footer .ubicacion .address h4,footer .ubicacion .address h4 a{color:#0fb7f1;font-size:14px;margin:0 0 0 -5px;position:relative}
+footer .ubicacion .address h4 .icon,footer .ubicacion .address h4 a .icon{font-size:28px;display:inline-block;vertical-align:middle;margin-bottom:3px;margin-left:3px}
+footer .ubicacion .address h4 a{display:inline-block}
+footer .ubicacion .address h4 a:hover{color:#d21034}
+footer .ubicacion .redes{display:inline-block;width:32%;vertical-align:bottom;text-align:right}
+footer .ubicacion .redes h4{display:inline-block;vertical-align:middle;margin:0;color:#fff;font-size:16px}
+footer .ubicacion .redes ul{display:inline-block;vertical-align:middle}footer .ubicacion .redes ul li{margin-left:2px}
+footer .ubicacion .redes a{font-size:22px}
+footer .ubicacion p{color:#fff;margin:0}
+footer .footerBottom{background:#091941;overflow:hidden;padding:15px 0}
+footer .footerBottom .logotipos{display:inline-block;vertical-align:middle;width:20%}
+footer .footerBottom .logotipos a{display:inline-block}
+footer .footerBottom .logotipos a.internacional{width:80px}
+footer .footerBottom .logotipos a.red{width:75px}
+footer .footerBottom .legales{text-align:right;float:right;width:60%;margin-right:0;margin-left:auto;padding-top:10px;padding-bottom:0}
+footer .footerBottom .legales ul li{border-right:1px solid #fff;padding:1px 10px}
+footer .footerBottom .legales ul li:last-child{border:0}
+a {color:white;}
+
+footer .ubicacion .address,footer .ubicacion .redes{display:block;width:100%}
+footer .ubicacion .address{text-align:center}
+footer .ubicacion .address p{padding:20px 0;width:80%;margin:0 auto}
+.sty-ico-holder{line-height:95px}
+.sty-ico-holder .icon{font-size:40px}
+
+footer .ubicacion .address{width:60%}
+footer .ubicacion .redes{width:39%;text-align:center}
+footer ul > li {
+    display: inline-block;
+    vertical-align: top;
+}
