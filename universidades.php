@@ -1,7 +1,5 @@
 ﻿<?php
-	header("Content-Type: text/html; charset=utf8");
-	session_start();
-	include('../core.php');
+include('core.php');
 ?>
 <!doctype html>
 <html lang="es">
@@ -23,8 +21,11 @@
 			</head>
 	<body>
 		<?php
+			//header("Content-Type: text/html; charset=utf8");
+			//session_start();
 			include('header_int.php');
 			$dbc = connect_bajio();
+			echo mysqli_connect_error();
 			mysqli_set_charset ( $dbc , "utf8mb4_unicode_ci" );
 			if(!isset($_REQUEST['u'])){
 		?>

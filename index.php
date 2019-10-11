@@ -1,7 +1,7 @@
 <?php
 	header("Content-Type: text/html; charset=utf8");
 	session_start();
-	include('../core.php');
+	include('core.php');
 	date_default_timezone_set ( "America/Mexico_City" );
 	function formatoFecha($fecha){
 		$fecha = empty($fecha)?date('Y-m-d'):$fecha;

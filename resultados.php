@@ -1,7 +1,7 @@
 <?php
 	header("Content-Type: text/html; ");
 	session_start();
-	include('../core.php');
+	include('core.php');
 	function formatoFecha($fecha){
 		$fecha = empty($fecha)?date('Y-m-d'):$fecha;
 		$dias = array('Domingo','Lunes','Martes','Mi&eacute;rcoles','Jueves','Viernes','S&aacute;bado');
