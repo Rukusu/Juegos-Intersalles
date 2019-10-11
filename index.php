@@ -336,7 +336,7 @@
 					<div class="clearfix"></div>
 				</div>-->
 				<article id="hospitales">
-					<a href="hospitales.php"><span class="ribbon">SERVICIO MÉDICO Y HOSPITALES</span></a>
+					<a href="hospitales.php"><span class="ribbon">HOSPITALIDAD</span></a>
 				</article>
 			</div>
 		</section>
