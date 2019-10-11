@@ -1,0 +1,38 @@
+.titulo{
+	line-height: 42px;
+	color: white;
+	font-size: 40px;
+	font-family: 'Indivisa display Sans heavy', Verdana, sans-serif;
+}
+
+.alinear_texto {
+	display: inline;
+	vertical-align: middle;
+}
+
+.margen_titulo {
+	margin-left: 45% !important;
+}
+
+.cuerpo{
+	margin-top: 20px;
+	color: white;
+	font-size: 20px;
+	height: 250px;
+	margin-left: 45%;
+	font-family: 'Indivisa Text Sans Regular', Verdana, sans-serif;
+}
+
+.imagen {
+	vertical-align: middle;
+	float: left;
+}
+
+.fondo {
+	background-image: url(../images/prontuario_fondo.jpg);
+}
+
+.ventana {
+	max-width: 900px;
+	width: auto !important;
+}
