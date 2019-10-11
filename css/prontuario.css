@@ -36,3 +36,14 @@
 	max-width: 900px;
 	width: auto !important;
 }
+
+.cuadro{
+	font-size: 24px;
+	font-family: 'Indivisa Text Sans Regular', Verdana, sans-serif;
+}
+
+@media screen and (max-width: 1055px){
+	.item a {
+		padding-top: 28px !important;
+	}
+}

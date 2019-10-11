@@ -38,26 +38,26 @@
 		</div>
 		
 		<section class="wrapper" id="items" style="margin-top: 20px">
-			<div class="item" data-bg="prontuario/chilaquiles" style="background-image: url(images/prontuario/chilaquiles.jpg);"><a href="#" data-toggle="modal" data-target="#Modal01"><p style="font-size: 24px;">Tortas de tamal y chilaquiles</p></a></div>
-			<div class="item" data-bg="prontuario/quesadillas" style="background-image: url(images/prontuario/quesadillas.jpg);"><a href="#" data-toggle="modal" data-target="#Modal02"><p style="font-size: 24px;">Quesadillas</p></a></div>
-			<div class="item" data-bg="prontuario/tacos" style="background-image: url(images/prontuario/tacos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal03"><p style="font-size: 24px;">Tacos al pastor</p></a></div>
-			<div class="item" data-bg="prontuario/luchas" style="background-image: url(images/prontuario/luchas.jpg);"><a href="#" data-toggle="modal" data-target="#Modal04"><p style="font-size: 24px;">Luchas</p></a></div>
-			<div class="item" data-bg="prontuario/manifestacion" style="background-image: url(images/prontuario/manifestacion.jpg);"><a href="#" data-toggle="modal" data-target="#Modal05"><p style="font-size: 24px;">Marchas / manifestaciones</p></a></div>
-			<div class="item" data-bg="prontuario/metro" style="background-image: url(images/prontuario/metro.jpg);"><a href="#" data-toggle="modal" data-target="#Modal06"><p style="font-size: 24px;">Metro</p></a></div>
-			<div class="item" data-bg="prontuario/bicis" style="background-image: url(images/prontuario/bicis.jpg);"><a href="#" data-toggle="modal" data-target="#Modal07"><p style="font-size: 24px;">Ecobici y scooters</p></a></div>
-			<div class="item" data-bg="prontuario/trafico" style="background-image: url(images/prontuario/trafico.jpg);"><a href="#" data-toggle="modal" data-target="#Modal08"><p style="font-size: 24px;">"Tráfico"</p></a></div>
-			<div class="item" data-bg="prontuario/chapultepec" style="background-image: url(images/prontuario/chapultepec.jpg);"><a href="#" data-toggle="modal" data-target="#Modal09"><p style="font-size: 24px;">Chapultepec</p></a></div>
-			<div class="item" data-bg="prontuario/museos" style="background-image: url(images/prontuario/museos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal10"><p style="font-size: 24px;">Museos</p></a></div>
-			<div class="item" data-bg="prontuario/rascacielos" style="background-image: url(images/prontuario/rascacielos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal11"><p style="font-size: 24px;">Rascacielos</p></a></div>
-			<div class="item" data-bg="prontuario/edificios_nombre_extrano" style="background-image: url(images/prontuario/edificios_nombre_extrano.jpg);"><a href="#" data-toggle="modal" data-target="#Modal12"><p style="font-size: 24px;">Edificios con nombres MUY extraños</p></a></div>
-			<div class="item" data-bg="prontuario/angel" style="background-image: url(images/prontuario/angel.jpg);"><a href="#" data-toggle="modal" data-target="#Modal13"><p style="font-size: 24px;">Ángel de la Independencia</p></a></div>
-			<div class="item" data-bg="prontuario/reforma" style="background-image: url(images/prontuario/reforma.jpg);"><a href="#" data-toggle="modal" data-target="#Modal14"><p style="font-size: 24px;">Paseo de la Reforma</p></a></div>
-			<div class="item" data-bg="prontuario/bellas_artes" style="background-image: url(images/prontuario/bellas_artes.jpg);"><a href="#" data-toggle="modal" data-target="#Modal15"><p style="font-size: 24px;">Palacio de Bellas Artes</p></a></div>
-			<div class="item" data-bg="prontuario/zocalo" style="background-image: url(images/prontuario/zocalo.jpg);"><a href="#" data-toggle="modal" data-target="#Modal16"><p style="font-size: 24px;">Plancha del Zócalo</p></a></div>
-			<div class="item" data-bg="prontuario/barrio" style="background-image: url(images/prontuario/barrio.jpg);"><a href="#" data-toggle="modal" data-target="#Modal17"><p style="font-size: 24px;">Barrio Universitario</p></a></div>
-			<div class="item" data-bg="prontuario/trajineras" style="background-image: url(images/prontuario/trajineras.jpg);"><a href="#" data-toggle="modal" data-target="#Modal18"><p style="font-size: 24px;">Las trajineras de Xochimilco</p></a></div>
-			<div class="item" data-bg="prontuario/sismo" style="background-image: url(images/prontuario/sismo.jpg);"><a href="#" data-toggle="modal" data-target="#Modal19"><p style="font-size: 24px;">Alerta sísmica</p></a></div>
-			<div class="item" data-bg="prontuario/estadio" style="background-image: url(images/prontuario/estadio.jpg);"><a href="#" data-toggle="modal" data-target="#Modal20"><p style="font-size: 24px;">Estadios para todos los deportes</p></a></div>
+			<div class="item" data-bg="prontuario/chilaquiles" style="background-image: url(images/prontuario/chilaquiles.jpg);"><a href="#" data-toggle="modal" data-target="#Modal01"><p class="cuadro">Tortas de tamal y chilaquiles</p></a></div>
+			<div class="item" data-bg="prontuario/quesadillas" style="background-image: url(images/prontuario/quesadillas.jpg);"><a href="#" data-toggle="modal" data-target="#Modal02"><p class="cuadro">Quesadillas</p></a></div>
+			<div class="item" data-bg="prontuario/tacos" style="background-image: url(images/prontuario/tacos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal03"><p class="cuadro">Tacos al pastor</p></a></div>
+			<div class="item" data-bg="prontuario/luchas" style="background-image: url(images/prontuario/luchas.jpg);"><a href="#" data-toggle="modal" data-target="#Modal04"><p class="cuadro">Luchas</p></a></div>
+			<div class="item" data-bg="prontuario/manifestacion" style="background-image: url(images/prontuario/manifestacion.jpg);"><a href="#" data-toggle="modal" data-target="#Modal05"><p class="cuadro">Marchas / manifestaciones</p></a></div>
+			<div class="item" data-bg="prontuario/metro" style="background-image: url(images/prontuario/metro.jpg);"><a href="#" data-toggle="modal" data-target="#Modal06"><p class="cuadro">Metro</p></a></div>
+			<div class="item" data-bg="prontuario/bicis" style="background-image: url(images/prontuario/bicis.jpg);"><a href="#" data-toggle="modal" data-target="#Modal07"><p class="cuadro">Ecobici y scooters</p></a></div>
+			<div class="item" data-bg="prontuario/trafico" style="background-image: url(images/prontuario/trafico.jpg);"><a href="#" data-toggle="modal" data-target="#Modal08"><p class="cuadro">"Tráfico"</p></a></div>
+			<div class="item" data-bg="prontuario/chapultepec" style="background-image: url(images/prontuario/chapultepec.jpg);"><a href="#" data-toggle="modal" data-target="#Modal09"><p class="cuadro">Chapultepec</p></a></div>
+			<div class="item" data-bg="prontuario/museos" style="background-image: url(images/prontuario/museos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal10"><p class="cuadro">Museos</p></a></div>
+			<div class="item" data-bg="prontuario/rascacielos" style="background-image: url(images/prontuario/rascacielos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal11"><p class="cuadro">Rascacielos</p></a></div>
+			<div class="item" data-bg="prontuario/edificios_nombre_extrano" style="background-image: url(images/prontuario/edificios_nombre_extrano.jpg);"><a href="#" data-toggle="modal" data-target="#Modal12"><p class="cuadro">Edificios con nombres MUY extraños</p></a></div>
+			<div class="item" data-bg="prontuario/angel" style="background-image: url(images/prontuario/angel.jpg);"><a href="#" data-toggle="modal" data-target="#Modal13"><p class="cuadro">Ángel de la Independencia</p></a></div>
+			<div class="item" data-bg="prontuario/reforma" style="background-image: url(images/prontuario/reforma.jpg);"><a href="#" data-toggle="modal" data-target="#Modal14"><p class="cuadro">Paseo de la Reforma</p></a></div>
+			<div class="item" data-bg="prontuario/bellas_artes" style="background-image: url(images/prontuario/bellas_artes.jpg);"><a href="#" data-toggle="modal" data-target="#Modal15"><p class="cuadro">Palacio de Bellas Artes</p></a></div>
+			<div class="item" data-bg="prontuario/zocalo" style="background-image: url(images/prontuario/zocalo.jpg);"><a href="#" data-toggle="modal" data-target="#Modal16"><p class="cuadro">Plancha del Zócalo</p></a></div>
+			<div class="item" data-bg="prontuario/barrio" style="background-image: url(images/prontuario/barrio.jpg);"><a href="#" data-toggle="modal" data-target="#Modal17"><p class="cuadro">Barrio Universitario</p></a></div>
+			<div class="item" data-bg="prontuario/trajineras" style="background-image: url(images/prontuario/trajineras.jpg);"><a href="#" data-toggle="modal" data-target="#Modal18"><p class="cuadro">Las trajineras de Xochimilco</p></a></div>
+			<div class="item" data-bg="prontuario/sismo" style="background-image: url(images/prontuario/sismo.jpg);"><a href="#" data-toggle="modal" data-target="#Modal19"><p class="cuadro">Alerta sísmica</p></a></div>
+			<div class="item" data-bg="prontuario/estadio" style="background-image: url(images/prontuario/estadio.jpg);"><a href="#" data-toggle="modal" data-target="#Modal20"><p class="cuadro">Estadios para todos los deportes</p></a></div>
 			<div class="clearfix"></div>
 		</section>
 		
