@@ -45,7 +45,7 @@
 						<div class="slide">
 							<!--<div class="lineas"></div>-->
 							<div class="frase"><strong>XXVI<br>JUEGOS DEPORTIVOS<br>LASALLISTAS</strong>Ciudad de México<br>Red de Universidades<br>La Salle<br>2019</div>
-							<div class="delasalle"></div>
+							<!--<div class="delasalle"></div>-->
 						</div>
 					</li>
 				</ul>
