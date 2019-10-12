@@ -24,7 +24,7 @@ footer .footerBottom .legales ul li{border-right:1px solid #fff;padding:1px 10px
 footer .footerBottom .legales ul li:last-child{border:0}
 a {color:white;}
 
-footer .ubicacion .address,footer .ubicacion .redes{display:block;width:100%}
+footer .ubicacion .address,footer .ubicacion .redes{/*display:block;*/width:100%}
 footer .ubicacion .address{text-align:center}
 footer .ubicacion .address p{padding:20px 0;width:80%;margin:0 auto}
 .sty-ico-holder{line-height:95px}

@@ -35,7 +35,7 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="footerMiddle">
-					<div class="ubicacion" style="max-width: 960px;">
+					<div class="ubicacion">
 						<div class="address">
 							<h4>
 								<a href="https://www.google.com.mx/maps/place/Universidad+La+Salle/@19.4085702,-99.1810039,15z/data=!4m5!3m4!1s0x0:0x3108b5797f9c9ecd!8m2!3d19.4085702!4d-99.1810039"> 
