@@ -46,4 +46,20 @@
 	.item a {
 		padding-top: 28px !important;
 	}
+	
+}
+
+@media screen and (max-width: 500px){
+	.margen_titulo {
+		margin-left: 1% !important;
+	}
+	
+	.cuerpo{
+		margin-left: 0%;
+		margin-bottom: 150px;
+	}
+	
+	.imagen {
+	width: 100%;
+	}
 }

@@ -39,7 +39,7 @@
 		
 		<section class="wrapper" id="items" style="margin-top: 20px">
 			<div class="item" data-bg="prontuario/quesadillas" style="background-image: url(images/prontuario/quesadillas.jpg);"><a href="#" data-toggle="modal" data-target="#Modal01"><p class="cuadro">Quesadillas</p></a></div>
-			<div class="item" data-bg="prontuario/bellas_artes" style="background-image: url(images/prontuario/bellas_artes.jpg);"><a href="#" data-toggle="modal" data-target="#Modal02"><p class="cuadro">Palacio de Bellas Artes</p></a></div>
+			<div class="item" data-bg="prontuario/bellas_artes" style="background-image: url(images/prontuario/bellas_artes.jpg);"><a href="#" data-toggle="modal" data-target="#Modal02"><p class="cuadro">"México"</p></a></div>
 			<div class="item" data-bg="prontuario/chilaquiles" style="background-image: url(images/prontuario/chilaquiles.jpg);"><a href="#" data-toggle="modal" data-target="#Modal03"><p class="cuadro">Tortas de tamal y chilaquiles</p></a></div>
 			<div class="item" data-bg="prontuario/tacos" style="background-image: url(images/prontuario/tacos.jpg);"><a href="#" data-toggle="modal" data-target="#Modal04"><p class="cuadro">Tacos al pastor</p></a></div>
 			<div class="item" data-bg="prontuario/luchas" style="background-image: url(images/prontuario/luchas.jpg);"><a href="#" data-toggle="modal" data-target="#Modal05"><p class="cuadro">Luchas</p></a></div>
@@ -277,7 +277,7 @@
 						<img src="images/prontuario/edificios_nombre_extrano.jpg" alt="Smiley face" class="imagen" height="350" width="350"> 
 						<div class="alinear_texto">
 						<h4 class="modal-title margen_titulo"><b class="titulo">Edificios con nombres MUY extraños</b></h4>
-						<p class="cuerpo">Nadie, absolutamente nadie: Estela de Luz // Los chilangos: La Sauvicrema. El conjunto de edificios en la CDMX son una obra maestra de la arquitectura y la ingeniería. Pero algunas veces terminan llamándolos por lo que parecen más que por su nombre original. Ahora que estarás en Santa Lucía podrás ver “la Lavadora” (Calakmul), “el Dorito” (Torre Virreyes) o “el Pantalón” (Torre Arcos Bosques).</p>
+						<p class="cuerpo">Nadie, absolutamente nadie: Estela de Luz // Los chilangos: La Suavicrema. El conjunto de edificios en la CDMX son una obra maestra de la arquitectura y la ingeniería. Pero algunas veces terminan llamándolos por lo que parecen más que por su nombre original. Ahora que estarás en Santa Lucía podrás ver “la Lavadora” (Calakmul), “el Dorito” (Torre Virreyes) o “el Pantalón” (Torre Arcos Bosques).</p>
 						</div>
 						</span>
 					</div>
