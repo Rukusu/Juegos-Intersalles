@@ -30,9 +30,13 @@ footer .ubicacion .address p{padding:20px 0;width:80%;margin:0 auto}
 .sty-ico-holder{line-height:95px}
 .sty-ico-holder .icon{font-size:40px}
 
-footer .ubicacion .address{width:60%}
-footer .ubicacion .redes{width:39%;text-align:center}
+footer .ubicacion .address{width:60%;}
+footer .ubicacion .redes{width:39%;text-align:center;}
 footer ul > li {
     display: inline-block;
     vertical-align: top;
+}
+@media only screen and (max-width: 600px) {
+	footer .ubicacion .address{width:100%;}
+	footer .ubicacion .redes{width:100%;}
 }
