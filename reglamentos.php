@@ -14,6 +14,7 @@
 		<title>XXVI Juegos Deportivos Lasallistas 2019</title>
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 		<link rel="stylesheet" href="../css/fancybox.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/juegos.css?<?php echo date('YmdHis'); ?>">
 		<link rel="stylesheet" type="text/css" href="css/interior.css?<?php echo date('YmdHis'); ?>">
 		<script type="text/javascript" src="../js/jquery.js"></script>

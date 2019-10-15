@@ -45,7 +45,7 @@
 						<div class="redes">
 							<h4>Síguenos :</h4>
 							<ul>
-								<li><a href="https://www.facebook.com/LaSalleMX" target="_blank" alt="Facebook"><span class="icon-facebook"></span></a></li>
+								<li><a href="https://www.facebook.com/Red-La-Salle-México-2760673140824619/" target="_blank" alt="Facebook"><span class="icon-facebook"></span></a></li>
 								<li><a href="https://twitter.com/lasalle_mx" target="_blank" alt="Twitter"><span class="icon-twitter"></span></a></li>
 							</ul>
 						</div>
