@@ -25,6 +25,52 @@
 			<div class="wrapper">HOSPITALIDAD</div>
 		</div>
 		<section class="wrapper" style="margin-top: 20px;">
+			<div class="text">
+				<div>
+					<h1>Guía de Hospitalidad</h1>
+					<button type="button">Descarga la guía</button> 
+				</div>
+				<div>
+					<h2>Direcciones importantes</h2>
+					<div style="width: 45%; display: inline-block; padding-left: 3%;">
+						<strong>Universidad La Salle México<br>Unidad Condesa</strong><br>
+						<p>Benjamín Franklin 45, Col. Condesa, Alc. Cuauhtémoc.</p>
+						<b>5278 9500</b>
+					</div>
+					<div style="width: 45%; display: inline-block; padding-left: 3%;">
+						<strong>Universidad La Salle México<br>Unidad Santa Lucía</strong><br>
+						<p>Av. Tamaulipas 3, Zona Federal, 01357 Ciudad de México, CDMX.</p>
+						<b>5602 1130</b>
+					</div>
+				</div>
+				<hr style="color:blue;">
+				<div>
+					<h2 style="padding-bottom: 10px">Hospitales cerca de Unidad Condesa</h2>
+					<div style="width: 45%; display: inline-block; padding-left: 3%;">
+						<p><strong>-> Hospital Ángeles Mocel Torre de Consultorios</strong><br>
+						Calle Gral. Juan Cano 107, San Miguel Chapultepec I Secc, 11850<br><b>55 5278 2600</b></p>
+					</div>
+					<div style="width: 45%; display: inline-block; padding-left: 3%;">
+						<p><strong>Hospital Ángeles México</strong><br>
+						Agrarismo 208, Escandón II Secc, 11800<br><b>55 5516 9900</b></p>
+					</div>
+					<br>
+					<div style="width: 45%; display: inline-block; padding-left: 3%;">
+						<p><strong>Torre Médica Dalinde</strong><br>
+						Eje 3 Sur 218, Roma Sur, 06760<br><b>55 5265 2900</b></p>
+					</div>
+					<div style="width: 45%; display: inline-block; padding-left: 3%;">
+						<p><strong>Nuevo Sanatorio Durango</strong><br>
+						Durango 296 Col. Roma<br><b>5148 4646</b></p>
+					</div>
+					<br>
+					<div style="width: 45%; display: inline-block; padding-left: 3%;">
+						<p><strong>Hospital Ángeles Metropolitano</strong><br>
+						Tlacotalpan 59, Roma Sur, 06760<br><b>55 5265 1800</b></p>
+					</div>
+				</div>
+				<hr style="color:blue;">
+			</div>
 			<!--<div class="text">
 				En caso de requerir atención médica durante los XVIII Juegos Deportivos Interprepas 2019, sugerimos revisar los convenios de seguro que cada Universidad tienen para la selección de una Institución de Salud. Los Hospitales que se lista a continuación, son a los que nuestra Casa de Estudios regularmente recurre.<br><br>
 				
