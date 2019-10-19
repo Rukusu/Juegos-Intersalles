@@ -1,0 +1,18 @@
+.btn_blue {
+	color: white;
+	background: #1f2d56; 
+	border-radius: 6px;
+	border: none; height: 33px;
+	width: 170px;
+}
+.btn_blue:hover{
+	background: teal;
+}
+.text_columns{
+	width: 45%;
+	display: inline-block;
+	padding-left: 3%;
+}
+.division_line{
+	color: #1f2d56;
+}
