@@ -198,7 +198,7 @@
 		<div class="wrapper">
 		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
-				<article id="mapas">
+				<article id="noticias">
 					<a href="noticias.php"><span class="ribbon">NOTICIAS</span></a>
 				</article>
 				<div class="clearfix"></div>
@@ -359,7 +359,7 @@
 		</section>
 		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
-				<article id="mapas">
+				<article id="prontuario">
 					<a href="prontuario.php"><span class="ribbon">CHILANGONARIO</span></a>
 				</article>
 				<div class="clearfix"></div>

@@ -310,6 +310,8 @@ section #generico a,
 section #transmisiones a,
 section #galeria a,
 section #hospitales a,
+section #prontuario a,
+section #noticias a,
 section #mapas a{
 	display: block;
 	min-height: 200px;
@@ -432,8 +434,20 @@ section article .title{
 	background-position: center;
 	background-size: cover;
 }
+#prontuario{
+	background: url(../images/cdmx.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#noticias{
+	background: url(../images/noticias.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#prontuario .ribbon,
 #generico .ribbon,
 #hospitales .ribbon,
+#noticias .ribbon,
 #mapas .ribbon{
 	background: url(../images/ribbon.png) top left;
 	background-size: cover;
@@ -622,6 +636,8 @@ footer #content #logos img{
 	}
 	section #hospitales a,
 	section #generico a,
+	section #noticias a,
+	section #prontuario a,
 	section #mapas a{
 		min-height: 250px;
 	}
@@ -653,7 +669,9 @@ footer #content #logos img{
 	#redesSociales .socialNetwork:nth-child(4){
 		width: 85%;
 	}
+	#prontuario .ribbon,
 	#generico .ribbon,
+	#noticias .ribbon,
 	#hospitales .ribbon,
 	#mapas .ribbon{
 		font-size: 18px;

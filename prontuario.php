@@ -429,7 +429,7 @@
 						<img src="images/prontuario/trajineras.jpg" alt="Smiley face" class="imagen" height="350" width="350"> 
 						<div class="alinear_texto">
 						<h4 class="modal-title margen_titulo"><b class="titulo">Las trajineras en Xochimilco</b></h4>
-						<p class="cuerpo">Corre el rumor de que este septiembre no tembló porque los dioses aceptaron el sacrificio del chico que murió en el lago de Xochimilco. Lo que sí es cierto es que es de lo más lindo ir a una trajinera y armar una fiesta con medida. Allá hay mariachis, botanas y hasta puedes adoptar a un ajolote para ayudar a preservar su especie. </p>
+						<p class="cuerpo">Es de lo más lindo ir a una trajinera y armar una fiesta con medida. Allá hay mariachis, botanas y hasta puedes adoptar a un ajolote para ayudar a preservar su especie. </p>
 						</div>
 						</span>
 					</div>
