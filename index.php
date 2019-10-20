@@ -40,17 +40,26 @@
 				<div id="juegos_w"></div>
 				<label id="menu" for="chkMenu"></label>
 			</div>
-			<div class="flexslider banner" style="margin-top: 60px;">
+			<!--<div class="wrapper">-->
+			<div class="flexslider banner" style="max-width: 1280px; padding-top: 60px; margin-left: auto; margin-right: auto; position: relative;"><!--style="margin-top: 60px; margin-right: auto; margin-left: auto; max-width: 1280px;"-->
 				<ul class="slides">
-					<li style="background-image: url(images/bann1-2019.png); margin-right: auto; margin-left: auto; max-width: 1280px;">
+					<li style="background-image: url(images/Juegos_MasterGraphic.png);">
 						<div class="slide">
 							<!--<div class="lineas"></div>-->
 							<div class="frase"><strong>XXVI<br>JUEGOS DEPORTIVOS<br>LASALLISTAS</strong>Ciudad de México<br>Red de Universidades<br>La Salle<br>2019</div>
 							<!--<div class="delasalle"></div>-->
 						</div>
 					</li>
+					<li style="background-image: url(images/bann1-2019.png);">
+						<div class="slide">
+							<!--<div class="lineas"></div>-->
+							
+							<!--<div class="delasalle"></div>-->
+						</div>
+					</li>
 				</ul>
 			</div>
+			<!--</div>-->
 		</div><!--
 		<div class="wrapper">
 			<div style="max-width: 468px; margin-right: 10px; margin-left: auto;">
