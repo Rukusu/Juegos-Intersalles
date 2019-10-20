@@ -306,6 +306,7 @@ section #galeria{
 	background: url(../images/galeria.jpg) center;
 	background-size: cover;
 }
+section #generico a,
 section #transmisiones a,
 section #galeria a,
 section #hospitales a,
@@ -431,6 +432,7 @@ section article .title{
 	background-position: center;
 	background-size: cover;
 }
+#generico .ribbon,
 #hospitales .ribbon,
 #mapas .ribbon{
 	background: url(../images/ribbon.png) top left;
@@ -619,6 +621,7 @@ footer #content #logos img{
 		min-height: 250px;
 	}
 	section #hospitales a,
+	section #generico a,
 	section #mapas a{
 		min-height: 250px;
 	}
@@ -650,6 +653,7 @@ footer #content #logos img{
 	#redesSociales .socialNetwork:nth-child(4){
 		width: 85%;
 	}
+	#generico .ribbon,
 	#hospitales .ribbon,
 	#mapas .ribbon{
 		font-size: 18px;

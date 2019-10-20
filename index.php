@@ -198,6 +198,63 @@
 		<div class="wrapper">
 		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
+				<article id="mapas">
+					<a href="noticias.php"><span class="ribbon">NOTICIAS</span></a>
+				</article>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+				<section class="wrapper caja_inicio" style="display:inline-block;">
+			<div>
+				
+				<!-- <div id="skewed">
+					<article id="transmisiones">
+					<?php
+						/*$sql = 'SELECT tor_deportes.icono,tor_deportes.deporte,tor_ramas.rama,tor_partidos.local,tor_partidos.visitante,tor_canchas.cancha,tor_partidos.fecha,tor_partidos.hora,tor_transmisiones.url FROM tor_transmisiones
+								INNER JOIN tor_partidos ON tor_transmisiones.partido_id = tor_partidos.partido_id
+								INNER JOIN tor_torneos ON tor_partidos.torneo_id = tor_torneos.torneo_id
+								INNER JOIN tor_canchas ON tor_partidos.cancha_id = tor_canchas.cancha_id
+								INNER JOIN tor_deportes ON tor_torneos.deporte_id = tor_deportes.deporte_id
+								INNER JOIN tor_ramas ON tor_torneos.rama_id = tor_ramas.rama_id
+								WHERE tor_partidos.fecha>=CURRENT_DATE()
+								ORDER BY tor_partidos.fecha ASC,tor_partidos.hora ASC LIMIT 1';
+						$trans = @mysql_query($sql);
+						while($t = @mysql_fetch_array($trans)){
+							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$t['local'];
+							$local = @mysql_query($sql);
+							$l = @mysql_fetch_array($local);
+							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$t['visitante'];
+							$visitante = @mysql_query($sql);
+							$v = @mysql_fetch_array($visitante);
+					?>
+						<a href="transmisiones.php">
+							<div class="icon" style="background-image: url(images/<?php echo $t['icono']; ?>.png);"></div>
+							<div class="game">
+								<div><strong><?php echo formatoFecha($t['fecha']).'<br>'.convertHour($t['hora']); ?></strong></div>
+								<div class="versus">
+									<span><?php echo utf8_encode($l['equipo']); ?></span><span>vs</span><span><?php echo utf8_encode($v['equipo']); ?></span>
+									<div class="clearfix"></div>
+								</div>
+								<div style="font-size: 16px;"><?php echo utf8_encode($t['cancha']); ?></div>
+							</div>
+							<span class="bottom">TRANSMISIONES</span>
+						</a>
+					<?php
+						}*/
+					?>
+					</article>
+					<article id="galeria">
+						<a href="https://www.facebook.com/pg/JuegosUniversitariosLasallistas/photos/?ref=page_internal" target="_blank"><span class="bottom">GALERÍA</span></a>
+					</article>
+					<div class="clearfix"></div>
+				</div>-->
+				<article id="hospitales">
+					<a href="hospitales.php"><span class="ribbon">HOSPITALIDAD</span></a>
+				</article>
+			</div>
+		</section>
+		<section class="wrapper caja_inicio" style="display:inline-block;">
+			<div>
 				<article id="redesSociales">
 					<div class="title">REDES SOCIALES</div>
 					<a href="https://twitter.com/LASALLELAGUNA" target="_blank" class="socialNetwork"><img src="images/twitter_w.png"></a>
@@ -294,57 +351,16 @@
 		</section>
 		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
-				
-				<!-- <div id="skewed">
-					<article id="transmisiones">
-					<?php
-						/*$sql = 'SELECT tor_deportes.icono,tor_deportes.deporte,tor_ramas.rama,tor_partidos.local,tor_partidos.visitante,tor_canchas.cancha,tor_partidos.fecha,tor_partidos.hora,tor_transmisiones.url FROM tor_transmisiones
-								INNER JOIN tor_partidos ON tor_transmisiones.partido_id = tor_partidos.partido_id
-								INNER JOIN tor_torneos ON tor_partidos.torneo_id = tor_torneos.torneo_id
-								INNER JOIN tor_canchas ON tor_partidos.cancha_id = tor_canchas.cancha_id
-								INNER JOIN tor_deportes ON tor_torneos.deporte_id = tor_deportes.deporte_id
-								INNER JOIN tor_ramas ON tor_torneos.rama_id = tor_ramas.rama_id
-								WHERE tor_partidos.fecha>=CURRENT_DATE()
-								ORDER BY tor_partidos.fecha ASC,tor_partidos.hora ASC LIMIT 1';
-						$trans = @mysql_query($sql);
-						while($t = @mysql_fetch_array($trans)){
-							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$t['local'];
-							$local = @mysql_query($sql);
-							$l = @mysql_fetch_array($local);
-							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$t['visitante'];
-							$visitante = @mysql_query($sql);
-							$v = @mysql_fetch_array($visitante);
-					?>
-						<a href="transmisiones.php">
-							<div class="icon" style="background-image: url(images/<?php echo $t['icono']; ?>.png);"></div>
-							<div class="game">
-								<div><strong><?php echo formatoFecha($t['fecha']).'<br>'.convertHour($t['hora']); ?></strong></div>
-								<div class="versus">
-									<span><?php echo utf8_encode($l['equipo']); ?></span><span>vs</span><span><?php echo utf8_encode($v['equipo']); ?></span>
-									<div class="clearfix"></div>
-								</div>
-								<div style="font-size: 16px;"><?php echo utf8_encode($t['cancha']); ?></div>
-							</div>
-							<span class="bottom">TRANSMISIONES</span>
-						</a>
-					<?php
-						}*/
-					?>
-					</article>
-					<article id="galeria">
-						<a href="https://www.facebook.com/pg/JuegosUniversitariosLasallistas/photos/?ref=page_internal" target="_blank"><span class="bottom">GALERÍA</span></a>
-					</article>
-					<div class="clearfix"></div>
-				</div>-->
-				<article id="hospitales">
-					<a href="hospitales.php"><span class="ribbon">HOSPITALIDAD</span></a>
+				<article id="mapas">
+					<a href="sedes.php"><span class="ribbon">MAPAS Y SEDES</span></a>
 				</article>
+				<div class="clearfix"></div>
 			</div>
 		</section>
 		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
 				<article id="mapas">
-					<a href="sedes.php"><span class="ribbon">MAPAS Y SEDES</span></a>
+					<a href="prontuario.php"><span class="ribbon">CHILANGONARIO</span></a>
 				</article>
 				<div class="clearfix"></div>
 			</div>

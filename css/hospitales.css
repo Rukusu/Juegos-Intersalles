@@ -12,7 +12,33 @@
 	width: 45%;
 	display: inline-block;
 	padding-left: 3%;
+	vertical-align: text-top;
 }
 .division_line{
 	color: #1f2d56;
+}
+.text_with_img {
+	width: 80%;
+	display: inline-block;
+	vertical-align: text-top;
+}
+.img_with_text {
+	width: 10%;
+	display: inline-block;
+	vertical-align: text-top;
+}
+@media only screen and (max-width: 800px) {
+	.text_columns{
+		width: 90%;
+	}
+	.text_with_img {
+		width: 90%;
+		display: inline-block;
+		vertical-align: text-top;
+	}
+.img_with_text {
+		width: 100%;
+		display: inline-block;
+		vertical-align: text-top;
+	}
 }
