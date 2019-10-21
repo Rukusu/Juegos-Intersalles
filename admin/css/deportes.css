@@ -1,0 +1,64 @@
+#back{
+	background: url(../../admin/images/back.png);
+	background-size: cover;
+	float: left;
+	height: 28px;
+	margin-right: 10px;
+	width: 28px;
+}
+.roles th{
+	background: #ff8e00;
+}
+.item:nth-child(odd){
+	background: #fafafa;
+	padding: 5px;
+}
+.item:nth-child(even){
+	background: #eee;
+	padding: 5px;
+}
+.item.inactive{
+	color: #ff8e00;
+}
+#cargaGrupos{
+	padding: 5px;
+}
+#cargaGrupos .grupo{
+	border: 1px solid #ff8e00;
+	margin: 5px;
+	padding: 5px;
+}
+#versus{
+	font-size: 18px;
+	text-align: center;
+}
+#map{
+	height: 300px;
+	margin-bottom: 5px;
+}
+form.bluesteel .extra{
+	display: none;
+}
+
+@media screen and (min-width: 640px){
+	#cargaGrupos .grupo{
+		float: left;
+		width: calc(50% - 10px);
+	}
+	#map{
+		height: 400px;
+	}
+}
+@media screen and (min-width: 768px){
+	label{
+		text-align: right;
+	}
+	#map{
+		height: 500px;
+	}
+}
+@media screen and (min-width: 960px){
+	#cargaGrupos .grupo{
+		width: calc(25% - 10px);
+	}
+}

@@ -1,0 +1,184 @@
+html,body{
+	font-size: 14px;
+	font-family: Arial, Verdana, sans-serif;
+}
+*{
+	box-sizing: border-box;
+}
+.clearfix{
+	clear: both;
+	display: block;
+	height: 0;
+	width: 0;
+}
+.error{
+	color: #f00;
+	padding: 5px;
+}
+.msg{
+	color: #090;
+	padding: 5px;
+}
+.button-default{
+	background: #ff8e00;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	padding: 5px 20px;
+}
+.link{
+	background: #ff8e00;
+	color: #000;
+	cursor: pointer;
+	padding: 3px 10px;
+	text-align: center;
+}
+.right{
+	float: right !important;
+	margin-left: 10px;
+}
+.right .link{
+	display: block;
+}
+.wrapper{
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+a{
+	color: #366;
+	text-decoration: none;
+}
+h1{
+	font-size: 18px;
+	margin: 0;
+	padding: 5px 0;
+}
+h2{
+	font-size: 16px;
+	margin: 0;
+	padding: 5px 0;
+}
+#wrapper{
+	overflow: hidden;
+	width: 100%;
+}
+header{
+	background: url(../images/header.png) center #231f20;
+	background-size: cover;
+	color: #fafafa;
+	height: 80px;
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+header #orange{
+	background: url(../images/orange.png) top right no-repeat;
+	background-size: auto 120px;
+	height: 100px;
+	right: calc(100% - 50px);
+	position: absolute;
+	top: -20px;
+	width: 1920px;
+}
+header #blue{
+	background: url(../images/blue.png) bottom left no-repeat;
+	background-size: cover;
+	bottom: -20px;
+	height: 100px;
+	left: calc(100% - 65px);
+	position: absolute;
+	width: 1920px;
+}
+header #blue.menu{
+	left: calc(100% - 130px);
+}
+header #delasalle{
+	background: url(../images/delasalle_w.png) 0 0;
+	background-size: cover;
+	float: left;
+	height: 50px;
+	margin: 15px 10px 15px 40px;
+	width: 50px;
+}
+header #title{
+	border-left: 1px solid #fff;
+	float: left;
+	font-size: 16px;
+	height: 50px;
+	margin: 15px 0;
+	padding: 8px 10px 0 10px;
+}
+section{
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 20px;
+	width: 100%;
+}
+form.bluesteel{
+	background: #ddd;
+	padding: 20px;
+}
+form.bluesteel label,
+form.bluesteel input[type="text"],
+form.bluesteel input[type="email"],
+form.bluesteel input[type="password"],
+form.bluesteel select,
+form.bluesteel textarea,
+form.bluesteel button{
+	border: none;
+	display: block;
+	margin-bottom: 5px;
+}
+form.bluesteel label.right{
+	text-align: right;
+}
+form.bluesteel button{
+	background: #55A4aa;
+	border-radius: 3px;
+	color: #fff;
+	padding: 5px 20px;
+}
+form.bluesteel button:active{
+	background: #89e0da;
+}
+.tile{
+	background-color: #ccc;
+	background-position: 30px 20px;
+	background-repeat: no-repeat;
+	background-size: 60px;
+	float: left;
+	height: 120px;
+	margin: 0 10px 20px 10px;
+	position: relative;
+	width: 120px;
+}
+
+@media screen and (min-width: 640px){
+	header{
+		height: 100px;
+		margin: 20px auto;
+		overflow: visible;
+	}
+	header #orange{
+		background-size: cover;
+		height: 120px;
+	}
+	header #blue{
+		background-size: cover;
+		height: 120px;
+	}
+	header #delasalle{
+		height: 60px;
+		margin: 20px 10px 20px 40px;
+		width: 60px;
+	}
+	header #title{
+		font-size: 18px;
+		height: 60px;
+		margin: 20px 0;
+		padding: 10px 10px 0 10px;
+	}
+}

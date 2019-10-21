@@ -1,0 +1,46 @@
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol{
+	display: block;
+	width: 100%;
+}
+@media (min-width: 768px){
+	.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol{
+		float: left;
+		margin:0 2% 0 0;
+	}
+	.onecol{
+		width:6.5%;
+	}
+	.twocol{
+		width:15%;
+	}
+	.threecol{
+		width:23.5%;
+	}
+	.fourcol{
+		width:32%;
+	}
+	.fivecol{
+		width:40.5%;
+	}
+	.sixcol{
+		width:49%;
+	}
+	.sevencol{
+		width:57.5%;
+	}
+	.eightcol{
+		width:66%;
+	}
+	.ninecol{
+		width:74.5%;
+	}
+	.tencol{
+		width:83%;
+	}
+	.elevencol{
+		width:91.5%;
+	}
+	.last{
+		margin-right:0;
+	}
+}
