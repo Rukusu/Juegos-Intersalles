@@ -41,22 +41,24 @@
 				die("Connection failed: " . mysqli_connect_error());
 				die(mysqli_error($conn));
 			}
-			$query ='SELECT post.post_title, post.ID, img.guid FROM hoylle_term_relationships, hoylle_posts post left join hoylle_posts img ON post.ID = img.post_parent WHERE hoylle_term_relationships.term_taxonomy_id=525 AND post.ID = hoylle_term_relationships.object_id  AND post.post_type = "post" AND img.post_mime_type LIKE "image%" AND post.post_status = "publish"';
+			$query ='SELECT post.post_title, post.ID, img.guid FROM hoylle_term_relationships, hoylle_posts post left join hoylle_posts img ON post.ID = img.post_parent WHERE hoylle_term_relationships.term_taxonomy_id=525 AND post.ID = hoylle_term_relationships.object_id  AND post.post_type = "post" AND img.post_mime_type LIKE "image%" AND post.post_status = "publish" ORDER BY img.post_date DESC';
 				
 			$result = mysqli_query ($conn,$query);
 			$data = $result -> fetch_row();
 
 			if (mysqli_num_rows($result) > 0) {
 			// output data of each row
+				$previous = 0;
 				while($row = mysqli_fetch_row($result)) {
-				
+					if ($previous <> $row[1]){
 					echo "<section class=\"wrapper caja_inicio\" style=\"display:inline-block;\">\n";
 					echo "<div>\n";
 					echo '<article style="background: url('.$row[2].'); background-position: center;background-size: cover;" id="generico">';
 					echo '<a href="nota.php?id='.$row[1].'"><span class="ribbon">'.utf8_encode($row[0]).'</span></a>';
 					echo "</article>\n";
 					echo "</div>\n";
-					echo "</section>\n";
+					echo "</section>\n";}
+					$previous = $row[1];
 				}			
 				$result->close();
 			}
