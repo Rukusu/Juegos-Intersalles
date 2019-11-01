@@ -208,7 +208,7 @@
 		<section class="wrapper caja_inicio" style="display:inline-block;">
 			<div>
 				<article id="noticias">
-					<a href="noticias.php"><span class="ribbon">NOTICIAS</span></a>
+					<a href="noticias.php"><span class="ribbon">NOTICIAS<br>5 datos que no te puedes perder...</span></a>
 				</article>
 				<div class="clearfix"></div>
 			</div>
@@ -289,20 +289,20 @@
 						$sql = 'SELECT tor_partidos.local,tor_partidos.visitante,tor_deportes.icono FROM tor_partidos
 								INNER JOIN tor_torneos ON tor_partidos.torneo_id = tor_torneos.torneo_id
 								INNER JOIN tor_deportes ON tor_torneos.deporte_id = tor_deportes.deporte_id
-								WHERE tor_partidos.torneo_id BETWEEN 1 AND 15 AND tor_partidos.fecha IS NOT NULL AND tor_partidos.fecha>=CURRENT_DATE()
+								WHERE tor_partidos.fecha IS NOT NULL AND tor_partidos.fecha>=CURRENT_DATE()
 								ORDER BY tor_partidos.fecha ASC,tor_partidos.hora ASC
 								LIMIT 20';
 						$partidos = @mysqli_query($dbc,$sql);
-						while($p = @mysqli_fetch_array($partidos, MYSQLI_NUM)){
+						while($p = @mysqli_fetch_array($partidos, MYSQLI_BOTH)){
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['local'];
 							$local = @mysqli_query($dbc,$sql);
-							$l = @mysqli_fetch_array($local, MYSQLI_NUM);
+							$l = @mysqli_fetch_array($local, MYSQLI_BOTH);
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$p['visitante'];
 							$visitante = @mysqli_query($dbc,$sql);
-							$v = @mysql_fetch_array($visitante);
+							$v = @mysqli_fetch_array($visitante,MYSQLI_BOTH);
 				?>
 							<tr>
-								<td class="icon" style="background-image: url(images/<?php echo $p['icono']; ?>_b.png);"></td>
+								<td class="icon" style="background-image: url(images/<?php echo $p['icono']; ?>.jpg);"></td>
 								<td><?php echo utf8_encode($l['equipo']); ?></td>
 								<td><strong>-</strong></td>
 								<td><strong>-</strong></td>

@@ -40,18 +40,18 @@
 			<div class="text">
 				<a class="reglamento" href="documents/Estatutos.pdf" target="_blank"><strong>Estatutos</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
 				<a class="reglamento" href="documents/Reglamento_General.pdf" target="_blank"><strong>Reglamento_General</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
-				<a class="reglamento" href="documents/Ajedrez.pdf" target="_blank"><img src="images/ico_chess.png" height="20" width="20"> <strong>Ajedrez</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
-				<a class="reglamento" href="documents/Baloncesto.pdf" target="_blank"><img src="images/ico_basquet.png" height="20" width="20"> <strong>Basquetbol</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
-				<a class="reglamento" href="documents/Futbol_Rapido.pdf" target="_blank"><img src="images/ico_futfast.png" height="20" width="20"> <strong>Futbol Rápido</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
-				<a class="reglamento" href="documents/Futbol_Asociacion.pdf" target="_blank"><img src="images/ico_futsoccer.png" height="20" width="20"> <strong>Futbol Soccer</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/AJEDREZ.pdf" target="_blank"><img src="images/ico_chess.png" height="20" width="20"> <strong>Ajedrez</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/BALONCESTO.pdf" target="_blank"><img src="images/ico_basquet.png" height="20" width="20"> <strong>Basquetbol</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/FUTBOL_RAPIDO.pdf" target="_blank"><img src="images/ico_futfast.png" height="20" width="20"> <strong>Futbol Rápido</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/SOCCER.pdf" target="_blank"><img src="images/ico_futsoccer.png" height="20" width="20"> <strong>Futbol Soccer</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
 				<!-- <a class="reglamento" href="#" target="_blank"><img src="images/ico_hockey_b.png" height="20" width="20"> <strong>Hockey sobre Pasto</strong><span></span></a> -->
-				<a class="reglamento" href="documents/Taekwondo.pdf" target="_blank"><img src="images/ico_tae.png" height="20" width="20"> <strong>Tae Kwon Do</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
-				<a class="reglamento" href="documents/Tenis.pdf" target="_blank"><img src="images/ico_tennis.png" height="20" width="20"> <strong>Tenis</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
-				<a class="reglamento" href="documents/Tocho_bandera.pdf" target="_blank"><img src="images/ico_tocho.png" height="20" width="20"> <strong>Tocho Bandera</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
-				<a class="reglamento" href="documents/Voleibol.pdf" target="_blank"><img src="images/ico_volei.png" height="20" width="20"> <strong>Voleibol de Sala</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
-				<a class="reglamento" href="#" target="_blank"><img src="images/ico_natacion.png" height="20" width="20"> <strong>Natación</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
-				<a class="reglamento" href="#" target="_blank"><img src="images/ico_crossfit.png" height="20" width="20"> <strong>Crossfit</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
-				<a class="reglamento" href="#" target="_blank"><img src="images/ico_handball.png" height="20" width="20"> <strong>Handball</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/TAEKWONDO.pdf" target="_blank"><img src="images/ico_tae.png" height="20" width="20"> <strong>Tae Kwon Do</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/TENIS.pdf" target="_blank"><img src="images/ico_tennis.png" height="20" width="20"> <strong>Tenis</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/TOCHO_BANDERA.pdf" target="_blank"><img src="images/ico_tocho.png" height="20" width="20"> <strong>Tocho Bandera</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/VOLEIBOL.pdf" target="_blank"><img src="images/ico_volei.png" height="20" width="20"> <strong>Voleibol de Sala</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
+				<!--<a class="reglamento" href="#" target="_blank"><img src="images/ico_natacion.png" height="20" width="20"> <strong>Natación</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>-->
+				<a class="reglamento" href="documents/CROSSFIT.pdf" target="_blank"><img src="images/ico_crossfit.png" height="20" width="20"> <strong>Crossfit</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
+				<a class="reglamento" href="documents/HANDBALL.pdf" target="_blank"><img src="images/ico_handball.png" height="20" width="20"> <strong>Handball</strong><span><img src="images/pdf_mini.gif"> Descargar</a></span>
 			</div>
 		</section>
 		<?php include('footer.php'); ?>
