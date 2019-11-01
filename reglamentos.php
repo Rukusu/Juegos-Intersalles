@@ -9,8 +9,8 @@
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#001e61">
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
-		<link type="image/x-icon" href="../favicon.ico" rel="icon">
-		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
+		<link type="image/x-icon" href="favicon.png" rel="icon">
+		<link type="image/x-icon" href="favicon.png" rel="shortcut icon">
 		<title>XXVI Juegos Deportivos Lasallistas 2019</title>
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 		<link rel="stylesheet" href="../css/fancybox.css">

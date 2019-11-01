@@ -24,8 +24,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no">
-		<link type="image/x-icon" href="../favicon.ico" rel="icon">
-		<link type="image/x-icon" href="../favicon.ico" rel="shortcut icon">
+		<link type="image/x-icon" href="favicon.png" rel="icon">
+		<link type="image/x-icon" href="favicon.png" rel="shortcut icon">
 		<title>Torneos deportivos</title>
 		<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
