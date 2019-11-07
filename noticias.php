@@ -19,7 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="css/interior.css?<?php echo date('YmdHis'); ?>">
 		<script type="text/javascript" src="../js/jquery.js"></script>
 		<script type="text/javascript" src="js/juegos.js?<?php echo date('YmdHis'); ?>"></script>
-			</head>
+	</head>
 	<body>
 		<?php include('header_int.php'); ?>
 		<div id="titulo">

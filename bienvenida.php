@@ -29,24 +29,24 @@
 		</div>
 		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
-				Bienvenidos a los XXVI Juegos Lasallistas<br><br><br>
+				La Universidad La Salle CDMX les da la más cordial bienvenida a esta justa deportiva que nos permitirá compartir cuatro intensos días de emoción, alegría, euforia y la fraternidad que nos define como familia Lasallista. ¡Volemos muy alto! Porque Grandes Cosas son Posibles. Indivisa Manent <br><br><br>
 				<strong>PROGRAMA</strong><br><br>
 				<div class="programa">
 					<strong>13 de noviembre 2019</strong>
 					<ul>
-						<li>9:00 en adelante.  Entrega de gafetes en los Hoteles.</li>
+						<li>9:00 en adelante.  Entrega de gafetes (Condesa).</li>
 											</ul>
 					<strong>14 de noviembre 2019  </strong>
 					<ul>
-						<li>10:00 hrs. Ceremonia de Inauguración</li>
+						<li>10:00 hrs. Ceremonia de Inauguración (Sta. Lucía)</li>
 											</ul>
-					<strong>noviembre 2019 </strong>
+					<strong>14 de noviembre 2019 </strong>
 					<ul>
-						<li>TBA. Ceremonia Eucarística</li>
+						<li>Ceremonia Eucarística</li>
 					</ul>
 					<strong>17 de noviembre 2019</strong>
 					<ul>
-						<li>17:00 hrs. Clausura en plaza La Salle</li>
+						<li>17:00 hrs. Clausura (Plaza La Salle)</li>
 					</ul>
 									</div>
 			</div>

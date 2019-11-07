@@ -59,15 +59,15 @@
 				$dbc = connect_bajio();
 				$sql = 'SELECT DISTINCT tor_canchas.cancha_id,tor_canchas.cancha,tor_canchas.descripcion,tor_canchas.contacto,tor_canchas.responsable,tor_canchas.direccion,tor_canchas.latitud,tor_canchas.longitud,tor_deportes.deporte,tor_deportes.icono FROM tor_canchas
 						INNER JOIN tor_deportes ON tor_canchas.deporte_id = tor_deportes.deporte_id
-						WHERE tor_canchas.cancha_id<>5 AND tor_canchas.cancha_id<>16 AND tor_canchas.cancha_id<>18
+						WHERE  tor_canchas.cancha_id > 23
 						ORDER BY tor_deportes.deporte,tor_canchas.cancha';
-				$result = @mysqli_query($sql);
+				$result = @mysqli_query($dbc,$sql);
 				$deporte = '';
 				while($r = @mysqli_fetch_array($result,MYSQLI_BOTH )){
 					if($r['deporte'] != $deporte){
 						if($deporte != '') echo '</blockquote><br>';
 						$deporte = $r['deporte'];
-						echo '<img src="images/'.$r['icono'].'_b.png" height="20" width="20"> <strong>'.utf8_encode($deporte).'</strong><br><br><blockquote>';
+						echo '<!--<img src="images/'.$r['icono'].'_b.png" height="20" width="20">--> <strong>'.utf8_encode($deporte).'</strong><br><br><blockquote>';
 					}
 					echo utf8_encode('<div class="imagen" style="background-image: url(images/cancha'.$r['cancha_id'].'.jpg);"></div><strong>'.$r['cancha'].'</strong><br>'.$r['direccion'].'<br>Responsable: '.$r['responsable'].'<br>Contacto: '.$r['contacto'].'<br><a href="#mapasede" class="fancybox showmap" data-id="'.$r['cancha_id'].'" data-lat="'.$r['latitud'].'" data-lon="'.$r['longitud'].'">Ver mapa</a><br><br><div class="clearfix"></div>');
 				}

@@ -312,6 +312,7 @@ section #galeria a,
 section #hospitales a,
 section #prontuario a,
 section #noticias a,
+section #resultados a,
 section #mapas a{
 	display: block;
 	min-height: 200px;
@@ -444,10 +445,16 @@ section article .title{
 	background-position: center;
 	background-size: cover;
 }
+#resultados{
+	background: url(../images/redultados.jpg);
+	background-position: center;
+	background-size: cover;
+}
 #prontuario .ribbon,
 #generico .ribbon,
 #hospitales .ribbon,
 #noticias .ribbon,
+#resultados .ribbon,
 #mapas .ribbon{
 	background: url(../images/ribbon.png) top left;
 	background-size: cover;
@@ -634,6 +641,7 @@ footer #content #logos img{
 		background: transparent;
 		min-height: 250px;
 	}
+	section #resultados a,
 	section #hospitales a,
 	section #generico a,
 	section #noticias a,
@@ -672,6 +680,7 @@ footer #content #logos img{
 	#prontuario .ribbon,
 	#generico .ribbon,
 	#noticias .ribbon,
+	#resultados .ribbon,
 	#hospitales .ribbon,
 	#mapas .ribbon{
 		font-size: 18px;

@@ -432,27 +432,69 @@
 							<th>Pts.</th>
 						</tr>
 					<?php
-						$sql = 'SELECT DISTINCT tor_equipos.equipo_id,tor_equipos.equipo,IFNULL(tor_estadisticas.jugados,0) AS jugados,IFNULL(tor_estadisticas.ganados,0) AS ganados,IFNULL(tor_estadisticas.empatados,0) AS empatados,IFNULL(tor_estadisticas.perdidos,0) AS perdidos,IFNULL(tor_estadisticas.extra,0) AS extra,IFNULL(tor_estadisticas.favor,0) AS favor,IFNULL(tor_estadisticas.contra,0) AS contra,IFNULL(tor_estadisticas.porcentaje,0) AS porcentaje,IFNULL(tor_estadisticas.diferencia,0) AS diferencia,IFNULL(tor_estadisticas.puntos,0) AS puntos FROM tor_equipos
-								INNER JOIN tor_torneos ON tor_equipos.deporte_id = tor_torneos.deporte_id AND tor_equipos.rama_id = tor_torneos.rama_id
-								INNER JOIN tor_partidos ON tor_torneos.torneo_id = tor_partidos.torneo_id
-								LEFT JOIN tor_estadisticas ON tor_equipos.equipo_id = tor_estadisticas.equipo_id AND tor_torneos.torneo_id = tor_estadisticas.torneo_id
-								WHERE tor_partidos.torneo_id='.$t['torneo_id'].' AND tor_partidos.grupo_id='.$t['grupo_id'].' AND (tor_partidos.local=tor_equipos.equipo_id OR tor_partidos.visitante=tor_equipos.equipo_id)
-								ORDER BY tor_estadisticas.puntos DESC,tor_estadisticas.diferencia DESC,tor_estadisticas.porcentaje DESC,tor_equipos.equipo';
+						$sql = 'SELECT DISTINCT tor_partidos.local, tor_equipos.equipo FROM tor_partidos, tor_equipos WHERE tor_partidos.grupo_id = '.$t['grupo_id'].' AND tor_partidos.torneo_id = '.$t['torneo_id'].' AND tor_equipos.equipo_id = tor_partidos.local';
 						$equipos = @mysqli_query($dbc,$sql);
 						while($e = @mysqli_fetch_array($equipos,MYSQLI_BOTH)){
+							$inner_sql = 'SELECT tor_partidos.local, tor_marcadores.marcador_local, tor_marcadores.marcador_visitante FROM tor_marcadores, tor_partidos WHERE tor_marcadores.partido_id = tor_partidos.partido_id AND (tor_partidos.visitante = '.$e['local'].' OR tor_partidos.local = '.$e['local'].')';
+							$sub = @mysqli_query($dbc,$inner_sql);
+							$JJ = 0;
+							$JG = 0;
+							$JP = 0;
+							$JE = 0;
+							$PG = 0;
+							$PP = 0;
+							$PS = 0;
+							while($f = @mysqli_fetch_array($sub,MYSQLI_BOTH)){
+								if($f['local'] == $e['local']){
+									if ($f['marcador_local'] > $f['marcador_visitante']){
+										$JG = $JG+1;
+										$PG = $PG + $f['marcador_local'];
+										$PP = $PP + $f['marcador_visitante'];
+									}
+									else {
+										if ($f['marcador_local'] < $f['marcador_visitante']){
+											$JP = $JP+1;
+											$PG = $PG + $f['marcador_local'];
+											$PP = $PP + $f['marcador_visitante'];
+										}
+										if ($f['marcador_local'] == $f['marcador_visitante']){
+											$JE = $JE+1;
+										}
+									}
+								}
+								else {
+									if ($f['marcador_local'] > $f['marcador_visitante']){
+											$JP = $JP+1;
+											$PG = $PG + $f['marcador_visitante'];
+											$PP = $PP + $f['marcador_local'];
+									}
+									else {
+										if ($f['marcador_local'] < $f['marcador_visitante']){
+											$JG = $JG+1;
+											$PG = $PG + $f['marcador_visitante'];
+											$PP = $PP + $f['marcador_local'];
+										}
+										if ($f['marcador_local'] == $f['marcador_visitante']){
+											$JE = $JE+1;
+										}
+									}
+								}
+								$JJ = $JJ+1;
+								if ($PP > 0 ){$PS = $PG/$PP;}
+							}
 					?>
 						<tr>
 							<td align="center"><?php echo $e['equipo']; ?></td>
-							<td align="center"><?php echo $e['jugados']; ?></td>
-							<td align="center"><?php echo $e['ganados']; ?></td>
-							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9){ ?><td align="center"><?php echo $e['empatados']; ?></td><?php } ?>
-							<td align="center"><?php echo $e['perdidos']; ?></td>
-							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><td align="center"><?php echo $e['extra']; ?></td><?php } ?>
-							<td align="center"><?php echo $e['favor']; ?></td>
-							<td align="center"><?php echo $e['contra']; ?></td>
-							<td align="center"><?php echo number_format($e['porcentaje'],2); ?></td>
-							<td align="center"><?php echo $e['diferencia']; ?></td>
-							<td align="center"><?php echo $e['puntos']; ?></td>
+							<td align="center"><?php echo $JJ; ?></td>
+							<td align="center"><?php echo $JG; ?></td>
+							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9){ ?><td align="center"><?php echo $JE; ?></td><?php } ?>
+							<td align="center"><?php echo $JP; ?></td>
+							<?php /*if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><td align="center"><?php echo $e['extra']; ?></td><?php }*/ ?>
+							<td align="center"><?php echo $PG; ?></td>
+							<td align="center"><?php echo $PP; ?></td>
+							<td align="center"><?php echo number_format($PS,2); ?></td>
+							<td align="center"><?php echo $PG-$PP; ?></td>
+							<td align="center"><?php echo '0'; ?></td>
 						</tr>
 					<?php
 						}
@@ -461,9 +503,9 @@
 		<?php
 						if($_REQUEST['d'] == 1){
 		?>
-			<br><div class="text" style="padding: 10px;">
+			<!--<br><div class="text" style="padding: 10px;">
 				<a class="reglamento" href="documents/AjedrezFinal.pdf" target="_blank"><strong>Informe</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
-			</div>
+			</div>-->
 		<?php
 						}
 		?>

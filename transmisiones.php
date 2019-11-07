@@ -46,6 +46,9 @@
 		</div>
 		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
+			<p>En este espacio, podrás seguir en vivo las semifinales y finales de los #JuegosLasallistas<br>16 y 17 de noviembre de 2019<br>¡Acompáñanos! </p>
+			<img src="images/FBLive.png" alt="FB Live" style="width: 120px;"> 
+
 			<?php
 				$dbc = connect_bajio();
 				$sql = 'SELECT tor_deportes.icono,tor_deportes.deporte,tor_ramas.rama,tor_partidos.local,tor_partidos.visitante,tor_canchas.cancha,tor_partidos.fecha,tor_partidos.hora,tor_transmisiones.url FROM tor_transmisiones
