@@ -77,6 +77,17 @@
 			var text = myEditor.children[0].innerHTML;
 			console.log(titulo_noticia);
 			console.log(text);
+			
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: form.serialize(), // serializes the form's elements.
+				success: function(data)
+				{
+					alert(data); // show response from the php script.
+				}
+			});
+			
 			}
 		</script>
 		</section>
