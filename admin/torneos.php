@@ -60,8 +60,6 @@
 	<body>
 		<div id="wrapper">
 			<header>
-				<div id="orange"></div>
-				<div id="blue"></div>
 				<div id="delasalle"></div>
 				<div id="title">DEPORTES</div>
 			</header>

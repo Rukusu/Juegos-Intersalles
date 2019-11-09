@@ -28,12 +28,15 @@
 		<!-- Initialize Quill editor -->
 		<?php include('../header_int.php'); ?>
 		<div id="titulo">
-			<div class="wrapper">NOTICIAS</div>
+			<div class="wrapper">EDITOR DE NOTICIAS</div>
 		</div>
 		<section class="wrapper" id="items" style="margin-top: 20px">
-			<form>
-			<p>Titulo</p>
-			<input type="text" id="titulo_noticia">
+			<form id="form_noticia" enctype="multipart/form-data" method="post">
+			<p>Título</p>
+			<input type="text" style="width: 50%;" id="titulo_noticia">
+			
+			<p>Imagen destacada</p>
+			<input type="file" name="imagen_noticia" id="imagen_noticia">
 
 			<p>Cuerpo</p>
 			<!-- Create the editor container -->
@@ -72,21 +75,36 @@
 			});
 			
 			document.getElementById("send_noticia").onclick = function(){
+			/*
 			var myEditor = document.querySelector('#editor');
 			var titulo_noticia = document.getElementById("titulo_noticia").value;
 			var text = myEditor.children[0].innerHTML;
 			console.log(titulo_noticia);
 			console.log(text);
-			
+			*/
+			var myEditor = document.querySelector('#editor');
+			var text = myEditor.children[0].innerHTML;
+			var formData = new FormData($('#form_noticia')[0]);
+			formData.append('adjunto', $('input[type=file]')[0].files[0]);
+			formData.append('cuerpo_noticia',text);
+			console.log(formData);	
+	
+			//console.log(solicitud);
 			$.ajax({
+				url: "inserta_noticia.php",
 				type: "POST",
-				url: url,
-				data: form.serialize(), // serializes the form's elements.
-				success: function(data)
-				{
-					alert(data); // show response from the php script.
+				data: formData,
+				cache: false,
+				contentType: false,
+				async: false,
+				processData: false,
+				success: function (data) {
+					//var result = $.parseJSON(data);
+					// $jsMail.html(result.nombre);
+					//console.log(result.id);
 				}
 			});
+			
 			
 			}
 		</script>

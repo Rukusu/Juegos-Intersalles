@@ -64,7 +64,7 @@ h2{
 	width: 100%;
 }
 header{
-	background: url(../images/header.png) center #231f20;
+	background: /*url(../images/header.png) center*/ rgb(64,153,130);
 	background-size: cover;
 	color: #fafafa;
 	height: 80px;

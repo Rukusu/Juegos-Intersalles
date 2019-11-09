@@ -40,9 +40,9 @@
 					<ul>
 						<li>10:00 hrs. Ceremonia de Inauguración (Sta. Lucía)</li>
 											</ul>
-					<strong>14 de noviembre 2019 </strong>
+					<strong>15 de noviembre 2019 </strong>
 					<ul>
-						<li>Ceremonia Eucarística</li>
+						<li>18:00 hrs. Ceremonia Eucarística (Auditorio Adrián Gibert)</li>
 					</ul>
 					<strong>17 de noviembre 2019</strong>
 					<ul>
