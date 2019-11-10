@@ -1,7 +1,7 @@
 <?php
 	header("Content-Type: text/html; charset=utf8");
 	session_start();
-	//include('core.php');
+	include('blog/core.php');
 ?>
 <!doctype html>
 <html lang="es">
@@ -30,20 +30,23 @@
 			if(!isset($conn)) {
 				/*$config = parse_ini_file('config.ini');*/
 				/*$conn = mysqli_connect('localhost',$config['user'],$config['password'],$config['dbname']);*/
-				$conn = mysqli_connect ("144.208.67.4","lasall8_laguna","J9L3DF)i#g)I","lasalle5_bdlog");
-				
+				//$conn = mysqli_connect ("144.208.67.4","lasall8_laguna","J9L3DF)i#g)I","lasalle5_bdlog");
+				$dbc = connect_bajio(); 
+				mysqli_set_charset ( $dbc , "utf8" );
 				//$conn = mysqli_connect("vps39255.inmotionhosting.com","lasall8_juegos_lasallistas","J9L3DF)i#g)I","lasalle5_bdlog");
 				//$conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, true);
 			}
 			// Check connection
+			/*
 			if (!$conn) {
 				//if($conn === false){
 				die("Connection failed: " . mysqli_connect_error());
 				die(mysqli_error($conn));
-			}
-			$query ='SELECT post.post_title, post.ID, img.guid FROM hoylle_term_relationships, hoylle_posts post left join hoylle_posts img ON post.ID = img.post_parent WHERE hoylle_term_relationships.term_taxonomy_id=525 AND post.ID = hoylle_term_relationships.object_id  AND post.post_type = "post" AND img.post_mime_type LIKE "image%" AND post.post_status = "publish" ORDER BY img.post_date DESC';
+			}*/
+			$sql = 'SELECT titulo, id, imagen FROM tor_noticias WHERE publicado = 1';
+			//$query ='SELECT post.post_title, post.ID, img.guid FROM hoylle_term_relationships, hoylle_posts post left join hoylle_posts img ON post.ID = img.post_parent WHERE hoylle_term_relationships.term_taxonomy_id=525 AND post.ID = hoylle_term_relationships.object_id  AND post.post_type = "post" AND img.post_mime_type LIKE "image%" AND post.post_status = "publish" ORDER BY img.post_date DESC';
 				
-			$result = mysqli_query ($conn,$query);
+			$result = mysqli_query ($dbc,$sql);
 
 			if (mysqli_num_rows($result) > 0) {
 			// output data of each row
@@ -52,7 +55,7 @@
 					if ($previous <> $row[1]){
 					echo "<section class=\"wrapper caja_inicio\" style=\"display:inline-block;\">\n";
 					echo "<div>\n";
-					echo '<article style="background: url('.$row[2].'); background-position: center;background-size: cover;" id="generico">';
+					echo '<article style="background: url(blog/img/'.$row[1].'.jpg); background-position: center;background-size: cover;" id="generico">';
 					echo '<a href="nota.php?id='.$row[1].'"><span class="ribbon">'.utf8_encode($row[0]).'</span></a>';
 					echo "</article>\n";
 					echo "</div>\n";
@@ -62,7 +65,7 @@
 				}			
 				$result->close();
 			}
-				mysqli_close($conn);
+				mysqli_close($dbc);
 			?>
 			</div>
 			
