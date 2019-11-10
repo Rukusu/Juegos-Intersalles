@@ -1,7 +1,7 @@
 <?php
 	header("Content-Type: text/html; charset=utf8");
 	session_start();
-	include('core.php');
+	include('../core.php');
 ?>
 <!doctype html>
 <html lang="es">
@@ -31,7 +31,6 @@
 		<?php include('../header_int.php'); ?>
 		<?php if (isset($_GET["id"])){ 
 				$dbc = connect_bajio(); 
-				mysqli_set_charset ( $dbc , "utf8" );
 				$id = mysqli_real_escape_string($dbc, $_GET["id"]);
 				$sql = 'SELECT titulo, cuerpo FROM tor_noticias WHERE id = "'.$id.'"';
 				$result = @mysqli_query($dbc,$sql);

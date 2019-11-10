@@ -12,7 +12,6 @@
 		public function insertarNoticia($datos_solicitud)
 		{
 			$dbc = connect_bajio();
-			mysqli_set_charset ( $dbc , "utf8" );
 			$datos_solicitud->titulo_noticia = mysqli_real_escape_string($dbc, $datos_solicitud->titulo_noticia);
 			$datos_solicitud->cuerpo = mysqli_real_escape_string($dbc, $datos_solicitud->cuerpo);
 			$imagen_escapada = mysqli_real_escape_string($dbc, $datos_solicitud->imagen_noticia);
@@ -44,7 +43,6 @@
 		public function ActualizarNoticia($datos_solicitud)
 		{
 			$dbc = connect_bajio();
-			mysqli_set_charset ( $dbc , "utf8" );
 			$datos_solicitud->titulo_noticia = mysqli_real_escape_string($dbc, $datos_solicitud->titulo_noticia);
 			$datos_solicitud->cuerpo = mysqli_real_escape_string($dbc, $datos_solicitud->cuerpo);
 			

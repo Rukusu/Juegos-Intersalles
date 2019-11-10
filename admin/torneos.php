@@ -11,10 +11,9 @@
 		$ts   = mktime(0,0,0,$dd[1],$dd[2],$dd[0]);
 		return $dias[date('w',$ts)].' '.date('d',$ts).' '.$meses[date('n',$ts)-1];
 	}
-	$_SESSION['user'] = 'admin';
-	$_SESSION['type'] = 1;
+
 	if(!isset($_SESSION['user'])){
-		header('Location: ../login.php');
+		header('Location: lgin.php');
 		exit();
 	}else{
 		$dbc = connect_bajio();

@@ -1,7 +1,7 @@
 <?php
 	header("Content-Type: text/html; charset=utf8");
 	session_start();
-	include('blog/core.php');
+	include('core.php');
 ?>
 <!doctype html>
 <html lang="es">
@@ -32,7 +32,7 @@
 				/*$conn = mysqli_connect('localhost',$config['user'],$config['password'],$config['dbname']);*/
 				//$conn = mysqli_connect ("144.208.67.4","lasall8_laguna","J9L3DF)i#g)I","lasalle5_bdlog");
 				$dbc = connect_bajio(); 
-				mysqli_set_charset ( $dbc , "utf8" );
+				//mysqli_set_charset ( $dbc , "utf8" );
 				//$conn = mysqli_connect("vps39255.inmotionhosting.com","lasall8_juegos_lasallistas","J9L3DF)i#g)I","lasalle5_bdlog");
 				//$conn->setAttribute(PDO::ATTR_EMULATE_PREPARES, true);
 			}
@@ -56,7 +56,7 @@
 					echo "<section class=\"wrapper caja_inicio\" style=\"display:inline-block;\">\n";
 					echo "<div>\n";
 					echo '<article style="background: url(blog/img/'.$row[1].'.jpg); background-position: center;background-size: cover;" id="generico">';
-					echo '<a href="nota.php?id='.$row[1].'"><span class="ribbon">'.utf8_encode($row[0]).'</span></a>';
+					echo '<a href="nota.php?id='.$row[1].'"><span class="ribbon">'.$row[0].'</span></a>';
 					echo "</article>\n";
 					echo "</div>\n";
 					echo "</section>\n";

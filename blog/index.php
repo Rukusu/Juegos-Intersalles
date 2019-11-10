@@ -1,7 +1,15 @@
 <?php
 	header("Content-Type: text/html; charset=utf8");
 	session_start();
-	include('core.php');
+	if (is_null($_SESSION['id'])){
+			header("Location: lgin.php");
+			die();
+	}
+	if ( $_SESSION['ldate'] < time()){
+		header("Location: tout.php");
+			die();
+	}	
+	include('../core.php');
 ?>
 <!doctype html>
 <html lang="es">
@@ -31,7 +39,6 @@
 		<h2><a href="editor.php" style="color: blue;">Crear nueva noticia</a></h2>
 			<?php 
 				$dbc = connect_bajio(); 
-				mysqli_set_charset ( $dbc , "utf8" );
 				$sql = 'SELECT id,titulo FROM tor_noticias WHERE publicado = 1';
 				$result = @mysqli_query($dbc,$sql);
 				while ($row = mysqli_fetch_assoc($result)){
