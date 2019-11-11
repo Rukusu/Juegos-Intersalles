@@ -55,6 +55,11 @@
 		</div>
 		<section class="wrapper">
 			<div class="text">
+				<h1>Universidad La Salle México</h1>
+				<img src="images/MapaCondesa.jpg" alt="Mapa Condesa" style="width: 100%;">
+				<img src="images/MapaSantaLucia.jpg" alt="Mapa Sta. Lucía" style="width: 100%;">
+			</div>
+			<div class="text">
 			<?php
 				$dbc = connect_bajio();
 				$sql = 'SELECT DISTINCT tor_canchas.cancha_id,tor_canchas.cancha,tor_canchas.descripcion,tor_canchas.contacto,tor_canchas.responsable,tor_canchas.direccion,tor_canchas.latitud,tor_canchas.longitud,tor_deportes.deporte,tor_deportes.icono FROM tor_canchas
