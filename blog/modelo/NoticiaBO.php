@@ -16,7 +16,12 @@
 			$datos_solicitud->cuerpo = mysqli_real_escape_string($dbc, $datos_solicitud->cuerpo);
 			$imagen_escapada = mysqli_real_escape_string($dbc, $datos_solicitud->imagen_noticia);
 			
-			$sql = "INSERT INTO tor_noticias (titulo,cuerpo,imagen) VALUES ('".$datos_solicitud->titulo_noticia."','".$datos_solicitud->cuerpo."','".$imagen_escapada."') ";
+			if (strcmp ($datos_solicitud->slider,"true")==0 ){
+				$sql = "INSERT INTO tor_noticias (titulo,cuerpo,imagen,slider) VALUES ('".$datos_solicitud->titulo_noticia."','".$datos_solicitud->cuerpo."','".$imagen_escapada."',1) ";
+			}
+			else {
+				$sql = "INSERT INTO tor_noticias (titulo,cuerpo,imagen) VALUES ('".$datos_solicitud->titulo_noticia."','".$datos_solicitud->cuerpo."','".$imagen_escapada."') ";
+			}
 			echo $sql;
 			mysqli_query($dbc,$sql);
 			$fp = fopen('../img/'.mysqli_insert_id ($dbc).'.jpg', 'w');
@@ -47,10 +52,18 @@
 			$datos_solicitud->cuerpo = mysqli_real_escape_string($dbc, $datos_solicitud->cuerpo);
 			
 			if (empty ($datos_solicitud->imagen_noticia)){
-				$sql = 'UPDATE tor_noticias SET titulo = "'.$datos_solicitud->titulo_noticia.'", cuerpo = "'.$datos_solicitud->cuerpo.'" WHERE id = "'.$datos_solicitud->id_noticia.'"';
+				if (strcmp ($datos_solicitud->slider,"true")==0 ){
+					$sql = 'UPDATE tor_noticias SET slider = 1, titulo = "'.$datos_solicitud->titulo_noticia.'", cuerpo = "'.$datos_solicitud->cuerpo.'" WHERE id = "'.$datos_solicitud->id_noticia.'"';
+				}else {
+					$sql = 'UPDATE tor_noticias SET slider = 0, titulo = "'.$datos_solicitud->titulo_noticia.'", cuerpo = "'.$datos_solicitud->cuerpo.'" WHERE id = "'.$datos_solicitud->id_noticia.'"';
+				}
 			}else {			
 				$datos_solicitud->imagen_noticia = mysqli_real_escape_string($dbc, $datos_solicitud->imagen_noticia);
-				$sql = 'UPDATE tor_noticias SET titulo = "'.$datos_solicitud->titulo_noticia.'", cuerpo = "'.$datos_solicitud->cuerpo.'", imagen = "'.$datos_solicitud->imagen_noticia.'" WHERE id = "'.$datos_solicitud->id_noticia.'"';
+				if (strcmp ($datos_solicitud->slider,"true")==0 ){
+					$sql = 'UPDATE tor_noticias SET slider = 1, titulo = "'.$datos_solicitud->titulo_noticia.'", cuerpo = "'.$datos_solicitud->cuerpo.'", imagen = "'.$datos_solicitud->imagen_noticia.'" WHERE id = "'.$datos_solicitud->id_noticia.'"';
+				}else {
+					$sql = 'UPDATE tor_noticias SET slider = 0, titulo = "'.$datos_solicitud->titulo_noticia.'", cuerpo = "'.$datos_solicitud->cuerpo.'", imagen = "'.$datos_solicitud->imagen_noticia.'" WHERE id = "'.$datos_solicitud->id_noticia.'"';
+				}
 				$fp = fopen('../img/'.$datos_solicitud->id_noticia.'.jpg', 'w');
 					fwrite($fp, $datos_solicitud->imagen_noticia);
 				fclose($fp);

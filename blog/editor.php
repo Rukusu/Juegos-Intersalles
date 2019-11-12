@@ -32,7 +32,7 @@
 		<?php if (isset($_GET["id"])){ 
 				$dbc = connect_bajio(); 
 				$id = mysqli_real_escape_string($dbc, $_GET["id"]);
-				$sql = 'SELECT titulo, cuerpo FROM tor_noticias WHERE id = "'.$id.'"';
+				$sql = 'SELECT titulo, cuerpo, slider FROM tor_noticias WHERE id = "'.$id.'"';
 				$result = @mysqli_query($dbc,$sql);
 				$row = mysqli_fetch_assoc($result);
 			}?>
@@ -45,10 +45,10 @@
 				<input type="text" style="width: 50%;" name="titulo_noticia" id="titulo_noticia" <?php if (isset($_GET["id"])){ echo 'value="'.$row['titulo'].'"'; }?>>
 				
 				<p>Imagen destacada (jpg)</p>
-				<input type="file" name="imagen_noticia" id="imagen_noticia" accept="image/jpeg">
+				<input type="file" name="imagen_noticia" id="imagen_noticia" accept="image/jpeg">checked 
 
-				<p>Publicar en slider</p>
-				<input type="checkbox" id="slider">
+				</p>Publicar en slider</p>
+				<input type="checkbox" id="in_slider" name="in_slider" value="on" <?php if (isset($_GET["id"])){ if($row['slider']==1) {echo "checked";} }?>>
 
 				<p>Cuerpo</p>
 				<!-- Create the editor container -->
