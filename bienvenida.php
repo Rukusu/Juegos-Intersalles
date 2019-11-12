@@ -30,6 +30,7 @@
 		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
 				La Universidad La Salle CDMX les da la más cordial bienvenida a esta justa deportiva que nos permitirá compartir cuatro intensos días de emoción, alegría, euforia y la fraternidad que nos define como familia Lasallista. ¡Volemos muy alto! Porque Grandes Cosas son Posibles. Indivisa Manent <br><br><br>
+				<img src="images/programa.jpg" style="width: 100%; margin-bottom: 20px">
 				<strong>PROGRAMA</strong><br><br>
 				<div class="programa">
 					<strong>13 de noviembre 2019</strong>

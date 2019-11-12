@@ -58,7 +58,7 @@ $ldate = time();
 			$_SESSION['id']  = $fila[0];
 			$_SESSION['ldate'] = 7200+$ldate;
 			mysqli_close($db);
-			echo '<br /><a href="index.php">Index</a>';
+			echo '<br /><a href="index.php">Continúa al inicio</a>';
 			header("Location: index.php");
 			die();
 

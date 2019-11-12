@@ -47,6 +47,9 @@
 				<p>Imagen destacada (jpg)</p>
 				<input type="file" name="imagen_noticia" id="imagen_noticia" accept="image/jpeg">
 
+				<p>Publicar en slider</p>
+				<input type="checkbox" id="slider">
+
 				<p>Cuerpo</p>
 				<!-- Create the editor container -->
 				<div id="editor">
@@ -57,6 +60,7 @@
 						}
 					?>
 				</div>
+				
 				<input type="text" style="display: none;" name="id_noticia" id="id_noticia" value="<?php if (isset($_GET["id"])){ echo $id; }else {echo '0';}?>">
 				<button type="button" name="send_noticia" id="send_noticia" class="send_noticia">Guardar</button>
 			</form>

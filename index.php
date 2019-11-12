@@ -64,6 +64,17 @@
 							<!--<div class="delasalle"></div>-->
 						</div>
 					</li>
+					<?php 
+						$dbc = connect_bajio(); 
+						$sql = "SELECT id FROM tor_noticias WHERE publicado = 1 AND slider = 1";
+						$result = @mysqli_query($dbc,$sql);
+						while($r = @mysqli_fetch_array($result,MYSQLI_BOTH)){
+							echo '<li style="background-image: url(blog/img/'.$r['id'].'.jpg);">';
+							echo '<a href="nota.php?id='.$r['id'].'"><div class="slide"></div></a>';
+						}
+						@mysqli_free_result($result);
+						@mysqli_close($dbc);
+					?>
 				</ul>
 			</div>
 			<!--</div>-->
