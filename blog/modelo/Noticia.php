@@ -8,6 +8,7 @@
 		private $imagen_noticia;
 		private $cuerpo;
 		private $id_noticia;
+		private $slider;
 		
 		//Constructor
 		public function __construct($post)
@@ -16,6 +17,7 @@
 			$this->imagen_noticia = file_get_contents($_FILES['imagen_noticia']['tmp_name']);
 			$this->cuerpo = $post['cuerpo'];
 			$this->id_noticia = $post['id_noticia'];
+			$this->slider = $post['slider'];
 		}
 		//Metodos
 		public function __set($name,$value){

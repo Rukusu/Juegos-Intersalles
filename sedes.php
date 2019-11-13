@@ -56,8 +56,8 @@
 		<section class="wrapper">
 			<div class="text">
 				<h1>Universidad La Salle México</h1>
-				<img src="images/MapaCondesa.jpg" alt="Mapa Condesa" style="width: 100%;">
-				<img src="images/MapaSantaLucia.jpg" alt="Mapa Sta. Lucía" style="width: 100%;">
+				<a href="images/MapaCondesa.jpg"><img src="images/MapaCondesa.jpg" alt="Mapa Condesa" style="width: 100%;"></a>
+				<a href="images/MapaSantaLucia.jpg"><img src="images/MapaSantaLucia.jpg" alt="Mapa Sta. Lucía" style="width: 100%;"></a>
 			</div>
 			<div class="text">
 			<?php

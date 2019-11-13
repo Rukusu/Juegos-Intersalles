@@ -43,6 +43,19 @@
 			<!--<div class="wrapper">-->
 			<div class="flexslider banner" style="max-width: 1280px; padding-top: 60px; margin-left: auto; margin-right: auto; position: relative;"><!--style="margin-top: 60px; margin-right: auto; margin-left: auto; max-width: 1280px;"-->
 				<ul class="slides">
+					<?php 
+						$dbc = connect_bajio(); 
+						$sql = "SELECT id, titulo FROM tor_noticias WHERE publicado = 1 AND slider = 1";
+						$result = @mysqli_query($dbc,$sql);
+						while($r = @mysqli_fetch_array($result,MYSQLI_BOTH)){
+							echo '<li style="background-image: url(blog/img/'.$r['id'].'.jpg); height: 80%; margin-top: 4%;">';
+							echo '<a href="nota.php?id='.$r['id'].'"><div class="slide">';
+							echo '<div class="frase"><p style="text-shadow: 2px 2px 4px #000000;">'.$r['titulo'].'</p></div>';
+							echo '</div></a>';
+						}
+						@mysqli_free_result($result);
+						@mysqli_close($dbc);
+					?>
 					<li style="background-image: url(images/Juegos_MasterGraphic.png);">
 						<div class="slide">
 							<!--<div class="lineas"></div>-->
@@ -64,17 +77,6 @@
 							<!--<div class="delasalle"></div>-->
 						</div>
 					</li>
-					<?php 
-						$dbc = connect_bajio(); 
-						$sql = "SELECT id FROM tor_noticias WHERE publicado = 1 AND slider = 1";
-						$result = @mysqli_query($dbc,$sql);
-						while($r = @mysqli_fetch_array($result,MYSQLI_BOTH)){
-							echo '<li style="background-image: url(blog/img/'.$r['id'].'.jpg);">';
-							echo '<a href="nota.php?id='.$r['id'].'"><div class="slide"></div></a>';
-						}
-						@mysqli_free_result($result);
-						@mysqli_close($dbc);
-					?>
 				</ul>
 			</div>
 			<!--</div>-->
@@ -101,125 +103,12 @@
 				<a href="resultados.php?d=7" class="disciplina" alt="Voleibol" style="background-image: url(images/Juegos2019_Voleibol0.png);"></a>
 				<a href="resultados.php?d=8" class="disciplina" alt="Tae Kwon Do" style="background-image: url(images/Juegos2019_Taekondo0.png);"></a>
 				<a href="resultados.php?d=9" class="disciplina" alt="Tocho Bandera" style="background-image: url(images/Juegos2019_TochoBandera0.png);"></a>
-				<a href="resultados.php?d=10" class="disciplina" alt="Handball" style="background-image: url(images/Juegos2019_HandBall0.png);"></a>
-				<a href="resultados.php?d=11" class="disciplina" alt="CrossFit" style="background-image: url(images/Juegos2019_Crossfit0.png);"></a>
-				<a href="resultados.php?d=11" class="disciplina" alt="Natacion" style="background-image: url(images/Juegos2019_Natacion0.png);"></a>
+				<a href="resultados.php?d=12" class="disciplina" alt="Handball" style="background-image: url(images/Juegos2019_HandBall0.png);"></a>
+				<a href="resultados.php?d=14" class="disciplina" alt="CrossFit" style="background-image: url(images/Juegos2019_Crossfit0.png);"></a>
+				<a href="resultados.php?d=13" class="disciplina" alt="Natacion" style="background-image: url(images/Juegos2019_Natacion0.png);"></a>
 				<a class="disciplina filler"></a>
 				<div class="clearfix"></div>
 			</div>
-		</div>
-		
-		<div class="wrapper" style="margin-top: 20px;">
-			<section id="process" class="wrapper respond"  style="padding-top: 40px; width: 97%; box-shadow: 5px 5px 2px #484848;">
-				<div class="row">
-					<div class="section-heading">
-						<!--<h2 class="text-center orange">Responsive Horizontal Timeline</h2>-->
-					</div>
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="steps-timeline text-center">
-							<div class="steps-one">
-								<h3 style="margin-left: 95px;">2016</h3>
-								<div class="end-circle back-orange"></div>
-								<div class="step-wrap">
-									<div class="steps-stops">
-										<div class="verticle-line back-orange"></div>
-									</div>
-								</div>
-								<div class="pane-warp back-blue">
-									<div class="steps-pane">
-										<img src="images/uni_cancun.jpg">
-									</div>
-								</div>
-								<div class="inverted-pane-warp back-blue">
-									<div class="inverted-steps-pane">
-										<p>Cancún</p>
-									</div>
-								</div>
-							</div>
-							<div class="steps-two">
-								<h3 style="margin-left: 95px;">2017</h3>
-								<div class="step-wrap">
-									<div class="steps-stops">
-										<div class="verticle-line back-orange"></div>
-									</div>
-								</div>
-								<div class="pane-warp back-orange">
-									<div class="steps-pane">
-										<img src="images/uni_neza.jpg">
-									</div>
-								</div>
-								<div class="inverted-pane-warp back-orange">
-									<div class="inverted-steps-pane">
-										<p>Nezahualcóyotl</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="steps-three">
-								<h3 style="margin-left: 95px;">2018</h3>
-								<div class="step-wrap">
-									<div class="steps-stops">
-										<div class="verticle-line back-orange"></div>
-									</div>
-								</div>
-								<div class="pane-warp back-blue">
-									<div class="steps-pane">
-										<img class="third" src="images/uni_bajio.jpg">
-									</div>
-								</div>
-								<div class="inverted-pane-warp back-blue">
-									<div class="inverted-steps-pane">
-										<p>Bajío</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="steps-four">
-								<h3 style="margin-left: 95px;">2019</h3>
-								<div class="step-wrap">
-									<div class="steps-stops">
-										<div class="verticle-line back-orange"></div>
-									</div>
-								</div>
-								<div class="pane-warp back-orange">
-									<div class="steps-pane">
-										<img src="images/uni_mexico.jpg">
-									</div>
-								</div>
-								<div class="inverted-pane-warp back-orange">
-									<div class="inverted-steps-pane">
-										<p>México</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="steps-five">
-								<h3 style="margin-left: 95px;">2020</h3>
-								<div class="inverted-end-circle back-orange"></div>
-								<div class="step-wrap">
-									<div class="steps-stops">
-										<div class="verticle-line back-orange"></div>
-									</div>
-								</div>
-								<div class="pane-warp back-blue">
-									<div class="steps-pane">
-										<img src="images/uni_2020.png	">
-									</div>
-								</div>
-								<div class="inverted-pane-warp back-blue">
-									<div class="inverted-steps-pane">
-										<p>¿?</p>									
-									</div>
-								</div>
-							</div>
-
-						</div>
-				  <!-- /.steps-timeline -->
-					</div>
-				</div>
-			</section>
 		</div>
 		
 		<div class="wrapper">
@@ -346,6 +235,118 @@
 
 			</div>	
 		
+		</div>
+		<div class="wrapper" style="margin-top: 20px;">
+			<section id="process" class="wrapper respond"  style="padding-top: 40px; width: 97%; box-shadow: 5px 5px 2px #484848;">
+				<div class="row">
+					<div class="section-heading">
+						<!--<h2 class="text-center orange">Responsive Horizontal Timeline</h2>-->
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="steps-timeline text-center">
+							<div class="steps-one">
+								<h3 style="margin-left: 95px;">2016</h3>
+								<div class="end-circle back-orange"></div>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-blue">
+									<div class="steps-pane">
+										<img src="images/uni_cancun.jpg">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-blue">
+									<div class="inverted-steps-pane">
+										<p>Cancún</p>
+									</div>
+								</div>
+							</div>
+							<div class="steps-two">
+								<h3 style="margin-left: 95px;">2017</h3>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-orange">
+									<div class="steps-pane">
+										<img src="images/uni_neza.jpg">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-orange">
+									<div class="inverted-steps-pane">
+										<p>Nezahualcóyotl</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="steps-three">
+								<h3 style="margin-left: 95px;">2018</h3>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-blue">
+									<div class="steps-pane">
+										<img class="third" src="images/uni_bajio.jpg">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-blue">
+									<div class="inverted-steps-pane">
+										<p>Bajío</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="steps-four">
+								<h3 style="margin-left: 95px;">2019</h3>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-orange">
+									<div class="steps-pane">
+										<img src="images/uni_mexico.jpg">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-orange">
+									<div class="inverted-steps-pane">
+										<p>México</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="steps-five">
+								<h3 style="margin-left: 95px;">2020</h3>
+								<div class="inverted-end-circle back-orange"></div>
+								<div class="step-wrap">
+									<div class="steps-stops">
+										<div class="verticle-line back-orange"></div>
+									</div>
+								</div>
+								<div class="pane-warp back-blue">
+									<div class="steps-pane">
+										<img src="images/uni_2020.png	">
+									</div>
+								</div>
+								<div class="inverted-pane-warp back-blue">
+									<div class="inverted-steps-pane">
+										<p>¿?</p>									
+									</div>
+								</div>
+							</div>
+
+						</div>
+				  <!-- /.steps-timeline -->
+					</div>
+				</div>
+			</section>
 		</div>
 		<?php include('footer.php'); ?>
 	</body>
