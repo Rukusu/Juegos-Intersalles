@@ -13,14 +13,34 @@ $ldate = time();
         return $result;
     }
 
-	include('../core.php');
 
+    function db_connect() {
 
+        // Define connection as a static variable, to avoid connecting more than once
+        static $connection;
+
+        // Try and connect to the database, if a connection has not been established yet
+        if(!isset($connection)) {
+             // Load configuration as an array. Use the actual location of your configuration file
+            $connection = mysqli_connect('72.167.233.13','redlasalleus','LuEdH5!8Hq','redlasalleus');    
+	}
+
+        // If connection was not successful, handle the error
+        if($connection === false) {
+            // Handle error - notify administrator, log to a file, show an error screen, etc.
+            echo "fail";
+		return mysqli_connect_error();
+        }
+        return $connection;
+    }
 	if (isset($_POST['submit'])) {
         	//check button pressed
 		$use = $_POST['username'];
-        $pass = $_POST["password"];
-		$db = connect_bajio(); 
+        	$pass = $_POST["password"];
+
+
+		$db = db_connect();
+		$db->set_charset("utf8");
 		mysqli_real_escape_string ($db , $use);
 		mysqli_real_escape_string ($db , $pass);
 
@@ -33,9 +53,11 @@ $ldate = time();
 			$fila = $id -> fetch_row();
 			$_SESSION['id']  = $fila[0];
 			$_SESSION['ldate'] = 7200+$ldate;
+			$_SESSION['user'] = 'admin';
+			$_SESSION['type'] = 1;
 			mysqli_close($db);
-			header("Location: index.php");
-			echo '<br />Si no eres redirigido, puedes: <a href="index.php">continuar al inicio</a>';
+				header("Location: torneos.php");
+			echo '<br />Si no eres redirigido, puedes: <a href="torneos.php">continuar al inicio</a>';
 			die();
 
 		}
@@ -52,7 +74,6 @@ $ldate = time();
 <html>
    
    <head>
-
      	<!--<link rel="shortcut icon" href="http://vignette3.wikia.nocookie.net/mlp/images/6/64/Favicon.ico/revision/latest?cb=20101215000701" />-->
  	<link rel="shortcut icon" href="icon.png" />
 	<meta charset="UTF-8"> 	

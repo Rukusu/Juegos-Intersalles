@@ -47,7 +47,7 @@
 		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
 			<p>En este espacio, podrás seguir en vivo las semifinales y finales de los #JuegosLasallistas<br>16 y 17 de noviembre de 2019<br>¡Acompáñanos! </p>
-			<img src="images/FBLive.png" alt="FB Live" style="width: 120px;"> 
+			<span><p style="font-size: 25px;"><img src="images/FBLive.png" alt="FB Live" style="width: 120px;"> <b>A partir del 16 de noviembre</b></p></span>
 
 			<?php
 				$dbc = connect_bajio();

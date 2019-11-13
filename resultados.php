@@ -51,6 +51,7 @@
 				}
 				
 			?>
+			<div class="item" data-bg="fondo-est" style="background-image: url(images/fondo-est.jpg);"><a href="documents/Juegos_2019_ROLES-min.pdf"><img src="images/descarga.png" alt="descarga" style="width: 80% "></a></div>
 			<!--
 			<div class="item" data-bg="dep_ajedrez" style="background-image: url(images/dep_ajedrez.jpg);"><a href="?d=1">AJEDREZ</a></div>
 			<div class="item" data-bg="dep_atletismo" style="background-image: url(images/dep_atletismo.jpg);"><a href="?d=2">ATLETISMO</a></div>
@@ -66,124 +67,63 @@
 			<div class="clearfix"></div>
 		</section>
 		<?php
-			}elseif($_REQUEST['d'] == 2){
+			}elseif($_REQUEST['d'] == 14){
 		?>
-		<!--
 		<div id="titulo">
-			<div class="wrapper">Atletismo</div>
+			<div class="wrapper">Cross Fit</div>
 		</div>
 		<section class="wrapper">
-			<div class="programa">
-				Sede: Deportiva de Lerdo, Durango <br><br>
-				<strong>Viernes 22 de Marzo de 2019 </strong>
-							</div><br>
-			 <!-- <div class="text">
-				<a class="reglamento" href="documents/Atletismo1erDia.pdf" target="_blank"><strong>Resultados 1er día</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
-				<a class="reglamento" href="documents/AtletismoFinal.pdf" target="_blank"><strong>Resultados Finales</strong><span><img src="images/pdf_mini.gif"> Descargar</span></a>
-			</div> --> 	
-		<!--		
-			<div class="accordion r2">
-				<input type="checkbox" id="chk100mf">
-				<label class="tab" for="chk100mf">100 m Femenil <span></span></label>
-				<div class="container">
-					<table border="1" cellpadding="5" cellspacing="0">
-						<tr><th>Nombre</th><th>Universidad</th><th>Carril</th><th>Heat</th><th>Número</th><th>Tiempo</th><th>Lugar</th></tr>
-						<tr><td align="center">Jaqueline Ronquillo Rey</td><td align="center">Chihuahua</td><td align="center">6</td><td align="center">1</td><td align="center">17</td><td align="center">12.71</td><td align="center">1</td></tr>
-						<tr><td align="center">Valeria Rodríguez Olivares</td><td align="center">Laguna</td><td align="center">4</td><td align="center">2</td><td align="center">35</td><td align="center">13.97</td><td align="center">2</td></tr>
-						<tr><td align="center">Irma Vanessa Valdéz Ruíz</td><td align="center">Nezahualcóyotl</td><td align="center">3</td><td align="center">2</td><td align="center">24</td><td align="center">14.97</td><td align="center">3</td></tr>
-					</table>
-							</div>
-			</div>
-		
-			<div class="accordion r2">
-				<input type="checkbox" id="chk400mf">
-				<label class="tab" for="chk400mf">400 m Femenil <span></span></label>
-				<div class="container">
-										<table border="1" cellpadding="5" cellspacing="0">
-						<tr><th>Nombre</th><th>Universidad</th><th>Carril</th><th>Heat</th><th>Número</th><th>Tiempo</th><th>Lugar</th></tr>
-						<tr><td align="center">Yesenia Delgado Hernández</td><td align="center">Bajío</td><td align="center">3</td><td align="center">1</td><td align="center">3</td><td align="center">1:04.98</td><td align="center">1</td></tr>
-						<tr><td align="center">Morelia Trujillo Rivera</td><td align="center">Nezahualcóyotl</td><td align="center">1</td><td align="center">1</td><td align="center">26</td><td align="center">1:06.69</td><td align="center">2</td></tr>
-						<tr><td align="center">Jennifer Alondra Venegas Torres</td><td align="center">Nezahualcóyotl</td><td align="center">2</td><td align="center">1</td><td align="center">25</td><td align="center">1:10.80</td><td align="center">3</td></tr>
-					</table>
-				
+			<div class="text">
+				<strong>PROGRAMA</strong><br><br>
+				<div class="programa">
+					<strong>Jueves 14 | GYM Polideportivo</strong>
+					<ul>
+						<li>13:00 Junta Técnica y Afloje</li>
+						<li>14:00 Inicio de competencia</li>
+					</ul>
+					<strong>Viernes 15 | GYM Polideportivo</strong>
+					<ul>
+						<li>9:00 Inicio de competencia</li>
+					</ul>
+					<strong>Sabado 16 | GYM Polideportivo</strong>
+					<ul>
+						<li>9:00 Inicio de competencia</li>
+					</ul>
 				</div>
 			</div>
-		
-				<div class="accordion r2">
-				<input type="checkbox" id="chk4100mf">
-				<label class="tab" for="chk4100mf">4 x 100 m Femenil <span></span></label>
-				<div class="container">
-										<table border="1" cellpadding="5" cellspacing="0">
-						<tr><th>Nombre</th><th>Universidad</th><th>Carril</th><th>Heat</th><th>Tiempo</th><th>Lugar</th></tr>
-						<tr><td align="center">Bajío</td><td align="center">Bajío</td><td align="center">1</td><td align="center">1</td><td align="center">56.69</td><td align="center">1</td></tr>
-						<tr><td align="center">Nezahualcóyotl</td><td align="center">Nezahualcóyotl</td><td align="center">3</td><td align="center">1</td><td align="center">59.95</td><td align="center">2</td></tr>
-						<tr><td align="center">Laguna</td><td align="center">Laguna</td><td align="center">2</td><td align="center">1</td><td align="center">1:01.42</td><td align="center">3</td></tr>
-					</table>
-				</div>
-			</div>
-	
-			<div class="accordion r1">
-				<input type="checkbox" id="chk100mv">
-				<label class="tab" for="chk100mv">100 m Varonil <span></span></label>
-				<div class="container">
-					<table border="1" cellpadding="5" cellspacing="0">
-						<tr><th>Nombre</th><th>Universidad</th><th>Carril</th><th>Heat</th><th>Número</th><th>Tiempo</th><th>Lugar</th></tr>
-						<tr><td align="center">Alberto Lozano Fernández</td><td align="center">Chihuahua</td><td align="center">6</td><td align="center">2</td><td align="center">22</td><td align="center">11.52</td><td align="center">1</td></tr>
-						<tr><td align="center">Mauricio Ríos Magallanes</td><td align="center">Chihuahua</td><td align="center">8</td><td align="center">2</td><td align="center">20</td><td align="center">11.72</td><td align="center">2</td></tr>
-						<tr><td align="center">Iván de Jesús Romero Ceja</td><td align="center">Bajío</td><td align="center">3</td><td align="center">1</td><td align="center">4</td><td align="center">11.97</td><td align="center">3</td></tr>
-					</table>
-				
-				</div>
-			</div>
-		
-			<div class="accordion r1">
-				<input type="checkbox" id="chk400mv">
-				<label class="tab" for="chk400mv">400 m Varonil <span></span></label>
-				<div class="container">
-				<div class="container">
-					<table border="1" cellpadding="5" cellspacing="0">
-						<tr><th>Nombre</th><th>Universidad</th><th>Carril</th><th>Heat</th><th>Número</th><th>Tiempo</th><th>Lugar</th></tr>
-						<tr><td align="center">Ricardo Miranda Pérez</td><td align="center">Bajío</td><td align="center">5</td><td align="center">1</td><td align="center">8</td><td align="center">53.57</td><td align="center">1</td></tr>
-						<tr><td align="center">Edson Alarcón Gutiérrez</td><td align="center">Chihuahua</td><td align="center">1</td><td align="center">1</td><td align="center">21</td><td align="center">54.5</td><td align="center">2</td></tr>
-						<tr><td align="center">Luis Gabriel Pérez Morales</td><td align="center">Cancún</td><td align="center">3</td><td align="center">1</td><td align="center">15</td><td align="center">57.32</td><td align="center">3</td></tr>
-					</table>
-					
-				</div>
-			</div>
-			</div>
-		
-			<div class="accordion r1">
-				<input type="checkbox" id="chk1500mv">
-				<label class="tab" for="chk1500mv">1500 m Varonil <span></span></label>
-				<div class="container">
-					<table border="1" cellpadding="5" cellspacing="0">
-						<tr><th>Nombre</th><th>Universidad</th><th>Heat</th><th>Número</th><th>Tiempo</th><th>Lugar</th></tr>
-						<tr><td align="center">Felipe Zinedine Carmona Soto </td><td align="center">Bajío</td><td align="center">1</td><td align="center">9</td><td align="center">05:23</td><td align="center">1</td></tr>
-						<tr><td align="center">Osvaldo Melo Palacios</td><td align="center">Chihuahua</td><td align="center">1</td><td align="center">23</td><td align="center">05:32</td><td align="center">2</td></tr>
-						<tr><td align="center">David López Delgado</td><td align="center">Cancún</td><td align="center">1</td><td align="center">16</td><td align="center">05:35</td><td align="center">3</td></tr>
-					</table>
-				</div>
-			</div>
-		
-			<div class="accordion r1">
-				<input type="checkbox" id="chk4100mv">
-				<label class="tab" for="chk4100mv">4 x 100 m Varonil <span></span></label>
-				<div class="container">
-					<table border="1" cellpadding="5" cellspacing="0">
-						<tr><th>Nombre</th><th>Universidad</th><th>Carril</th><th>Heat</th><th>Tiempo</th><th>Lugar</th></tr>
-						<tr><td align="center">Chihuahua</td><td align="center">Chihuahua</td><td align="center">2</td><td align="center">1</td><td align="center">48.35</td><td align="center">1</td></tr>
-						<tr><td align="center">Bajío</td><td align="center">Bajío</td><td align="center">1</td><td align="center">1</td><td align="center">51.26</td><td align="center">2</td></tr>
-						<tr><td align="center">Cancún</td><td align="center">Cancún</td><td align="center">4</td><td align="center">1</td><td align="center">52.91</td><td align="center">3</td></tr>
-					</table>
-				</div>
-			</div>
-		
 		</section>
-		-->
+		<?php
+			}elseif($_REQUEST['d'] == 13){
+		?>
+		<div id="titulo">
+			<div class="wrapper">Natación</div>
+		</div>
+		<section class="wrapper">
+			<div class="text">
+				<strong>PROGRAMA</strong><br><br>
+				<div class="programa">
+					<strong>Jueves 14 | Alberca Unidad 2</strong>
+					<ul>
+						<li>13:00 Junta Técnica y Afloje</li>
+						<li>14:00 Inicio de competencia</li>
+					</ul>
+					<strong>Viernes 15 | Alberca Unidad 2</strong>
+					<ul>
+						<li>8:00 Afloje</li>
+						<li>9:00 Inicio de competencia</li>
+					</ul>
+					<strong>Sabado 16 | Alberca Unidad 2</strong>
+					<ul>
+						<li>8:00 Afloje</li>
+						<li>9:00 Inicio de competencia</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 		<?php
 			}elseif($_REQUEST['d'] == 8){
 		?>
-		<!--	
+		
 		<div id="titulo">
 			<div class="wrapper">Tae Kwon Do</div>
 		</div>
@@ -191,24 +131,25 @@
 			<div class="text">
 				<strong>PROGRAMA</strong><br><br>
 				<div class="programa">
-					<strong>Jueves 21 de Marzo | Instituto Francés La Salle</strong>
+					<strong>Jueves 14 | SUM / Santa Lucía</strong>
 					<ul>
-						<li>11:00 hrs. Junta Técnica</li>
-						<li>12:00 a 14:00 hrs. Pesaje</li>
+						<li>11:30 Pesaje</li>
 					</ul>
-					<strong>Viernes 22 de Marzo del 2019</strong>
+					<strong>Viernes 15 | SUM / Unidad 2</strong>
 					<ul>
-						<li>9:00 am a 16:00 pm</li>
+						<li>9:00 Inicio de competencia</li>
 					</ul>
-					<strong> Sábado 23 de Marzo</strong>
+					<strong>Sabado 16 | SUM / Unidad 2</strong>
 					<ul>
-						
-						<li>9:00 am a 16:00 pm </li>
+						<li>9:00 Inicio de competencia</li>
+					</ul>
+					<strong>Domingo 17 | SUM / Unidad 2</strong>
+					<ul>
+						<li>9:00 Inicio de competencia</li>
 					</ul>
 				</div>
 			</div>
 		</section>
-		-->
 		<?php
 			}else{
 				
@@ -416,20 +357,14 @@
 							<th></th>
 							<th>JJ</th>
 							<th>JG</th>
-							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9){ ?><th>JE</th><?php } ?>
+							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9 || $t['deporte_id'] == 12){ ?><th>JE</th><?php } ?>
 							<th>JP</th>
-							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><th>PEG</th><?php } ?>
-							<?php if($t['deporte_id'] == 1){ ?><th>PG</th><th>PP</th><?php } ?>
-							<?php if($t['deporte_id'] == 3){ ?><th>TF</th><th>TC</th><?php } ?>
-							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><th>GF</th><th>GC</th><?php } ?>
-							<?php if($t['deporte_id'] == 6){ ?><th>JF</th><th>JC</th><?php } ?>
-							<?php if($t['deporte_id'] == 7){ ?><th>PF</th><th>PC</th><?php } ?>
-							<?php if($t['deporte_id'] == 9){ ?><th>PA</th><th>PR</th><?php } ?>
-							<?php if($t['deporte_id'] == 10){ ?><th>CA</th><th>CR</th><?php } ?>
-							<?php if($t['deporte_id'] == 11){ ?><th>TA</th><th>TC</th><?php } ?>
-							<th>%</th>
+							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 12){ ?><th>GF</th><th>GC</th><?php } ?>
+							<?php if($t['deporte_id'] == 7 || $t['deporte_id'] == 1){ ?><th>PF</th><th>PC</th><?php } ?>
+							<?php if($t['deporte_id'] == 9) { ?><th>TF</th><th>TC</th><?php } ?>
+							<?php if($t['deporte_id'] == 3) { ?><th>PA</th><th>PC</th><?php } ?>
 							<th>DIF</th>
-							<th>Pts.</th>
+							<?php if($t['deporte_id'] <> 7 && $t['deporte_id'] <> 6){ ?><th>Pts.</th><?php } ?>
 						</tr>
 					<?php
 						$sql = 'SELECT DISTINCT tor_partidos.local, tor_equipos.equipo FROM tor_partidos, tor_equipos WHERE tor_partidos.grupo_id = '.$t['grupo_id'].' AND tor_partidos.torneo_id = '.$t['torneo_id'].' AND tor_equipos.equipo_id = tor_partidos.local';
@@ -487,19 +422,19 @@
 							<td align="center"><?php echo $e['equipo']; ?></td>
 							<td align="center"><?php echo $JJ; ?></td>
 							<td align="center"><?php echo $JG; ?></td>
-							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9){ ?><td align="center"><?php echo $JE; ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9 || $t['deporte_id'] == 12){ ?><td align="center"><?php echo $JE; ?></td><?php } ?>
 							<td align="center"><?php echo $JP; ?></td>
 							<?php /*if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><td align="center"><?php echo $e['extra']; ?></td><?php }*/ ?>
-							<td align="center"><?php echo $PG; ?></td>
-							<td align="center"><?php echo $PP; ?></td>
-							<td align="center"><?php echo number_format($PS,2); ?></td>
+							<?php if($t['deporte_id'] <> 6){ ?><td align="center"><?php echo $PG; ?></td><?php } ?>
+							<?php if($t['deporte_id'] <> 6){ ?><td align="center"><?php echo $PP; ?></td><?php } ?>
 							<td align="center"><?php echo $PG-$PP; ?></td>
-							<td align="center"><?php echo '0'; ?></td>
+							<?php if($t['deporte_id'] <> 7 && $t['deporte_id'] <> 6){ ?><td align="center"><?php echo '0'; ?></td><?php } ?>
 						</tr>
 					<?php
 						}
 					?>
 					</table>
+					<p style="color: black;">Descarga el rol de juegos: <a href="documents/Juegos_2019_ROLES-min.pdf" style="color: blue;">aquí</a></p>
 		<?php
 						if($_REQUEST['d'] == 1){
 		?>
