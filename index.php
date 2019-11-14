@@ -56,6 +56,10 @@
 						@mysqli_free_result($result);
 						@mysqli_close($dbc);
 					?>
+					<li style="background-image: url(images/inauguracion.png);">
+						<div class="slide">
+						</div>
+					</li>
 					<li style="background-image: url(images/Juegos_MasterGraphic.png);">
 						<div class="slide">
 							<!--<div class="lineas"></div>-->
