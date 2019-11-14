@@ -861,7 +861,7 @@
 					<div class="clearfix"></div>
 				<?php } ?>
 					<label class="fourcol"></label>
-					<button class="fourcol" type="submit">Guardar</button>
+					<button class="fourcol" type="submit" id="btnGuarda">Guardar</button>
 					<div class="clearfix"></div>
 				</form>
 			<?php
@@ -869,6 +869,14 @@
 				}
 				@mysqli_close($dbc);
 			?>
+			<p style="display: none;" id="msgGuardado">Guardado</p>
+			<script>
+				document.getElementById("btnGuarda").onclick = function() {myFunction()};
+				function myFunction() {
+				  var x = document.getElementById("msgGuardado");
+					x.style.display = "block";
+				}
+			</script>
 			</section>
 		</div>
 	</body>

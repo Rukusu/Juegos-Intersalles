@@ -50,27 +50,38 @@
 
 			<?php
 				$dbc = connect_bajio();
-				$sql = 'SELECT tor_deportes.icono,tor_deportes.deporte,tor_ramas.rama,tor_partidos.local,tor_partidos.visitante,tor_canchas.cancha,tor_partidos.fecha,tor_partidos.hora,tor_transmisiones.url FROM tor_transmisiones
+				$sql = 'SELECT `partido_id`,`url`,`Dia`,`Hora`,`Nombre` FROM `tor_transmisiones` WHERE Hora <= CURRENT_TIME() AND Dia <= CURRENT_DATE()';
+				$trans = @mysqli_query($dbc,$sql);
+				while($t = @mysqli_fetch_array($trans, MYSQLI_BOTH )){
+					if (isset ($t['partido_id'])){
+						
+						$inner = 'SELECT tor_deportes.icono,tor_deportes.deporte,tor_ramas.rama,tor_partidos.local,tor_partidos.visitante,tor_canchas.cancha,tor_partidos.fecha,tor_partidos.hora,tor_transmisiones.url FROM tor_transmisiones
 						INNER JOIN tor_partidos ON tor_transmisiones.partido_id = tor_partidos.partido_id
 						INNER JOIN tor_torneos ON tor_partidos.torneo_id = tor_torneos.torneo_id
 						INNER JOIN tor_canchas ON tor_partidos.cancha_id = tor_canchas.cancha_id
 						INNER JOIN tor_deportes ON tor_torneos.deporte_id = tor_deportes.deporte_id
 						INNER JOIN tor_ramas ON tor_torneos.rama_id = tor_ramas.rama_id
-						ORDER BY tor_partidos.fecha ASC,tor_partidos.hora ASC';
-				$trans = @mysqli_query($dbc,$sql);
-				while($t = @mysqli_fetch_array($trans, MYSQLI_BOTH )){
-					$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$t['local'];
-					$local = @mysqli_query($dbc,$sql);
-					$l = @mysqli_fetch_array($local, MYSQLI_BOTH );
-					$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$t['visitante'];
-					$visitante = @mysqli_query($dbc,$sql);
-					$v = @mysqli_fetch_array($visitante, MYSQLI_BOTH );
+						WHERE tor_partidos.partido_id = '.$t['partido_id'];
+						$sub = @mysqli_query($dbc,$sql);
+						$q = @mysqli_fetch_array($trans, MYSQLI_BOTH )
+						$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$q['local'];
+						$local = @mysqli_query($dbc,$sql);
+						$l = @mysqli_fetch_array($local, MYSQLI_BOTH );
+						$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$q['visitante'];
+						$visitante = @mysqli_query($dbc,$sql);
+						$v = @mysqli_fetch_array($visitante, MYSQLI_BOTH );
+						
+						echo utf8_encode($q['deporte'].' '.$q['rama'].' - <strong>'.$l['equipo'].'</strong> VS <strong>'.$v['equipo'].'</strong><br>'.formatoFecha($q['fecha']).', '.convertHour($q['hora']).', '.$q['cancha'].'<br>');
+					if($t['url'] != '#') echo '<a href="'.$q['url'].'" target="_blank">Ver transmisi&oacute;n</a>';
+						
+					} else {
+						echo utf8_encode('<strong>'.$t['Nombre'].'</strong><br>'.formatoFecha($t['Dia']).', '.convertHour($t['Hora']).'<br>');
+						if($t['url'] != '#') echo '<a href="'.$t['url'].'" target="_blank">Ver transmisi&oacute;n</a>';
+					}
+					echo '<br><br>';
+				}
+					
 			?>
-				<div class="icono" style="background-image: url(images/<?php echo $t['icono']; ?>.png);"></div>
-				<?php
-					echo utf8_encode($t['deporte'].' '.$t['rama'].' - <strong>'.$l['equipo'].'</strong> VS <strong>'.$v['equipo'].'</strong><br>'.formatoFecha($t['fecha']).', '.convertHour($t['hora']).', '.$t['cancha'].'<br>');
-					if($t['url'] != '#') echo '<a href="'.$t['url'].'" target="_blank">Ver transmisi&oacute;n</a>';
-				?><br><br>
 				<div class="clearfix"></div>
 			<?php
 				}
