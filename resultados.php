@@ -117,6 +117,48 @@
 						<li>8:00 Afloje</li>
 						<li>9:00 Inicio de competencia</li>
 					</ul>
+					
+					<p><b>HOMBRES 50 METROS LIBRE</b></p>
+					
+					<table border="1" style="border-spacing: 0;"><tbody style="text-align:center">
+						 <tr style="background-color: #443a8f;; color: #fff;"><td><b>LUGAR</b></td><td><b>NOMBRE</b></td><td><b>CAT</b></td><td><b>EQUIPO</b></td><td><b>TIEMPO</b></td><td><b>PUNTOS</b></td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">1</td><td>Domínguez Francisco</td><td>20</td><td>CDMX</td><td>25.52</td><td>9</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">2</td><td>Hernández Juan</td><td>21</td><td>CDMX</td><td>26.32</td><td>7</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">3</td><td>Ramos Roy</td><td>29</td><td>CDMX</td><td>26.79</td><td>6</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">4</td><td>García Abraham</td><td>19</td><td>CDMX</td><td>26.84</td><td>5</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">5</td><td>Calderón Erick</td><td>18</td><td>Santa Teresa</td><td>27.21</td><td>4</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">6</td><td>Olvera Alejandro</td><td>22</td><td>CDMX</td><td>27.24</td><td>3</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">7</td><td>López Emilio</td><td>18</td><td>Santa Teresa</td><td>27.25</td><td>2</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">8</td><td>Ruíz Francisco</td><td>17</td><td>CDMX</td><td>27.43</td><td>1</td></tr>
+					</tbody></table>
+					
+					<p><b>MUJERES 200 METROS DORSO</b></p>
+					<table border="1" style="border-spacing: 0;"><tbody style="text-align:center">
+						<tr style="background-color: #443a8f;; color: #fff;"><td><b>LUGAR</b></td><td><b>NOMBRE</b></td><td><b>CAT</b></td><td><b>EQUIPO</b></td><td><b>TIEMPO</b></td><td><b>PUNTOS</b></td></tr>
+						<tr><td style="background-color: #2caac6; color: #fff;">1</td><td>Santana Fernanda</td><td>16</td><td>Santa Teresa</td><td>2.47.08</td><td>9</td></tr>
+						<tr><td style="background-color: #2caac6; color: #fff;">2</td><td>Guadalupe Martínez</td><td>19</td><td>Chihuahua</td><td>2.48.14</td><td>7</td></tr>
+						<tr><td style="background-color: #2caac6; color: #fff;">3</td><td>Mariana Villanueva</td><td>18</td><td>Santa Teresa</td><td>2.51.85</td><td>6</td></tr>
+						<tr><td style="background-color: #2caac6; color: #fff;">4</td><td>Lozano Alejandra</td><td>16</td><td>Santa Teresa</td><td>3.00.33</td><td>5</td></tr>
+						<tr><td style="background-color: #2caac6; color: #fff;">5</td><td>Fernanda Dimas</td><td>22</td><td>Victoria</td><td>3.01.01</td><td>4</td></tr>
+						<tr><td style="background-color: #2caac6; color: #fff;">6</td><td>Victoria Hernández</td><td>19</td><td>CDMX</td><td>3.02.67</td><td>3</td></tr>
+						<tr><td style="background-color: #2caac6; color: #fff;">7</td><td>Leslie Guzmán</td><td>17</td><td>CDMX</td><td>3.16.62</td><td>2</td></tr>
+						<tr><td style="background-color: #2caac6; color: #fff;">8</td><td>Sanroman Lucia</td><td>16</td><td>Santa Teresa</td><td>3.25.14</td><td>1</td></tr>
+					</tbody></table>
+					
+					<p><b>HOMBRES 200 METROS DORSO</b></p>
+					<table border="1" style="border-spacing: 0;"><tbody style="text-align:center">
+						<tr style="background-color: #443a8f;; color: #fff;"><td><b>LUGAR</b></td><td><b>NOMBRE</b></td><td><b>CAT</b></td><td><b>EQUIPO</b></td><td><b>TIEMPO</b></td><td><b>PUNTOS</b></td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">1</td><td>Arellano Carlos</td><td>20</td><td>CDMX</td><td>2.16.56</td><td>9</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">2</td><td>Aranda Jorge</td><td>18</td><td>Santa Teresa</td><td>2.19.13</td><td>7</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">3</td><td>Domínguez Francisco</td><td>20</td><td>CDMX</td><td>2.20.61</td><td>6</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">4</td><td>López Emilio</td><td>18</td><td>CDMX</td><td>2.21.95</td><td>5</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">5</td><td>Meneses Alexander</td><td>15</td><td>Santa Teresa</td><td>2.37.48</td><td>4</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">6</td><td>Salcedo Jorge</td><td>16</td><td>CDMX</td><td>2.48.84</td><td>3</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">7</td><td>Leon Gael</td><td>17</td><td>Santa Teresa</td><td>2.51.32</td><td>2</td></tr>
+						 <tr><td style="background-color: #2caac6; color: #fff;">8</td><td>Castañeda Rodrigo</td><td>17</td><td>CDMX</td><td>2.51.68</td><td>1</td></tr>
+					</tbody></table>
+					
+					
 				</div>
 			</div>
 		</section>
@@ -212,6 +254,15 @@
 							$local = @mysqli_query($dbc,$sql);
 							$l = @mysqli_fetch_array($local, MYSQLI_BOTH);
 							$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$r['visitante'];
+							$sqllocalshootout = 'SELECT marcador_id from tor_marcadores WHERE extra_id = '.$r['local'].' AND partido_id = '.$r['partido_id'];
+							$localshootout = @mysqli_query($dbc,$sqllocalshootout);
+							$localasterix = mysqli_num_rows($localshootout);
+							
+							$sqlvisitanteshootout = 'SELECT marcador_id from tor_marcadores WHERE extra_id = '.$r['visitante'].' AND partido_id = '.$r['partido_id'];
+							$visitanteshootout = @mysqli_query($dbc,$sqlvisitanteshootout);
+							$visitanteasterix = mysqli_num_rows($visitanteshootout);
+							
+							
 							$visitante = @mysqli_query($dbc,$sql);
 							$v = @mysqli_fetch_array($visitante, MYSQLI_BOTH);
 							$sql = 'SELECT tor_marcadores.marcador_local,tor_marcadores.marcador_visitante FROM tor_marcadores
@@ -219,7 +270,14 @@
 							$marcador = @mysqli_query($dbc,$sql);
 							if(@mysqli_num_rows($marcador) > 0){
 								$m = @mysqli_fetch_array($marcador, MYSQLI_BOTH);
-								$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
+								if ($localasterix <> 0){
+									$vs = '<strong>'.$m['marcador_local'].'*</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
+								}
+								else if ($visitanteasterix <> 0){
+									$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'*</strong>';
+								} else {
+									$vs = '<strong>'.$m['marcador_local'].'</strong> - <strong>'.$m['marcador_visitante'].'</strong>';
+								}
 							}else{
 								$vs = 'vs';
 							}
@@ -357,20 +415,25 @@
 							<th></th>
 							<th>JJ</th>
 							<th>JG</th>
-							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9 || $t['deporte_id'] == 12){ ?><th>JE</th><?php } ?>
+							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9 || $t['deporte_id'] == 12){ ?><th>JE</th><?php } ?>
 							<th>JP</th>
+							<?php if($t['deporte_id'] == 6){ ?><th>JF</th><th>JC</th><?php } ?>
+							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><th>JGSO</th><?php } ?>
+							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><th>JPSO</th><?php } ?>
 							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 12){ ?><th>GF</th><th>GC</th><?php } ?>
 							<?php if($t['deporte_id'] == 7 || $t['deporte_id'] == 1){ ?><th>PF</th><th>PC</th><?php } ?>
 							<?php if($t['deporte_id'] == 9) { ?><th>TF</th><th>TC</th><?php } ?>
 							<?php if($t['deporte_id'] == 3) { ?><th>PA</th><th>PC</th><?php } ?>
+							<?php if($t['deporte_id'] == 6){ ?><th>%</th><?php } ?>
 							<th>DIF</th>
 							<?php if($t['deporte_id'] <> 7 && $t['deporte_id'] <> 6){ ?><th>Pts.</th><?php } ?>
 						</tr>
 					<?php
 						$sql = 'SELECT DISTINCT tor_partidos.local, tor_equipos.equipo FROM tor_partidos, tor_equipos WHERE tor_partidos.grupo_id = '.$t['grupo_id'].' AND tor_partidos.torneo_id = '.$t['torneo_id'].' AND tor_equipos.equipo_id = tor_partidos.local';
 						$equipos = @mysqli_query($dbc,$sql);
+						$i=0;
 						while($e = @mysqli_fetch_array($equipos,MYSQLI_BOTH)){
-							$inner_sql = 'SELECT tor_partidos.local, tor_marcadores.marcador_local, tor_marcadores.marcador_visitante FROM tor_marcadores, tor_partidos WHERE tor_marcadores.partido_id = tor_partidos.partido_id AND (tor_partidos.visitante = '.$e['local'].' OR tor_partidos.local = '.$e['local'].')';
+							$inner_sql = 'SELECT tor_partidos.local, tor_marcadores.marcador_local, tor_marcadores.marcador_visitante, tor_marcadores.extra_id,  tor_marcadores.sets_contra, tor_marcadores.sets_favor FROM tor_marcadores, tor_partidos WHERE tor_marcadores.partido_id = tor_partidos.partido_id AND (tor_partidos.visitante = '.$e['local'].' OR tor_partidos.local = '.$e['local'].')';
 							$sub = @mysqli_query($dbc,$inner_sql);
 							$JJ = 0;
 							$JG = 0;
@@ -379,21 +442,39 @@
 							$PG = 0;
 							$PP = 0;
 							$PS = 0;
+							$JGSO = 0;
+							$JPSO = 0;
+							$SF = 0;
+							$SC = 0;
 							while($f = @mysqli_fetch_array($sub,MYSQLI_BOTH)){
 								if($f['local'] == $e['local']){
 									if ($f['marcador_local'] > $f['marcador_visitante']){
 										$JG = $JG+1;
 										$PG = $PG + $f['marcador_local'];
 										$PP = $PP + $f['marcador_visitante'];
+										$SF = $SF + $f['sets_favor'];
+										$SC = $SC + $f['sets_contra'];
 									}
 									else {
 										if ($f['marcador_local'] < $f['marcador_visitante']){
 											$JP = $JP+1;
 											$PG = $PG + $f['marcador_local'];
 											$PP = $PP + $f['marcador_visitante'];
+											$SF = $SF + $f['sets_favor'];
+											$SC = $SC + $f['sets_contra'];
 										}
 										if ($f['marcador_local'] == $f['marcador_visitante']){
 											$JE = $JE+1;
+											$PG = $PG + $f['marcador_local'];
+											$PP = $PP + $f['marcador_local'];
+											$SF = $SF + $f['sets_favor'];
+											$SC = $SC + $f['sets_contra'];
+											if ($f['extra_id'] == $e['local']) {
+												$JGSO = $JGSO +1;
+											}
+											else {
+												$JPSO = $JPSO +1;
+											}
 										}
 									}
 								}
@@ -402,39 +483,146 @@
 											$JP = $JP+1;
 											$PG = $PG + $f['marcador_visitante'];
 											$PP = $PP + $f['marcador_local'];
+											$SF = $SF + $f['sets_favor'];
+											$SC = $SC + $f['sets_contra'];
 									}
 									else {
 										if ($f['marcador_local'] < $f['marcador_visitante']){
 											$JG = $JG+1;
 											$PG = $PG + $f['marcador_visitante'];
 											$PP = $PP + $f['marcador_local'];
+											$SF = $SF + $f['sets_favor'];
+											$SC = $SC + $f['sets_contra'];
 										}
 										if ($f['marcador_local'] == $f['marcador_visitante']){
 											$JE = $JE+1;
+											$PG = $PG + $f['marcador_local'];
+											$PP = $PP + $f['marcador_local'];
+											$SF = $SF + $f['sets_favor'];
+											$SC = $SC + $f['sets_contra'];
+											if ($f['extra_id'] == $e['local']) {
+												$JGSO = $JGSO +1;
+											}
+											else {
+												$JPSO = $JPSO +1;
+											}
 										}
 									}
 								}
 								$JJ = $JJ+1;
 								if ($PP > 0 ){$PS = $PG/$PP;}
+								
 							}
+							$resultados [$i][0]= $e['equipo'];
+							$resultados [$i][1]= $JJ;
+							$resultados [$i][2]= $JG;
+							$resultados [$i][3]= $JE;
+							$resultados [$i][4]= $JGSO;
+							$resultados [$i][5]= $JPSO;
+							$resultados [$i][6]= $PG;
+							$resultados [$i][7]= $PP;
+							if ($t['deporte_id'] == 4 || $t['deporte_id'] == 5){
+								$resultados [$i][8]= ($JG*3)+($JGSO*2)+$JPSO;
+							} else {
+								$resultados [$i][8]= ($JG*2)+$JP;
+							}
+							$resultados [$i][9]= $JP;
+							$resultados [$i][10]= $SF;
+							$resultados [$i][11]= $SC;
+							
+							$i = $i +1;
+						}
+						
+							for ($j=0;$j<$i;$j++){
+								for ($k=0;$k<$i-1;$k++){
+									if ($resultados [$k][8] < $resultados [$k+1][8]){
+										$aux[0] = $resultados [$k][0];
+										$aux[1] = $resultados [$k][1];
+										$aux[2] = $resultados [$k][2];
+										$aux[3] = $resultados [$k][3];
+										$aux[4] = $resultados [$k][4];
+										$aux[5] = $resultados [$k][5];
+										$aux[6] = $resultados [$k][6];
+										$aux[7] = $resultados [$k][7];
+										$aux[8] = $resultados [$k][8];
+										$aux[9] = $resultados [$k][9];
+										$aux[10] = $resultados [$k][10];
+										$aux[11] = $resultados [$k][11];
+										
+										$resultados [$k][0] = $resultados [$k+1][0];
+										$resultados [$k][1] = $resultados [$k+1][1];
+										$resultados [$k][2] = $resultados [$k+1][2];
+										$resultados [$k][3] = $resultados [$k+1][3];
+										$resultados [$k][4] = $resultados [$k+1][4];
+										$resultados [$k][5] = $resultados [$k+1][5];
+										$resultados [$k][6] = $resultados [$k+1][6];
+										$resultados [$k][7] = $resultados [$k+1][7];
+										$resultados [$k][8] = $resultados [$k+1][8];
+										$resultados [$k][9] = $resultados [$k+1][9];
+										$resultados [$k][10] = $resultados [$k+1][10];
+										$resultados [$k][11] = $resultados [$k+1][11];
+										
+										$resultados [$k+1][0] = $aux[0];
+										$resultados [$k+1][1] = $aux[1];
+										$resultados [$k+1][2] = $aux[2];
+										$resultados [$k+1][3] = $aux[3];
+										$resultados [$k+1][4] = $aux[4];
+										$resultados [$k+1][5] = $aux[5];
+										$resultados [$k+1][6] = $aux[6];
+										$resultados [$k+1][7] = $aux[7];
+										$resultados [$k+1][8] = $aux[8];
+										$resultados [$k+1][9] = $aux[9];
+										$resultados [$k+1][10] = $aux[10];
+										$resultados [$k+1][11] = $aux[11];
+										
+										
+										
+										
+									}
+								}
+							}
+						
+						for ($k=0;$k<$i;$k++){
+							$e['equipo'] = $resultados [$k][0];
+							$JJ = $resultados [$k][1];
+							$JG = $resultados [$k][2];
+							$JE = $resultados [$k][3];
+							$JGSO = $resultados [$k][4];
+							$JPSO = $resultados [$k][5];
+							$PG = $resultados [$k][6];
+							$PP = $resultados [$k][7];
+							$JP = $resultados [$k][9];
+							$SF = $resultados [$k][10];
+							$SC = $resultados [$k][11];
+							
 					?>
 						<tr>
 							<td align="center"><?php echo $e['equipo']; ?></td>
 							<td align="center"><?php echo $JJ; ?></td>
 							<td align="center"><?php echo $JG; ?></td>
-							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 4 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9 || $t['deporte_id'] == 12){ ?><td align="center"><?php echo $JE; ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 1 || $t['deporte_id'] == 5 || $t['deporte_id'] == 9 || $t['deporte_id'] == 12){ ?><td align="center"><?php echo $JE; ?></td><?php } ?>
 							<td align="center"><?php echo $JP; ?></td>
+							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><td align="center"><?php echo $JGSO; ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><td align="center"><?php echo $JPSO; ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 6){ ?><td align="center"><?php echo $SF; ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 6){ ?><td align="center"><?php echo $SC; ?></td><?php } ?>
 							<?php /*if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><td align="center"><?php echo $e['extra']; ?></td><?php }*/ ?>
 							<?php if($t['deporte_id'] <> 6){ ?><td align="center"><?php echo $PG; ?></td><?php } ?>
 							<?php if($t['deporte_id'] <> 6){ ?><td align="center"><?php echo $PP; ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 6) { ?><td align="center"><?php if ($SC == 0) {echo '0';} else {echo $SF/$SC;} ?></td><?php } ?>
 							<td align="center"><?php echo $PG-$PP; ?></td>
-							<?php if($t['deporte_id'] <> 7 && $t['deporte_id'] <> 6){ ?><td align="center"><?php echo '0'; ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 4 || $t['deporte_id'] == 5){ ?><td align="center"><?php echo ($JG*3)+($JGSO*2)+$JPSO; ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 3) { ?><td align="center"><?php echo ($JG*2)+($JP); ?></td><?php } ?>
+							<?php if($t['deporte_id'] == 12) { ?><td align="center"><?php echo ($JG*3)+($JE*1); ?></td><?php } ?>			
+							<?php if($t['deporte_id'] <> 7 && $t['deporte_id'] <> 6 && $t['deporte_id'] <> 4 && $t['deporte_id'] <> 3 && $t['deporte_id'] <> 5 && $t['deporte_id'] <> 12){ ?><td align="center"><?php echo $JG; ?></td><?php } ?>
 						</tr>
 					<?php
 						}
 					?>
 					</table>
 					<p style="color: black;">Descarga el rol de juegos: <a href="documents/Juegos_2019_ROLES-min.pdf" style="color: blue;">aquí</a></p>
+					<?php if($t['deporte_id']==6 && $t['grupo_id'] == 1 && $t['torneo_id'] == 26) {echo '<p style="color: black;">Descarga el estado de campeonato: <a href="documents/campeonato/TENIS_FEMENIL_SERIE_A.pdf" style="color: blue;">aquí</a></p>';}?>
+					<?php if($t['deporte_id']==6 && $t['grupo_id'] == 1 && $t['torneo_id'] == 27) {echo '<p style="color: black;">Descarga el estado de campeonato: <a href="documents/campeonato/TENIS_VARONIL_SERIE_A.pdf" style="color: blue;">aquí</a></p>';}?>
 		<?php
 						if($_REQUEST['d'] == 1){
 		?>

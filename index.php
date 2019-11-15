@@ -56,10 +56,6 @@
 						@mysqli_free_result($result);
 						@mysqli_close($dbc);
 					?>
-					<li style="background-image: url(images/inauguracion.png);">
-						<div class="slide">
-						</div>
-					</li>
 					<li style="background-image: url(images/Juegos_MasterGraphic.png);">
 						<div class="slide">
 							<!--<div class="lineas"></div>-->
@@ -74,13 +70,13 @@
 							<!--<div class="delasalle"></div>-->
 						</div>
 					</li>
-					<li style="background-image: url(images/dias.png);">
-						<div class="slide">
+					<!--<li style="background-image: url(images/dias.png);">
+						<div class="slide">-->
 							<!--<div class="lineas"></div>-->
 							
 							<!--<div class="delasalle"></div>-->
-						</div>
-					</li>
+						<!--</div>
+					</li>-->
 				</ul>
 			</div>
 			<!--</div>-->

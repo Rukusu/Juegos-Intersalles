@@ -581,7 +581,7 @@
 			}
 			if(!isset($_REQUEST['ganador'])){
 				$warning = 'Debes seleccionar el ganador';
-			}elseif($_REQUEST['ganador'] == 0 && !isset($_REQUEST['extra']) && $_REQUEST['d'] != 1 && $_REQUEST['d'] != 9){
+			}elseif($_REQUEST['ganador'] == 0 && !isset($_REQUEST['extra']) && $_REQUEST['d'] != 1 && $_REQUEST['d'] != 9 && $_REQUEST['d'] != 12){
 				$warning = 'Debes seleccionar el ganador del punto extra';
 			}elseif($_REQUEST['mLocal'] == '' || $_REQUEST['mVisitante'] == ''){
 				$warning = 'Debes escribir el marcador final';
@@ -601,6 +601,7 @@
 					$clocal = $_REQUEST['favorVisitante'];
 					$cvisitante = $_REQUEST['favorLocal'];
 				}else{
+					if ($_REQUEST['d'] == 12){ $extra = 0;}
 					$flocal = $_REQUEST['mLocal'];
 					$fvisitante = $_REQUEST['mVisitante'];
 					$clocal = $_REQUEST['mVisitante'];

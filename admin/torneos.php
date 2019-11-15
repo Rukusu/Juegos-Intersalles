@@ -820,7 +820,7 @@
 					<input type="hidden" name="t" value="<?php echo $_REQUEST['t']; ?>">
 					<label class="twocol"><strong>Ganador</strong></label>
 					<label class="twocol"><input type="radio" name="ganador" value="<?php echo $p['local']; ?>" class="noempate"<?php if($ganador == $p['local']) echo ' checked'; ?>> <?php echo utf8_encode($l['equipo']); ?></label>
-				<?php if($p['deporte_id'] == 1 || $p['deporte_id'] == 4 || $p['deporte_id'] == 5 || $p['deporte_id'] == 9){ ?>
+				<?php if($p['deporte_id'] == 1 || $p['deporte_id'] == 4 || $p['deporte_id'] == 5 || $p['deporte_id'] == 9 || $p['deporte_id'] == 12){ ?>
 					<label class="twocol"><input type="radio" name="ganador" value="0" id="empate"<?php if($ganador == 0) echo ' checked'; ?>> Empate</label>
 				<?php } ?>
 					<label class="twocol"><input type="radio" name="ganador" value="<?php echo $p['visitante']; ?>" class="noempate"<?php if($ganador == $p['visitante']) echo ' checked'; ?>> <?php echo utf8_encode($v['equipo']); ?></label>

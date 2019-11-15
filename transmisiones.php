@@ -46,14 +46,13 @@
 		</div>
 		<section class="wrapper" style="margin-top: 20px;">
 			<div class="text">
-			<img src="images/Partidos.jpg" alt="Partidos" style="width: 100%">
 
 			<?php
 				$dbc = connect_bajio();
 				$sql = 'SELECT `partido_id`,`url`,`Dia`,`Hora`,`Nombre` FROM `tor_transmisiones` WHERE Hora <= CURRENT_TIME() AND Dia <= CURRENT_DATE()';
 				$trans = @mysqli_query($dbc,$sql);
 				while($t = @mysqli_fetch_array($trans, MYSQLI_BOTH )){
-					if (isset ($t['partido_id'])){
+					if ($t['partido_id'] <> NULL){
 						
 						$inner = 'SELECT tor_deportes.icono,tor_deportes.deporte,tor_ramas.rama,tor_partidos.local,tor_partidos.visitante,tor_canchas.cancha,tor_partidos.fecha,tor_partidos.hora,tor_transmisiones.url FROM tor_transmisiones
 						INNER JOIN tor_partidos ON tor_transmisiones.partido_id = tor_partidos.partido_id
@@ -63,7 +62,7 @@
 						INNER JOIN tor_ramas ON tor_torneos.rama_id = tor_ramas.rama_id
 						WHERE tor_partidos.partido_id = '.$t['partido_id'];
 						$sub = @mysqli_query($dbc,$sql);
-						$q = @mysqli_fetch_array($trans, MYSQLI_BOTH )
+						$q = @mysqli_fetch_array($trans, MYSQLI_BOTH );
 						$sql = 'SELECT equipo FROM tor_equipos WHERE equipo_id='.$q['local'];
 						$local = @mysqli_query($dbc,$sql);
 						$l = @mysqli_fetch_array($local, MYSQLI_BOTH );
@@ -82,9 +81,11 @@
 				}
 					
 			?>
+			<img src="images/Partidos.jpg" alt="Partidos" style="width: 100%">
+			
 				<div class="clearfix"></div>
 			<?php
-				}
+				
 				@mysqli_close($dbc);
 			?>
 			</div>
